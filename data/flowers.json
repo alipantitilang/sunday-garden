@@ -17,12 +17,6 @@
         "fruit": "The fruit is depressed-globose; cited specimens are around 2.2 × 3.2 cm.",
         "seeds": "Seeds are small and ellipsoid, about 1.2 mm long in the cited description."
       },
-      "howItGrows": [
-        "A rhizome anchors the plant in the substrate beneath the water.",
-        "Long petioles carry leaves upward until their blades reach the water surface.",
-        "Flowers are held at or above the water surface.",
-        "The plant persists as a rhizomatous hydrogeophyte; exact seasonal timing varies with geography and growing conditions."
-      ],
       "interestingFacts": [
         {
           "title": "It is not a true lotus",
@@ -162,6 +156,32 @@
           "Nymphaea caerulea Savigny",
           "Nymphaea coerulea Andrews"
         ]
+      },
+      "growthCycle": {
+        "type": "standard",
+        "resolution": "standard",
+        "phases": [
+          {
+            "id": "phase-01",
+            "name": "Phase 01",
+            "description": "A rhizome anchors the plant in the substrate beneath the water."
+          },
+          {
+            "id": "phase-02",
+            "name": "Phase 02",
+            "description": "Long petioles carry leaves upward until their blades reach the water surface."
+          },
+          {
+            "id": "phase-03",
+            "name": "Phase 03",
+            "description": "Flowers are held at or above the water surface."
+          },
+          {
+            "id": "phase-04",
+            "name": "Phase 04",
+            "description": "The plant persists as a rhizomatous hydrogeophyte; exact seasonal timing varies with geography and growing conditions."
+          }
+        ]
       }
     },
     {
@@ -181,12 +201,6 @@
         "fruit": "After pollination and maturation, the floral receptacle develops into the familiar rose hip, a fleshy structure enclosing numerous achenes.",
         "prickles": "Rosa stems are commonly described as bearing prickles; these are often casually called thorns in everyday language, but botanical descriptions distinguish them from true thorns."
       },
-      "howItGrows": [
-        "A rose establishes a perennial woody framework from which new shoots arise.",
-        "Depending on the species or cultivar, growth may form a shrub, climber, rambler, groundcover, or compact container plant.",
-        "Leaves develop along the shoots and flowers are produced on new or established flowering growth, with flowering behaviour varying substantially among rose groups.",
-        "If flowers are allowed to mature rather than being removed, many roses develop hips containing seeds."
-      ],
       "interestingFacts": [
         {
           "title": "Red Rose is not one species",
@@ -333,6 +347,32 @@
         "genus": "Rosa",
         "acceptedName": "Rosa L.",
         "synonyms": []
+      },
+      "growthCycle": {
+        "type": "standard",
+        "resolution": "standard",
+        "phases": [
+          {
+            "id": "phase-01",
+            "name": "Phase 01",
+            "description": "A rose establishes a perennial woody framework from which new shoots arise."
+          },
+          {
+            "id": "phase-02",
+            "name": "Phase 02",
+            "description": "Depending on the species or cultivar, growth may form a shrub, climber, rambler, groundcover, or compact container plant."
+          },
+          {
+            "id": "phase-03",
+            "name": "Phase 03",
+            "description": "Leaves develop along the shoots and flowers are produced on new or established flowering growth, with flowering behaviour varying substantially among rose groups."
+          },
+          {
+            "id": "phase-04",
+            "name": "Phase 04",
+            "description": "If flowers are allowed to mature rather than being removed, many roses develop hips containing seeds."
+          }
+        ]
       }
     },
     {
@@ -360,13 +400,6 @@
         "flower": "Tulip flowers vary greatly in size, shape and colour. Cup-shaped flowers are common, while cultivated forms include lily-flowered, fringed, parrot and peony-flowered types.",
         "fruit": "After successful reproduction, a capsule can develop and contain seeds; many cultivated tulips are instead propagated vegetatively for reliable cultivar characteristics."
       },
-      "howItGrows": [
-        "The bulb remains dormant through part of the year and stores reserves underground.",
-        "With suitable seasonal conditions, leaves emerge and the plant develops a flowering stem.",
-        "Most cultivated tulips flower in mid to late spring, although flowering time varies by type and climate.",
-        "After flowering, the foliage continues to photosynthesise and replenish the bulb before gradually yellowing and dying back.",
-        "Many specialist tulips can persist and multiply in favourable conditions, while many bedding tulips are treated as seasonal displays because reliable reflowering is not guaranteed."
-      ],
       "interestingFacts": [
         {
           "title": "Pink is not a species name",
@@ -510,7 +543,38 @@
         "growthForm",
         "nativeRange",
         "habitat"
-      ]
+      ],
+      "growthCycle": {
+        "type": "standard",
+        "resolution": "standard",
+        "phases": [
+          {
+            "id": "phase-01",
+            "name": "Phase 01",
+            "description": "The bulb remains dormant through part of the year and stores reserves underground."
+          },
+          {
+            "id": "phase-02",
+            "name": "Phase 02",
+            "description": "With suitable seasonal conditions, leaves emerge and the plant develops a flowering stem."
+          },
+          {
+            "id": "phase-03",
+            "name": "Phase 03",
+            "description": "Most cultivated tulips flower in mid to late spring, although flowering time varies by type and climate."
+          },
+          {
+            "id": "phase-04",
+            "name": "Phase 04",
+            "description": "After flowering, the foliage continues to photosynthesise and replenish the bulb before gradually yellowing and dying back."
+          },
+          {
+            "id": "phase-05",
+            "name": "Phase 05",
+            "description": "Many specialist tulips can persist and multiply in favourable conditions, while many bedding tulips are treated as seasonal displays because reliable reflowering is not guaranteed."
+          }
+        ]
+      }
     },
     {
       "id": "white-lily",
@@ -535,12 +599,6 @@
         "flower": "Lilium flowers vary greatly in shape and colour. They may be trumpet-, bowl-, funnel- or Turk’s-cap-shaped; white is one of the colours represented across the genus.",
         "fruit": "The fruit is generally a capsule containing numerous seeds."
       },
-      "howItGrows": [
-        "The plant persists underground as a bulb through an annual cycle of growth.",
-        "A leafy stem emerges from the bulb and develops its characteristic foliage.",
-        "Flowers form toward the end of the stem, with shape, fragrance, number and flowering season varying among species and cultivars.",
-        "After flowering, fertilised flowers can develop capsules and seeds while the plant replenishes its underground reserves for the next growth cycle."
-      ],
       "interestingFacts": [
         {
           "title": "White Lily is not one species",
@@ -652,7 +710,33 @@
         "habitat"
       ],
       "family": "Liliaceae",
-      "genus": "Lilium"
+      "genus": "Lilium",
+      "growthCycle": {
+        "type": "standard",
+        "resolution": "standard",
+        "phases": [
+          {
+            "id": "phase-01",
+            "name": "Phase 01",
+            "description": "The plant persists underground as a bulb through an annual cycle of growth."
+          },
+          {
+            "id": "phase-02",
+            "name": "Phase 02",
+            "description": "A leafy stem emerges from the bulb and develops its characteristic foliage."
+          },
+          {
+            "id": "phase-03",
+            "name": "Phase 03",
+            "description": "Flowers form toward the end of the stem, with shape, fragrance, number and flowering season varying among species and cultivars."
+          },
+          {
+            "id": "phase-04",
+            "name": "Phase 04",
+            "description": "After flowering, fertilised flowers can develop capsules and seeds while the plant replenishes its underground reserves for the next growth cycle."
+          }
+        ]
+      }
     },
     {
       "id": "pink-white-lily",
@@ -676,12 +760,6 @@
         "flower": "Flowers can be trumpet-, bowl-, funnel-, or Turk’s-cap-shaped; colours include white, pink and many combinations.",
         "fruit": "Lilies produce capsules containing seeds."
       },
-      "howItGrows": [
-        "The bulb stores resources during dormant periods.",
-        "New stems and leaves emerge from the bulb during the active growing season.",
-        "Flowers develop at the top of the leafy stem, with form and colour varying by species or cultivar.",
-        "After flowering, the plant replenishes the bulb before foliage dies back in many deciduous lilies."
-      ],
       "interestingFacts": [
         {
           "title": "The colour combination is real",
@@ -773,7 +851,33 @@
         "habitat"
       ],
       "family": "Liliaceae",
-      "genus": "Lilium"
+      "genus": "Lilium",
+      "growthCycle": {
+        "type": "standard",
+        "resolution": "standard",
+        "phases": [
+          {
+            "id": "phase-01",
+            "name": "Phase 01",
+            "description": "The bulb stores resources during dormant periods."
+          },
+          {
+            "id": "phase-02",
+            "name": "Phase 02",
+            "description": "New stems and leaves emerge from the bulb during the active growing season."
+          },
+          {
+            "id": "phase-03",
+            "name": "Phase 03",
+            "description": "Flowers develop at the top of the leafy stem, with form and colour varying by species or cultivar."
+          },
+          {
+            "id": "phase-04",
+            "name": "Phase 04",
+            "description": "After flowering, the plant replenishes the bulb before foliage dies back in many deciduous lilies."
+          }
+        ]
+      }
     }
   ]
 }

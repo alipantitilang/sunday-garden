@@ -160,3 +160,46 @@ RF-006 closes the current responsive audit scope for the RF-001–RF-005 remake 
 ### Validation
 - Documentation files checked after rewrite.
 - Existing data schema retained; no flower/Gardener content was fabricated or removed as part of this documentation remake.
+
+## RF-008 — Growth Cycle Template & Resolution Remake — COMPLETED
+
+**Date:** 2026-09-25  
+**Scope:** Growth Cycle data model, research standard, renderer templates, and governance documentation
+
+### Problem
+
+RF-003 made the Growth Cycle phase count dynamic, but the system still treated every phase sequence as if a single circular visual model were sufficient. Biological and developmental research does not provide one universal number of phases for all flowers. Phase count depends on the definition and resolution used by the source.
+
+### Changes
+
+- Replaced the canonical `howItGrows` growth-cycle representation with `growthCycle`.
+- Added `type`, `resolution`, and explicit `phases` records.
+- Added supported resolution values: `standard`, `detailed`, `specialized`, and `custom`.
+- Preserved the existing researched phase descriptions without rewriting their content.
+- Added phase IDs and labels so each phase can be addressed independently.
+- Updated the Flower Page renderer to select a template from the data:
+  - `cycle-3` through `cycle-8` for readable circular presentations;
+  - `cycle-custom` for phase counts or structures outside that family.
+- Added a custom ordered presentation so detailed/specialized cycles are not forced into an overcrowded circle.
+- Kept a legacy renderer fallback for existing array-based growth data.
+- Updated the data validator to require a valid `growthCycle` for flower records.
+- Updated README, AI rules, Flower Research Prompt, data README, and Phase Plan to establish the new Growth Cycle standard.
+
+### Governance rule
+
+> **Research first → determine resolution → preserve the supported phase count → choose the visual template.**
+
+The visual system must never invent, merge, delete, or reorder biological phases merely to satisfy a template.
+
+### Validation
+
+- `node --check js/flower.js` passed.
+- `node --check js/main.js` passed.
+- `node tools/validate-data.mjs` passed after the new schema migration.
+- All five current flower records use `growthCycle`.
+- Current phase counts remain unchanged: Blue Lotus 4, Red Rose 4, Pink Tulip 5, White Lily 4, Pink & White Lily 4.
+- No flower research text was fabricated or rewritten.
+
+### Result
+
+RF-008 closes the Growth Cycle remake scope. Future changes to an existing Growth Cycle implementation should be logged as a new RF; a genuinely new interaction/capability should use the next Phase.

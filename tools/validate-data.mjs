@@ -14,6 +14,19 @@ for (const f of flowers) {
   flowerIds.add(f.id);
   if (!['pending', 'complete'].includes(f.researchStatus)) errors.push(`Invalid flower researchStatus: ${f.id}`);
   if (!f.taxonomy || f.taxonomy.family !== f.family || f.taxonomy.genus !== f.genus) errors.push(`Taxonomy mismatch: ${f.id}`);
+  if (!f.growthCycle || !Array.isArray(f.growthCycle.phases) || f.growthCycle.phases.length === 0) {
+    errors.push(`Missing growthCycle phases: ${f.id}`);
+  } else {
+    if (!['standard', 'detailed', 'specialized', 'custom'].includes(f.growthCycle.resolution)) {
+      errors.push(`Invalid growthCycle resolution: ${f.id}`);
+    }
+    const phaseIds = new Set();
+    for (const [index, phase] of f.growthCycle.phases.entries()) {
+      if (!phase?.id || phaseIds.has(phase.id)) errors.push(`Invalid or duplicate growth phase id: ${f.id} phase ${index + 1}`);
+      if (!phase?.description) errors.push(`Missing growth phase description: ${f.id} phase ${index + 1}`);
+      phaseIds.add(phase.id);
+    }
+  }
   if (f.researchStatus === 'complete') {
     if (!Array.isArray(f.sources) || f.sources.length === 0) errors.push(`No sources: ${f.id}`);
     if (!Array.isArray(f.interestingFacts) || f.interestingFacts.length === 0) errors.push(`No interesting facts: ${f.id}`);

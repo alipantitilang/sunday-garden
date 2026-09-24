@@ -35,6 +35,12 @@
 .growth-cycle__detail { display: grid; grid-template-columns: 4rem 1fr; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(52,70,58,.14); }
 .growth-cycle__detail > span { font-family: var(--font-display); font-size: 1.7rem; color: var(--lotus-blue); }
 .growth-cycle__detail p { margin: 0; line-height: 1.7; color: var(--ink); }
+.growth-cycle__detail > div { min-width: 0; }
+.growth-cycle__detail h3 { margin: 0 0 .35rem; font-family: var(--font-display); font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 600; color: var(--forest); }
+.growth-cycle__custom-heading { max-width: 48rem; margin-bottom: 1.5rem; }
+.growth-cycle__custom-heading p:last-child { margin: 0; color: var(--ink); line-height: 1.7; }
+.growth-cycle--custom .growth-cycle__details { border-top: 1px solid rgba(52,70,58,.2); }
+.growth-cycle__detail--custom { grid-template-columns: 4rem minmax(0, 1fr); }
 .morphology-grid, .facts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .morphology-item, .fact-note { border-top: 1px solid var(--taupe); padding-top: 1.25rem; }
 .morphology-item h3, .fact-note h3 { font-family: var(--font-display); font-size: 1.65rem; font-weight: 500; color: var(--forest); }

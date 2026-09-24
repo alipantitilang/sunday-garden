@@ -219,6 +219,39 @@ The renderer must be data-aware.
 
 Do not hard-code a fixed number of morphology fields, growth phases, symbolism entries, or similar content when the data model is intentionally extensible.
 
+### Growth Cycle Governance
+
+Growth Cycle phase count is not a universal constant across flowers or research sources. A phase count reflects the resolution and purpose of the source being used.
+
+Use the canonical structure:
+
+```json
+"growthCycle": {
+  "type": "standard",
+  "resolution": "standard",
+  "phases": [
+    {
+      "id": "phase-01",
+      "name": "Phase 01",
+      "description": "..."
+    }
+  ]
+}
+```
+
+Allowed resolutions:
+- `standard`
+- `detailed`
+- `specialized`
+- `custom`
+
+Research determines the phases first. The interface template is selected afterward. Never invent, merge, delete, or reorder research-backed phases only to fit a visual layout.
+
+For phase counts from 3–8, the current renderer may use a corresponding circular template family. Counts outside that range use the custom ordered presentation unless a future validated template family is introduced. This is a rendering decision, not a biological rule.
+
+Legacy `howItGrows` arrays may be read for compatibility, but new flower records should use `growthCycle.phases`.
+
+
 Support compatible singular/plural forms where the schema requires it, such as `flower` and `flowers`.
 
 Never hide valid data simply because an older renderer did not anticipate the field.

@@ -112,19 +112,57 @@ const SundayGardenFlower = (() => {
     return `<section class="flower-section container"><div class="section-heading"><p class="eyebrow">${eyebrow}</p><h2>${title}</h2></div><div class="morphology-grid">${Array.isArray(data) ? data.filter(([, value]) => isMeaningful(value)).map(([label, value]) => `<article class="morphology-item"><h3>${escapeHTML(label)}</h3><div>${valueMarkup(value)}</div></article>`).join('') : dataItemsMarkup(items)}</div></section>`;
   }
 
-  function growthCycleMarkup(phases = []) {
+  function growthCycleMarkup(growthCycle = {}) {
+    const legacyPhases = Array.isArray(growthCycle) ? growthCycle : [];
+    const phases = Array.isArray(growthCycle?.phases) ? growthCycle.phases : legacyPhases;
     const meaningful = phases.filter(isMeaningful);
     if (!meaningful.length) return '';
+
+    const resolution = growthCycle?.resolution || 'standard';
     const count = meaningful.length;
+    const template = count >= 3 && count <= 8 ? `cycle-${count}` : 'cycle-custom';
+    const phaseLabel = resolution === 'detailed'
+      ? 'Siklus terperinci'
+      : resolution === 'specialized'
+        ? 'Siklus khusus'
+        : resolution === 'custom'
+          ? 'Siklus kustom'
+          : 'Siklus standar';
+
+    if (template === 'cycle-custom') {
+      const details = meaningful.map((step, i) => {
+        const description = typeof step === 'string' ? step : (step.description || step.name || '');
+        const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
+        return `<article class="growth-cycle__detail growth-cycle__detail--custom">
+          <span>${String(i + 1).padStart(2, '0')}</span>
+          <div><h3>${escapeHTML(name)}</h3><p>${escapeHTML(description)}</p></div>
+        </article>`;
+      }).join('');
+      return `<div class="container growth-cycle growth-cycle--custom" data-template="${template}" data-resolution="${escapeHTML(resolution)}">
+        <div class="growth-cycle__custom-heading">
+          <p class="eyebrow">${escapeHTML(phaseLabel)}</p>
+          <p>Siklus ditampilkan dalam urutan fase yang ditentukan oleh data penelitian.</p>
+        </div>
+        <div class="growth-cycle__details">${details}</div>
+      </div>`;
+    }
+
     const nodes = meaningful.map((step, i) => {
       const angle = (360 / count) * i - 90;
       return `<article class="growth-cycle__node" style="--angle:${angle}deg" aria-label="Fase ${i + 1} dari ${count}"><span>${String(i + 1).padStart(2, '0')}</span></article>`;
     }).join('');
-    const details = meaningful.map((step, i) => `<article class="growth-cycle__detail"><span>${String(i + 1).padStart(2, '0')}</span><p>${escapeHTML(step)}</p></article>`).join('');
-    return `<div class="container growth-cycle" style="--phase-count:${count}">
-      <div class="growth-cycle__visual" role="img" aria-label="Siklus pertumbuhan dengan ${count} fase">
+    const details = meaningful.map((step, i) => {
+      const description = typeof step === 'string' ? step : (step.description || step.name || '');
+      const name = typeof step === 'string' ? '' : (step.name || '');
+      return `<article class="growth-cycle__detail">
+        <span>${String(i + 1).padStart(2, '0')}</span>
+        <div>${name ? `<h3>${escapeHTML(name)}</h3>` : ''}<p>${escapeHTML(description)}</p></div>
+      </article>`;
+    }).join('');
+    return `<div class="container growth-cycle growth-cycle--${template}" data-template="${template}" data-resolution="${escapeHTML(resolution)}" style="--phase-count:${count}">
+      <div class="growth-cycle__visual" role="img" aria-label="${escapeHTML(phaseLabel)} dengan ${count} fase">
         <div class="growth-cycle__orbit" aria-hidden="true"></div>
-        <div class="growth-cycle__center"><span>Siklus</span><strong>${count}</strong><small>fase</small></div>
+        <div class="growth-cycle__center"><span>${escapeHTML(phaseLabel)}</span><strong>${count}</strong><small>fase</small></div>
         ${nodes}
       </div>
       <div class="growth-cycle__details">${details}</div>
@@ -215,7 +253,7 @@ const SundayGardenFlower = (() => {
 
         <section class="flower-section flower-growth">
           <div class="container section-heading"><p class="eyebrow">From the roots to the bloom</p><h2>How it grows</h2><p>${SundayGardenI18n.flower.growthIntro}</p></div>
-          ${growthCycleMarkup(f.howItGrows)}
+          ${growthCycleMarkup(f.growthCycle)}
         </section>
 
         <section class="flower-section container">

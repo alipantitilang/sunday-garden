@@ -198,6 +198,7 @@ Future innovations may add Phase 33, Phase 34, and beyond. A Phase is added only
 | RF-005 | Taxonomy & Fallback Robustness | ✅ Complete |
 | RF-006 | Responsive Audit | ✅ Complete |
 | RF-007 | Documentation, Information & AI Governance Remake | ✅ Complete |
+| RF-008 | Growth Cycle Template & Resolution Remake | ✅ Complete |
 
 Detailed records are maintained in `REMAKE_FIX_LOG.md`.
 
@@ -236,7 +237,7 @@ Legend:
 - [x] Life cycle
 - [x] Ecology
 - [x] Conservation notes
-- [x] Growth Cycle visualization
+- [x] Growth Cycle visualization with data-driven phase count and resolution-aware templates
 - [x] Interesting facts
 - [x] Cultural and historical notes
 - [x] Documented symbolism / meaning
@@ -316,6 +317,8 @@ Every published Flower Page may contain the following information when reliable 
 
 - Growth phases
 - Growth cycle
+- Growth-cycle resolution: `standard`, `detailed`, `specialized`, or `custom`
+- Data-driven cycle templates selected from the researched phase count
 - Flowering position and characteristics
 - Flowering season or timing, when source-supported
 - Reproduction
@@ -395,6 +398,53 @@ Do not use invented prose such as:
 - generic AI-generated history.
 
 When a field is genuinely not applicable to a particular flower, the data model may use `null` or an omitted optional field where the schema explicitly permits it. This is different from a relevant field whose information simply could not be established; the latter should use `-` in the user-facing content layer.
+
+---
+
+## 9A. Growth Cycle Standard
+
+The Growth Cycle is a **research-driven representation**, not a universal fixed biological stage count. Different sources may describe the same plant at different levels of resolution, and specialized developmental studies may use substantially more stages than a general life-cycle summary.
+
+Sunday Garden therefore stores the cycle explicitly:
+
+```json
+"growthCycle": {
+  "type": "standard",
+  "resolution": "standard",
+  "phases": [
+    {
+      "id": "phase-01",
+      "name": "Phase 01",
+      "description": "..."
+    }
+  ]
+}
+```
+
+### Resolution values
+
+- `standard` — a normal editorial life-cycle representation.
+- `detailed` — a finer-grained representation supported by the research.
+- `specialized` — a domain-specific developmental sequence.
+- `custom` — a structure that does not fit the standard template families.
+
+### Template rule
+
+The renderer may use compact circular templates for phase counts that remain readable, and a custom ordered presentation when the phase count or structure would make a circular diagram misleading or overcrowded.
+
+The implementation must **not** create biological phases merely to fill a visual template, merge research-backed phases merely to reduce a count, or assume that a flower has the same number of phases as another flower.
+
+> **The data should shape the cycle; the cycle should not shape the data.**
+
+For new or substantially researched flowers:
+
+1. research the documented developmental sequence;
+2. determine the appropriate resolution;
+3. preserve the supported phase count;
+4. choose the renderer template based on that data;
+5. validate that every phase remains visible and understandable.
+
+The renderer retains a backward-compatible fallback for legacy phase arrays, but new records should use `growthCycle`.
 
 ---
 

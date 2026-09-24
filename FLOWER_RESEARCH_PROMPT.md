@@ -121,6 +121,43 @@ Populate relevant fields for:
 - life cycle
 - seasonality
 
+### Growth Cycle Resolution
+
+Treat growth-cycle phase count as a **research result**, not a design requirement.
+
+Use:
+
+```json
+"growthCycle": {
+  "type": "standard",
+  "resolution": "standard",
+  "phases": [
+    {
+      "id": "phase-01",
+      "name": "Phase 01",
+      "description": "..."
+    }
+  ]
+}
+```
+
+Choose `resolution` from:
+- `standard`
+- `detailed`
+- `specialized`
+- `custom`
+
+Research workflow:
+1. identify the developmental/life-cycle sequence supported by reliable sources;
+2. decide the appropriate level of resolution from the evidence;
+3. preserve the supported number and order of phases;
+4. record each phase without inventing biological stages for visual symmetry;
+5. let the renderer choose an appropriate template afterward.
+
+Do not assume every flower has the same number of phases. A detailed scientific staging system may contain many more stages than an editorial life-cycle summary; these are different resolutions, not contradictions.
+
+If the source does not establish a phase clearly, do not manufacture it. Use the project's missing-information convention (`-`) where the field is relevant but cannot be established.
+
 ### Distribution & ecology
 - native range
 - introduced range where documented

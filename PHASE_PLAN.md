@@ -58,6 +58,10 @@ Canonical flower registry and taxonomy-scope handling.
 
 ## Active roadmap
 
+### Remake baseline
+
+RF-001 through RF-008 are the current completed remake/fix series. RF-008 establishes the research-driven Growth Cycle data and template standard before new capability work resumes.
+
 ### Phase 20 — Gardener-to-Flower Relationships — NEXT
 - People of This Flower
 - multiple Gardeners per flower

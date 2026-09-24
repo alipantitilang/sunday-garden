@@ -31,6 +31,7 @@ A flower record is shared by all Gardeners who choose the same flower/category. 
 - growth form
 - morphology
 - growth phases / growth cycle
+- growth-cycle resolution (`standard`, `detailed`, `specialized`, `custom`)
 - distribution
 - habitat
 - flowering
@@ -103,3 +104,23 @@ Large images should remain externally hosted/CDN-hosted where practical. JSON st
 Each flower/category has one stable ID. Gardeners reference that ID. Do not duplicate botanical research for every Gardener.
 
 A research record may be incomplete, but it must never be completed with guesses merely to satisfy the schema.
+
+## Growth Cycle Data Standard
+
+Use `growthCycle` as the canonical growth-cycle field:
+
+```json
+"growthCycle": {
+  "type": "standard",
+  "resolution": "standard",
+  "phases": [
+    {
+      "id": "phase-01",
+      "name": "Phase 01",
+      "description": "..."
+    }
+  ]
+}
+```
+
+The number of phases must come from the research resolution being used. It must not be changed solely to satisfy a visual template. `howItGrows` is a legacy compatibility field and should not be used for new records.
