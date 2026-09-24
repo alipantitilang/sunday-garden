@@ -44,7 +44,7 @@
     },
     {
       "id": "hyunwo-red-rose",
-      "displayName": "hyunwo",
+      "displayName": "Hyunwo",
       "flower": {
         "id": "red-rose",
         "name": "Red Rose",
@@ -65,7 +65,7 @@
     },
     {
       "id": "ginaa-pink-tulip",
-      "displayName": "ginaa",
+      "displayName": "Gina",
       "flower": {
         "id": "pink-tulip",
         "name": "Pink Tulip",
@@ -86,7 +86,7 @@
     },
     {
       "id": "leo-white-lily",
-      "displayName": "leo",
+      "displayName": "Leo",
       "flower": {
         "id": "white-lily",
         "name": "White Lily",
