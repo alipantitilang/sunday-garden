@@ -4,272 +4,156 @@ Use this prompt whenever a new Gardener is added to Sunday Garden.
 
 ## 0. Role
 
-You are maintaining Sunday Garden, a quiet botanical journal of human stories.
+You are maintaining Sunday Garden, a quiet botanical journal of flowers, people, and human stories.
 
 Core philosophy:
 - The flower is the question; the person is the answer.
 - Different flowers. Different stories. One garden.
 - Everyone blooms in their own way.
 
-The Gardener's personal story is primary. Botanical research supports the page; it must never overwrite, reinterpret, or invent the person's experience.
+Read `AI_RULES.md` and `README.md` first. They are the governing project rules.
 
-## 1. Before changing anything
+## 1. Classification
 
-Inspect the current project first:
+Adding a Gardener is **content work**, not automatically a Phase or RF.
+
+Create an RF only if the addition exposes or requires a change to an existing system.
+
+Create a Phase only if the addition requires a genuinely new capability or workflow.
+
+## 2. Before changing anything
+
+Inspect:
 1. `AI_RULES.md`
-2. `data/gardeners.json`
-3. `data/flowers.json`
-4. `data/README.md`
-5. the existing `flower.html` implementation
-6. `js/flower.js`, `js/garden.js`, and relevant CSS
-7. the Garden Card rendering
-8. any existing Gardener using the same flower
+2. `README.md`
+3. `data/gardeners.json`
+4. `data/flowers.json`
+5. `data/README.md`
+6. `flower.html`
+7. `js/flower.js`
+8. `js/garden.js`
+9. relevant CSS
+10. existing Gardener using the same flower, if any
 
-Preserve the established architecture and visual direction. Do not create a one-off implementation for a single Gardener.
+Preserve the established architecture. Do not create a one-off implementation for a single Gardener.
 
-## 2. Input
+## 3. Input
 
 Expected input may include:
-- Gardener name/display name
-- chosen flower
-- personal story
-- one or two images
-- optional About information
-- optional links
+- display name;
+- chosen flower;
+- personal story;
+- hero image;
+- Garden Card image;
+- optional gallery;
+- optional About information;
+- optional links.
 
-If information is not provided, leave it absent or disabled. Never invent personal details.
+If information is not provided, leave it absent/disabled. Never invent personal information.
 
-## 3. Gardener ID
+## 4. Gardener ID
 
-Create a stable lowercase kebab-case ID.
+Use a stable lowercase kebab-case ID.
 
 Preferred pattern:
 `gardener-flower`
 
-Examples:
-- `alip-blue-lotus`
-- `sarah-pink-white-lily`
-- `hyunwo-red-rose`
-- `ginaa-pink-tulip`
-- `leo-white-lily`
+Do not rename an existing ID merely to make it prettier.
 
-Do not rename an existing ID merely to make it prettier. IDs are data references and must remain stable.
+## 5. Flower relationship
 
-## 4. Flower ID
+Reuse an existing canonical flower ID when the flower already exists.
 
-Use an existing flower ID when the flower already exists.
-
-Do not create duplicate flower records because two Gardeners chose the same flower.
+Do not create duplicate flower records because two Gardeners choose the same flower.
 
 If the flower is genuinely new:
-1. create a stable lowercase kebab-case flower ID;
-2. research it in the flower-content phase;
-3. add one canonical flower record to `flowers.json`.
+1. create a stable flower ID;
+2. use `FLOWER_RESEARCH_PROMPT.md` for research;
+3. create one canonical flower record;
+4. validate it.
 
-## 5. Story preservation
+## 6. Story preservation
 
-Copy the Gardener's story exactly unless the user explicitly asks for editing.
+Copy the Gardener's story exactly unless the user explicitly requests editing.
 
 Preserve:
-- wording
-- punctuation
-- paragraph breaks
-- capitalization
-- intentional informal language
+- wording;
+- punctuation;
+- paragraph breaks;
+- capitalization;
+- intentional informal language.
 
 Never:
-- rewrite it into a generic poetic style;
+- rewrite the story into a generic poetic style;
 - add emotions the Gardener did not state;
 - turn personal symbolism into botanical fact;
-- shorten it merely for layout convenience.
+- translate the story without permission.
 
-## 6. Images
+## 7. Language
 
-If two images are supplied:
-- first image → `media.hero`
-- second image → `media.gardenCard`
+The Gardener story remains in the language supplied by the Gardener.
 
-If one image is supplied:
-- use it as `media.hero`;
-- leave `media.gardenCard` empty until the Garden Keeper provides the Garden Card.
+Website labels and structured botanical data follow `AI_RULES.md`:
+- English for editorial openings;
+- Indonesian for practical/content UI and future flower data;
+- Latin/scientific terminology and relevant original-language evidence remain in original form.
 
-The Garden Card is externally prepared by the Garden Keeper. Do not automatically edit, crop, generate, or replace it unless explicitly requested.
+## 8. Media
 
-Prefer stable external/CDN URLs when supplied by the user.
+`media.hero` = clean/original Flower Page image.  
+`media.gardenCard` = edited Garden Page image.
 
-Canonical media shape:
-```json
-"media": {
-  "hero": "...",
-  "gardenCard": "...",
-  "gallery": [],
-  "altText": "Name — Flower"
-}
-```
+Do not swap them.
 
-## 7. About section
+Do not edit or regenerate user-provided artwork unless explicitly requested.
 
-Use the flexible structure:
-```json
-"about": {
-  "display": false,
-  "content": [],
-  "links": []
-}
-```
+## 9. Optional About information
 
-If the Gardener supplies public information, use only what they supplied:
-```json
-"about": {
-  "display": true,
-  "content": [
-    {"label": "What I Do", "value": "..."},
-    {"label": "What I Love", "value": "..."}
-  ],
-  "links": []
-}
-```
+Only include information supplied or explicitly approved by the Gardener.
 
-Do not ask the Gardener to provide botanical facts. That is the editorial team's job.
+Possible fields:
+- What I Do
+- What I Love
+- Currently
+- links
 
-## 8. Flower research
+Do not infer occupation, age, location, personality, or interests.
 
-If the flower is new or incomplete, do not fill it with generic symbolism first.
+## 10. Validation
 
-Research in this order:
-1. taxonomy and accepted name;
-2. family/genus;
-3. morphology;
-4. distribution;
-5. habitat;
-6. growth/life cycle;
-7. flowering and reproduction;
-8. ecology;
-9. conservation where relevant;
-10. interesting facts;
-11. cultural/historical records;
-12. documented symbolism;
-13. Sunday Garden interpretation.
-
-Preferred sources:
-- Kew Plants of the World Online
-- botanical gardens
-- universities
-- government biodiversity databases
-- peer-reviewed papers
-- museums and cultural institutions
-- reputable horticultural organizations
-
-Use sources appropriate to the claim. Do not invent citations or URLs.
-
-Keep these categories separate:
-- Botanical fact
-- Cultural/historical record
-- Symbolism or traditional meaning
-- Sunday Garden interpretation
-
-A symbolism list is never proof of botanical behavior.
-
-## 9. Canonical Gardener schema
-
-Every published Gardener should follow this minimum structure:
-```json
-{
-  "id": "...",
-  "displayName": "...",
-  "flower": {
-    "id": "...",
-    "name": "...",
-    "scientificName": "..."
-  },
-  "story": "...",
-  "about": {
-    "display": false,
-    "content": [],
-    "links": []
-  },
-  "media": {
-    "hero": "...",
-    "gardenCard": "...",
-    "gallery": [],
-    "altText": "..."
-  },
-  "status": "published"
-}
-```
-
-## 10. Flower Page
-
-The universal page is:
-`flower.html?id=<gardener-id>`
-
-It must dynamically render the selected Gardener and its flower.
-
-Expected content order:
-1. Gardener/Flower Hero
-2. Why did they choose this flower?
-3. A Little About the Gardener (only when available)
-4. About the Flower
-5. Cultural / Historical Notes
-6. From the Roots to the Bloom
-7. How It Grows
-8. Gallery (only when media exists)
-9. What [Flower] Can Mean
-10. People of This Flower
-11. Closing CTA
-
-Do not create a new HTML page for a new Gardener.
-
-## 11. Garden Page
-
-The Garden Page must automatically read `gardeners.json`.
-
-Do not manually add a Gardener card to `garden.html`.
-
-A Garden Card links to:
-`flower.html?id=<gardener-id>`
-
-## 12. Validation
-
-Before declaring the Gardener complete, verify:
-- valid JSON;
-- unique Gardener ID;
-- stable flower ID;
-- no duplicate flower record;
+After adding the Gardener, verify:
+- stable ID;
+- correct canonical flower ID;
 - story preserved;
-- image URLs present and correctly assigned;
-- `hero` and `gardenCard` are not swapped;
+- media URLs present and correctly assigned;
 - alt text exists;
 - status is intentional;
 - Flower Page loads the Gardener;
-- Garden Page renders the Gardener automatically;
-- People of This Flower can find all Gardeners using that flower;
-- no broken HTML/CSS/JS references;
-- responsive behavior is unchanged for existing Gardeners.
+- Garden Page renders the Gardener;
+- People of This Flower can find all relevant Gardeners;
+- no duplicate flower record was created;
+- no broken references;
+- existing responsive behavior remains intact.
 
-## 13. Phase discipline
+Run the project's data validator and any relevant syntax checks. Do not claim checks that were not performed.
 
-Do not combine unrelated work into one Gardener addition.
+## 11. Documentation
 
-Use the project phase plan:
-- data normalization first;
-- then one flower at a time for research/content completeness;
-- then responsive/UI refinement;
-- then feedback/testimonials;
-- then About/Sunday Vibes expansion;
-- final validation last.
+A normal Gardener addition does not require a Phase or RF update.
 
-When a flower has multiple Gardeners, research the flower once and reuse the canonical flower record.
+Update documentation only when the addition changes the system:
+- existing-system change → RF;
+- new capability → Phase;
+- content-only addition → data files and validation only.
 
-## 14. Output
+## 12. Output
 
-After completing an addition, report:
+Report:
 1. Gardener added;
-2. flower used or created;
+2. canonical flower used/created;
 3. files changed;
-4. image URLs assigned;
-5. research sources used, if any;
+4. media assigned;
+5. research performed, if any;
 6. validation performed;
-7. remaining work, if any.
-
-Do not claim a validation or file exists unless it was actually checked.
+7. remaining missing information;
+8. whether a Phase or RF is actually required.

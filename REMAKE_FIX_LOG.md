@@ -141,3 +141,22 @@ The new RF-001 through RF-005 components needed a final responsive pass. Several
 
 ### Result
 RF-006 closes the current responsive audit scope for the RF-001–RF-005 remake series. Future responsive changes should be logged as a new Remake & Fix entry rather than rewriting the Phase 01–32 history.
+
+
+## RF-007 — Documentation, Information & AI Governance Remake — COMPLETED
+
+### Scope
+- Reorganized README around project direction, architecture, Phase rules, Remake & Fix rules, Feature & Innovation Registry, information standards, data governance, workflow, validation, and documentation map.
+- Removed individual flower/Gardener records from development progress.
+- Removed flower-specific research work from the active Phase roadmap while retaining a continuity note for historical Phase 15–19 work.
+- Established Phase as the system/new-capability update path and RF as the existing-system remake/fix path.
+- Added an expandable Feature & Innovation Registry with implemented and planned items.
+- Added a formal Flower Information Standard, including historical date, place, documented people/roles, scientific description, and history/timeline fields.
+- Added a missing-information convention using `-` for relevant research fields that cannot be established.
+- Established Indonesian as the primary language for future flower data, while preserving Latin/scientific terminology and relevant original-language excerpts with Indonesian translations.
+- Renewed `AI_RULES.md`, `ADD_GARDENER_PROMPT.md` references/requirements, and created `FLOWER_RESEARCH_PROMPT.md`.
+- Updated `data/README.md` to match the new governance and schema direction.
+
+### Validation
+- Documentation files checked after rewrite.
+- Existing data schema retained; no flower/Gardener content was fabricated or removed as part of this documentation remake.

@@ -1,125 +1,296 @@
 # Sunday Garden — AI Rules
 
-## Source of truth
+## 1. Role and source of truth
 
-Sunday Garden is a quiet botanical journal: a digital garden of human stories, not primarily a flower encyclopedia.
+You are maintaining **Sunday Garden**, a quiet botanical journal of flowers, people, and human stories.
 
 Core philosophy:
 - The flower is the question; the person is the answer.
 - Different flowers. Different stories. One garden.
 - Everyone blooms in their own way.
 
-## Visual direction
+The project files are the source of truth. Inspect the current project before changing it. Never rely on an older remembered version when the current files are available.
 
-Style: Quiet Botanical Journal.
+## 2. Development classification
 
-It should feel like a quiet old botanical journal on a desk, but inside a browser.
+### Phase = new capability / update patch
+Use a Phase when introducing a new feature, workflow, system, architecture, or meaningful new web capability.
+
+### Remake & Fix = existing-system improvement
+Use RF when repairing, refactoring, redesigning, restructuring, correcting, or improving something that already exists.
+
+### Content-only change
+Adding a Gardener, flower, story, or research entry does not automatically create a Phase or RF. Only the system change caused by that content belongs in development tracking.
+
+Do not rewrite Phase history because content volume grows.
+
+## 3. Language policy
+
+Sunday Garden uses a bilingual editorial system.
+
+### English
+Use for:
+- hero openings;
+- editorial section openers/eyebrows;
+- selected editorial headlines;
+- short atmospheric phrases.
+
+### Indonesian
+Use for:
+- navigation and UI;
+- buttons and CTAs;
+- labels and metadata;
+- botanical descriptions;
+- research summaries;
+- cultural/historical explanations;
+- growth/morphology information;
+- practical instructions.
+
+### Preserve original forms
+Do not translate or alter:
+- Latin scientific names;
+- formal taxonomic nomenclature;
+- proper names;
+- source titles when the original is important;
+- technical terms whose established scientific form is required;
+- direct quotations.
+
+If an original-language quote or term is included as research evidence, show the original and an Indonesian translation:
+
+**Original:** “...”  
+**Terjemahan:** “...”
+
+## 4. Visual direction
+
+Style: **Quiet Botanical Journal**.
+
+It should feel like a quiet old botanical journal on a desk, inside a browser.
 
 Avoid:
-- SaaS/dashboard aesthetics
-- excessive rounded cards
-- excessive shadows
-- glassmorphism
-- neon
-- digital gradients
-- excessive animation
+- SaaS/dashboard aesthetics;
+- excessive rounded cards;
+- excessive shadows;
+- glassmorphism;
+- neon;
+- decorative digital gradients;
+- excessive animation.
 
 Prefer:
-- warm paper
-- real photography
-- thin borders
-- editorial composition
-- botanical line art
-- subtle imperfections
-- whitespace
-- restrained motion
+- warm paper;
+- real photography;
+- thin borders;
+- editorial composition;
+- botanical line art;
+- subtle imperfections;
+- whitespace;
+- restrained motion.
 
-## Visual system
-
-```css
---forest: #34463A;
---sage: #87977A;
---paper: #F3EEE3;
---taupe: #A69B88;
---mist: #A8B9BC;
---lotus-blue: #7188B5;
---dusty-rose: #C49A98;
---ink: #29302B;
-```
-
-Typography:
-- Cormorant Garamond — editorial/display
-- Manrope — body/UI
-- Caveat — optional, sparingly
-
-## Architecture
+## 5. Architecture
 
 Static-first vanilla HTML/CSS/JS/JSON.
 
-Do not add a framework unless explicitly requested.
-
-HTML = structure.
-CSS = visual design.
-JS = behavior.
+HTML = structure.  
+CSS = visual design.  
+JS = behavior/rendering.  
 JSON = content/data.
 
-`gardeners.json` is the primary content entity.
+Do not add a framework unless explicitly requested.
 
-`flower.html` is universal and uses a query string:
-`flower.html?id=alip-blue-lotus`
+`gardeners.json` stores Gardener content. `flowers.json` stores canonical flower research. `flower.html` is universal and uses a query string.
 
-Do not create one HTML file per Gardener.
+Do not create one HTML page per Gardener or one HTML page per flower.
 
-## Data principles
+## 6. Data principles
 
 Never invent:
-- personal stories
-- personal biographies
-- botanical facts
-- quotes
-- sources
+- personal stories;
+- personal biographies;
+- botanical facts;
+- dates;
+- places;
+- discoverers;
+- scientific descriptions;
+- historical events;
+- quotations;
+- sources;
+- pollinators or ecological claims;
+- taxonomy.
 
-Story text should remain free-form. Do not force it into short/long sections.
+If a relevant field cannot be established by reliable research, use `-` in the user-facing content/data value rather than guessing.
 
-A Gardener may have:
-- display name
-- chosen flower
-- story
-- optional about section
-- optional links
-- media.hero
-- media.gardenCard
+If a field is genuinely not applicable and the schema permits it, use `null` or omit it as defined by the schema.
 
-The Garden Card image is prepared by the Garden Keeper. Code should only render/link it.
+Distinguish:
+- unknown/unverified information;
+- not applicable information;
+- documented information;
+- Sunday Garden interpretation.
 
-Large images should preferably be externally hosted/CDN-hosted. JSON stores their URLs.
+## 7. Historical research rules
 
-## Coding rules
+When researching a flower's history, distinguish carefully between:
+- Indigenous/local knowledge;
+- earliest historical observation;
+- earliest documented record;
+- collection/specimen history;
+- scientific description;
+- naming/publication;
+- later taxonomic classification.
 
-Before modifying existing code:
-1. Understand the current structure.
-2. Preserve working functionality.
-3. Change only what the task requires.
-4. Do not silently change architecture.
+Do **not** automatically call the first scientific describer the person who “discovered” the flower.
 
-Use semantic HTML, meaningful class names, responsive/mobile-first CSS, accessibility defaults, and performance-conscious implementation.
+Where evidence exists, record:
+- date or period;
+- place/region;
+- person(s) associated with the record;
+- what they actually did;
+- publication/name history;
+- relevant historical context.
 
-No inline CSS.
+## 8. Flower information standard
+
+A Flower Page may include:
+
+### Identity & taxonomy
+- common name;
+- scientific name;
+- accepted name/treatment;
+- synonyms;
+- taxonomic note;
+- kingdom/order/family/genus;
+- growth form.
+
+### Botanical profile
+- roots;
+- bulb/rhizome/corm/tuber when applicable;
+- stem;
+- leaves;
+- flowers;
+- petals;
+- stamens/reproductive structures;
+- fruit;
+- seeds;
+- prickles/thorns or other relevant structures;
+- additional documented morphology.
+
+### Growth & ecology
+- growth phases;
+- growth cycle;
+- flowering;
+- reproduction;
+- life cycle;
+- seasonality;
+- habitat;
+- native distribution;
+- introduced distribution when documented;
+- ecology;
+- conservation.
+
+### History & culture
+- earliest documented record;
+- date/period;
+- historical place/region;
+- scientist/author/collector/illustrator or other documented person;
+- scientific description/publication;
+- naming/classification history;
+- historical use/cultivation;
+- cultural/historical notes;
+- chronology/timeline when useful.
+
+### Meaning
+- documented symbolism;
+- language of flowers;
+- religious/traditional associations;
+- literature/art associations;
+- Sunday Garden interpretation.
+
+### Evidence
+- sources;
+- source type;
+- short original-language excerpt or term when useful;
+- Indonesian translation;
+- research note/context where needed.
+
+## 9. Data visibility principle
+
+The renderer must be data-aware.
+
+**The data should shape the page, not the page limit the data.**
+
+Do not hard-code a fixed number of morphology fields, growth phases, symbolism entries, or similar content when the data model is intentionally extensible.
+
+Support compatible singular/plural forms where the schema requires it, such as `flower` and `flowers`.
+
+Never hide valid data simply because an older renderer did not anticipate the field.
+
+## 10. Content separation
+
+Keep these layers separate:
+
+1. **Botanical fact** — source-supported.
+2. **Documented cultural/historical context** — attributed/contextualized.
+3. **Gardener's personal meaning** — preserved as supplied.
+4. **Sunday Garden interpretation** — clearly labeled as interpretation.
+
+Do not convert one layer into another.
+
+## 11. Gardener rules
+
+Preserve a Gardener's story exactly unless editing is explicitly requested.
+
+Never:
+- rewrite their story into a generic poetic style;
+- invent biography;
+- add emotions they did not state;
+- turn their metaphor into botanical fact.
+
+Use stable IDs. Reuse an existing canonical flower instead of duplicating flower research.
+
+## 12. Coding rules
+
+Before modifying code:
+1. inspect the current structure;
+2. inspect the relevant data;
+3. identify existing behavior;
+4. preserve working functionality;
+5. change only what the task requires;
+6. validate the result.
+
+Use semantic HTML, meaningful classes, responsive/mobile-first CSS, accessibility defaults, and performance-conscious implementation.
+
+No inline CSS.  
 No inline JavaScript.
 
-When something is unspecified, choose the simplest maintainable solution consistent with the established botanical-journal aesthetic.
+If a decision materially changes architecture, discuss it before implementation unless the user has already approved it.
 
-If a decision materially changes architecture, ask first.
+## 13. Documentation rules
 
-## Development phases
+When a new capability is approved:
+- add/update Feature & Innovation Registry;
+- create or update the appropriate Phase;
+- record acceptance criteria;
+- validate;
+- update `README.md` and `PHASE_PLAN.md`.
 
-The original phases 01–10 form the baseline. The detailed post-baseline roadmap is maintained in `PHASE_PLAN.md`.
+When an existing system is changed:
+- create/update an RF entry;
+- record the problem and scope;
+- validate;
+- update `README.md` and `REMAKE_FIX_LOG.md`.
 
-The current structured work begins with:
-11. Data Source Audit
-12. Gardener Schema Normalization
-13. Existing Gardener Media Migration
-14. Flower Registry Normalization
-15+. One dedicated research/content phase per flower
+Do not put individual flower/Gardener counts into development progress.
 
-Build incrementally. Keep data normalization, botanical research, UI refinement, and community features in separate phases whenever practical. Consistency is more important than adding features.
+## 14. Validation rules
+
+Never claim validation that was not actually performed.
+
+Before release, check as applicable:
+- JSON/data validation;
+- JavaScript syntax;
+- internal links;
+- image references;
+- renderer visibility;
+- responsive behavior;
+- accessibility;
+- missing-data markers;
+- documentation status.

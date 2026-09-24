@@ -1,76 +1,105 @@
 # Sunday Garden Data
 
-This folder contains the content layer for the static site.
+This folder contains the canonical content layer for the static site.
 
 ## `gardeners.json`
 
-A Gardener is the primary content entity. Each record contains:
+A Gardener is the primary human-content entity. Each record may contain:
 
-- `id` — stable URL/query identifier.
-- `displayName` — public Gardener name.
-- `status` — publication state (`published`, `draft`, or `archived`).
-- `flower` — the chosen flower reference (`id`, `name`, `scientificName`).
-- `story` — the Gardener's own free-form story. Do not rewrite personal stories during data entry unless explicitly requested.
-- `about` — optional Gardener information. It may remain empty.
-- `media.hero` — original/clean Flower Page hero image.
-- `media.gardenCard` — edited Garden Card image.
+- `id` — stable identifier.
+- `displayName` — public name.
+- `status` — publication state.
+- `flower` — canonical flower reference.
+- `story` — Gardener's own free-form story.
+- `about` — optional self-provided information.
+- `media.hero` — Flower Page hero image.
+- `media.gardenCard` — Garden Page card image.
+- `media.gallery` — optional additional images.
+- `media.altText` — accessible media description.
+
+Personal information must never be invented.
 
 ## `flowers.json`
 
-Flower data is shared by all Gardeners who choose the same flower. It contains:
+A flower record is shared by all Gardeners who choose the same flower/category. It contains the canonical botanical and research layer.
 
-- identity and taxonomy
-- distribution and habitat
+### Current information groups
+
+- identity
+- taxonomy
+- taxonomic notes and synonyms
+- growth form
 - morphology
-- flowering and reproduction notes
-- growth/life-cycle information
+- growth phases / growth cycle
+- distribution
+- habitat
+- flowering
+- reproduction
+- life cycle
+- ecology
+- conservation
 - interesting facts
-- cultural/historical notes
-- symbolism
+- cultural and historical notes
+- symbolism / documented meanings
 - Sunday Garden interpretation
 - sources
 
-### Editorial rule
+### Planned / extensible historical information
 
-Keep **botanical fact**, **documented cultural history**, and **Sunday Garden interpretation** separate. If a claim is not supported by a source, do not present it as established fact.
+The flower schema may be extended to include:
 
-### Taxonomy rule
+- earliest documented record
+- date or period
+- historical place/region
+- associated historical people and their documented roles
+- scientific description/publication
+- naming/classification history
+- historical timeline
 
-Use the current accepted treatment from a recognised botanical authority when available, while retaining familiar historical/synonym names when they help readers understand the flower.
+Historical fields must distinguish scientific description from the much broader concept of human “discovery”. Indigenous/local knowledge may predate written scientific records.
 
-### Image rule
+## Language rule
 
-Large images should remain external/CDN-hosted in production where practical. JSON should store the URL/path, not image binary data.
+New flower data should primarily use **Indonesian**.
 
-## Canonical flower registry
+Keep Latin scientific names, taxonomic nomenclature, proper names, required technical terms, and relevant original source quotations in their original form.
 
-Each flower gets exactly one stable `id`. Gardener records reference that ID instead of duplicating botanical research.
+When an original-language research excerpt is included:
 
-Every flower record uses the same top-level shape, even before research is complete:
+- preserve the original;
+- provide an Indonesian translation;
+- identify the source;
+- never fabricate or paraphrase as though it were a direct quote.
 
-- `id`, `commonName`, `scientificName`
-- `researchStatus` — `pending` or `complete`
-- `family`, `genus`, and `taxonomy`
-- `taxonomicNote`
-- `growthForm`
-- `morphology`
-- `howItGrows`
-- `interestingFacts`
-- `culturalNotes`
-- `symbolism`
-- `sundayGardenInterpretation`
-- `distribution`
-- `habitatProfile`
-- `flowering`
-- `reproduction`
-- `lifeCycle`
-- `ecology`
-- `conservation`
-- `sources`
-- `profileOrder`
+## Missing information rule
 
-A `pending` record is a registry placeholder, not a completed research entry. It must not be filled with guessed botanical facts merely to satisfy the schema. Dedicated research phases promote it to `complete` after sources and claims have been verified.
+If a relevant field cannot be established through reliable research, use `-` rather than guessing.
 
-### Category-name rule
+`-` means the information is unknown, unavailable, or not established by the current research.
 
-Names such as `White Lily`, `Pink Tulip`, `Red Rose`, or `Pink & White Lily` can describe a colour/common category rather than one species. The registry may therefore use a genus-level scientific placeholder (`Lilium spp.`, `Tulipa spp.`, `Rosa spp.`) until research establishes a more precise taxonomic scope. Never invent a species from a common colour name alone.
+Use `null` or omission only when the schema explicitly treats the field as genuinely not applicable/optional.
+
+## Editorial separation
+
+Keep these layers separate:
+
+1. Botanical fact.
+2. Documented cultural/historical context.
+3. Gardener's personal story.
+4. Sunday Garden interpretation.
+
+A cultural meaning must not be presented as a universal botanical fact.
+
+## Taxonomy rule
+
+Use a recognised botanical authority when available. Common colour/category names do not automatically identify one species. Genus-level or category-level records are valid when that is the evidence-supported scope.
+
+## Image rule
+
+Large images should remain externally hosted/CDN-hosted where practical. JSON stores URLs/paths rather than image binaries.
+
+## Canonical registry rule
+
+Each flower/category has one stable ID. Gardeners reference that ID. Do not duplicate botanical research for every Gardener.
+
+A research record may be incomplete, but it must never be completed with guesses merely to satisfy the schema.
