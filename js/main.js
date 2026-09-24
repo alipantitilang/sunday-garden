@@ -1,8 +1,8 @@
 const SundayGarden = (() => {
   const navItems = [
     { href: "index.html", label: "Home", key: "home" },
-    { href: "garden.html", label: "The Garden", key: "garden" },
-    { href: "about.html", label: "About", key: "about" }
+    { href: "about.html", label: "About", key: "about" },
+    { href: "garden.html", label: "The Garden", key: "garden" }
   ];
 
   function currentPage() {
@@ -97,8 +97,8 @@ const SundayGarden = (() => {
           <div class="site-footer__mark">Sunday Garden</div>
           <div class="site-footer__links" aria-label="Footer links">
             <a href="index.html">Home</a>
-            <a href="garden.html">The Garden</a>
             <a href="about.html">About</a>
+            <a href="garden.html">The Garden</a>
           </div>
         </div>
 

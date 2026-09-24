@@ -48,17 +48,6 @@ const SundayGardenFlower = (() => {
     return sources.map(source => `<li><a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title)} <span class="sr-only">(opens in a new tab)</span></a><span>${escapeHTML(source.type)}</span></li>`).join('');
   }
 
-  function peopleMarkup(gardeners, flowerId, currentId) {
-    const people = gardeners.filter(item => item.flower?.id === flowerId);
-    if (!people.length) return '';
-    return `<section class="flower-section container people-section"><div class="section-heading"><p class="eyebrow">The garden grows</p><h2>People of This Flower</h2><p>Different people can find different words in the same flower.</p></div><div class="morphology-grid">${people.map(person => `<article class="morphology-item"><h3>${escapeHTML(person.displayName)}</h3><p>${escapeHTML(person.story || '')}</p><a class="text-link" href="flower.html?id=${encodeURIComponent(person.id)}" aria-current="${person.id === currentId ? 'page' : 'false'}">Read their story →</a></article>`).join('')}</div></section>`;
-  }
-
-  function aboutGardenerMarkup(gardener) {
-    if (!gardener.about?.display || !gardener.about?.content?.length) return '';
-    return `<section class="flower-section container gardener-about"><div class="section-heading"><p class="eyebrow">Beyond the flower</p><h2>A little about ${escapeHTML(gardener.displayName)}</h2></div><div class="morphology-grid">${gardener.about.content.map(item => `<article class="morphology-item"><h3>${escapeHTML(item.label)}</h3><p>${escapeHTML(item.value)}</p></article>`).join('')}</div></section>`;
-  }
-
   function render() {
     const main = document.querySelector('#main-content');
     if (!state.gardener || !state.flower) {
@@ -83,8 +72,6 @@ const SundayGardenFlower = (() => {
           <p class="eyebrow">Why did they choose this flower?</p>
           ${storyMarkup(g.story, g.displayName)}
         </section>
-
-        ${aboutGardenerMarkup(g)}
 
         <section class="flower-section container flower-profile">
           <div class="section-heading"><p class="eyebrow">The flower</p><h2 id="flower-profile-title">A little about ${escapeHTML(f.commonName)}</h2><p>${escapeHTML(f.taxonomicNote)}</p></div>
@@ -122,8 +109,6 @@ const SundayGardenFlower = (() => {
           <div class="section-heading"><p class="eyebrow">What it can mean</p><h2>${escapeHTML(f.commonName)}, interpreted</h2></div>
           <div class="meaning-layout"><div class="meaning-tags">${f.symbolism.map(word => `<span>${escapeHTML(word)}</span>`).join('')}</div><p class="meaning-text">${escapeHTML(f.sundayGardenInterpretation)}</p></div>
         </section>
-
-        ${peopleMarkup(state.gardeners, f.id, g.id)}
 
         <section class="flower-section sources-section container">
           <div class="section-heading"><p class="eyebrow">Read further</p><h2>Sources & further reading</h2><p>Botanical details and historical notes are kept separate from Sunday Garden's own interpretation.</p></div>

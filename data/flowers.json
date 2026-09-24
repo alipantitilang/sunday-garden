@@ -298,366 +298,186 @@
       "commonName": "Red Rose",
       "scientificName": "Rosa spp.",
       "acceptedName": "Rosa spp.",
-      "taxonomicNote": "“Red rose” describes roses by flower colour rather than a single botanical species or cultivar. Without a named cultivar or species, the botanical entry is kept at the genus level.",
+      "taxonomicNote": "This Garden entry uses Rosa spp. at genus level because the submitted story identifies the flower by common name/colour rather than a single species.",
       "family": "Rosaceae",
       "genus": "Rosa",
-      "growthForm": "Woody shrubs, climbers, ramblers, and other perennial garden forms.",
+      "growthForm": "Shrubs or climbers; stems commonly bear prickles or thorns.",
       "morphology": {
-        "leaves": "Leaves are generally pinnate, with serrated leaflets and stipules at the leaf bases.",
-        "flowers": "Flowers may be solitary or borne in clusters; cultivated roses vary greatly in form and petal number.",
-        "petals": "Wild Rosa species typically have five petals; cultivated roses may have many more through selection and hybridisation.",
-        "stamens": "Flowers have numerous stamens, especially conspicuous in many single-flowered forms.",
-        "fruit": "After flowering, many roses can develop fleshy rose hips containing numerous achenes.",
-        "seeds": "The individual achenes inside rose hips are the seed-bearing fruits of the rose."
+        "leaves": "Leaves are generally pinnate with serrated leaflets.",
+        "flowers": "Flowers are bisexual and may be solitary or arranged in clusters.",
+        "petals": "Rosa flowers commonly have five petals in wild species, while cultivated roses may have many more through selection.",
+        "stamens": "Flowers contain numerous stamens.",
+        "fruit": "The hollow receptacle becomes fleshy and coloured in fruit.",
+        "seeds": "The fruit contains numerous achenes."
       },
       "howItGrows": [
-        "A woody perennial establishes stems and roots, often producing new shoots from the base or along climbing growth.",
-        "Leaves and flowering shoots develop as the plant enters active growth.",
-        "Flower buds form and open; many cultivated roses repeat flowering during the growing season.",
-        "After pollination, some roses develop hips as the floral receptacle enlarges and matures."
+        "The plant develops leafy shoots from its stems.",
+        "Flowers form singly or in clusters depending on the species.",
+        "After flowering, the receptacle can develop into a fleshy rose hip containing many achenes."
       ],
       "interestingFacts": [
         {
-          "title": "A genus, not one flower",
-          "text": "Rosa is a diverse genus, so a “red rose” can refer to many species, hybrids, and cultivars rather than one botanical taxon."
-        },
-        {
-          "title": "The thorns people call thorns",
-          "text": "Roses are characteristically armed with prickles on their stems; botanical sources distinguish these from true thorns."
-        },
-        {
-          "title": "Rose hips",
-          "text": "Many roses produce colourful hips after flowering, and the fruits can persist into the cooler season."
+          "title": "A genus, not one single flower",
+          "text": "Rosa contains many species, so “red rose” describes colour rather than a unique botanical species."
         }
       ],
-      "culturalNotes": [
-        {
-          "title": "Love and passion",
-          "text": "In Western artistic and literary traditions, the red rose has been associated with love, beauty, romance, and passion."
-        },
-        {
-          "title": "A long history in art",
-          "text": "The rose has appeared extensively in European art and literature, with meanings that vary by period and context."
-        }
-      ],
+      "culturalNotes": [],
       "symbolism": [
         "love",
-        "beauty",
-        "romance",
         "passion",
-        "boundaries"
+        "courage"
       ],
-      "sundayGardenInterpretation": "The red rose carries a useful tension for Hyunwo’s story: softness and beauty on one side, boundaries and self-knowledge on the other. Here, the colour and prickles are not treated as universal definitions, but as a personal language for being visible without surrendering one’s limits.",
+      "sundayGardenInterpretation": "The red rose in a Gardener’s story can remain personal: a colour, a boundary, and a way of being seen.",
       "sources": [
         {
-          "title": "Rosa L. | Plants of the World Online",
-          "publisher": "Royal Botanic Gardens, Kew",
+          "title": "Kew — Plants of the World Online: Rosa",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30002432-2/general-information",
-          "type": "taxonomy & botanical reference"
-        },
-        {
-          "title": "Roses (Rosa) | RHS Plant Guide",
-          "publisher": "Royal Horticultural Society",
-          "url": "https://www.rhs.org.uk/plants/roses",
-          "type": "botanical & horticultural reference"
-        },
-        {
-          "title": "The Red Rose",
-          "publisher": "The Metropolitan Museum of Art",
-          "url": "https://www.metmuseum.org/es/exhibitions/sleeping-beauties-reawakening-fashion/visiting-guide",
-          "type": "cultural history"
-        },
-        {
-          "title": "Floral Fashions: From Bouquets to Buttonholes",
-          "publisher": "Smithsonian Gardens",
-          "url": "https://gardens.si.edu/exhibitions/current-exhibitions/floral-fashions-from-bouquets-to-buttonholes/",
-          "type": "symbolism reference"
+          "type": "Botanical reference"
         }
       ],
       "classification": {
         "kingdom": "Plantae",
-        "order": "Rosales"
+        "family": "Rosaceae",
+        "genus": "Rosa"
       },
       "distribution": {
-        "nativeRange": "Temperate and subtropical regions of the Northern Hemisphere at the genus level."
+        "nativeRange": "Temperate and subtropical Northern Hemisphere."
       },
       "habitatProfile": {
-        "growthForm": "Woody shrubs, climbers and other perennial forms.",
-        "habitat": "Varies widely among species; cultivated roses are commonly grown in sunny, well-drained garden settings."
+        "habitat": "See genus-level botanical reference.",
+        "growthForm": "Shrubs or climbers; stems commonly bear prickles or thorns."
       },
       "flowering": {
-        "season": "Varies by species and cultivar; many garden roses flower in summer, with repeat-flowering cultivars continuing into autumn.",
-        "colour": "Red is one of many colours found among cultivated roses."
+        "flowerPosition": "Flowers are borne above the vegetative structure.",
+        "colour": "Varies among species and cultivars."
       },
       "reproduction": {
-        "pollination": "Flowers are pollinated by animals, including insects, depending on species and floral form.",
-        "methods": "Seed production occurs after pollination; cultivated roses may also be propagated vegetatively by cuttings, budding, or grafting."
-      },
-      "lifeCycle": {
-        "type": "Perennial woody plant",
-        "afterFlowering": "Many roses may form hips after flowers are pollinated."
-      },
-      "ecology": {
-        "role": "Roses provide flowers and, where hips are produced, fruit resources within garden and natural ecosystems.",
-        "adaptations": "Prickles can help deter browsing and climbing growth forms help plants occupy different spaces."
-      },
-      "conservation": {
-        "note": "Conservation status varies by species; “red rose” is not a single species."
-      },
-      "profileOrder": [
-        "commonName",
-        "scientificName",
-        "acceptedName",
-        "family",
-        "genus",
-        "growthForm",
-        "nativeRange",
-        "habitat"
-      ]
+        "flowers": "Sexual reproduction occurs through flowers and subsequent seed formation; details vary by species."
+      }
     },
     {
       "id": "pink-tulip",
       "commonName": "Pink Tulip",
       "scientificName": "Tulipa spp.",
       "acceptedName": "Tulipa spp.",
-      "taxonomicNote": "“Pink tulip” describes tulips by flower colour rather than a single species. The entry therefore uses the accepted genus Tulipa unless a specific species or cultivar is supplied.",
+      "taxonomicNote": "This Garden entry uses Tulipa spp. at genus level because the submitted story identifies the flower by common name/colour rather than a single species.",
       "family": "Liliaceae",
       "genus": "Tulipa",
-      "growthForm": "Bulbous perennial geophyte.",
+      "growthForm": "Bulbous geophytes in the genus Tulipa.",
       "morphology": {
-        "leaves": "Tulips produce fleshy, strap-like to lance-shaped basal or lower leaves, depending on species and cultivar.",
-        "flowers": "Flowers are usually solitary and terminal, with a cup- or goblet-like form in many cultivated tulips.",
-        "petals": "The visible floral parts are six petaloid tepals, often brightly coloured and sometimes marked or patterned.",
-        "stamens": "There are typically six stamens surrounding the central ovary.",
-        "fruit": "After successful pollination, a dry capsule develops and can split to release seeds.",
-        "seeds": "Seeds are produced inside the capsule; cultivated tulips are also commonly propagated from bulbs and offsets."
+        "leaves": "Tulips develop leaves from an underground bulb.",
+        "flowers": "Flowers are typically borne singly at the end of a flowering stem.",
+        "petals": "The showy floral parts vary among species and cultivars.",
+        "stamens": "Flowers contain stamens surrounding the central reproductive structures.",
+        "fruit": "After successful pollination, a capsule can develop.",
+        "seeds": "Seeds develop within the fruit capsule."
       },
       "howItGrows": [
-        "The underground bulb stores resources through the dormant period.",
-        "Roots and shoots emerge as conditions become suitable, producing leaves above ground.",
-        "A flowering stem develops and the flower opens, commonly in spring for many garden tulips.",
-        "After flowering, foliage continues to photosynthesise before the plant returns to dormancy and the bulb stores resources for the next cycle."
+        "The bulb stores resources below ground.",
+        "Leaves emerge from the bulb and support the flowering shoot.",
+        "A flower develops at the end of the shoot before seed production."
       ],
       "interestingFacts": [
         {
-          "title": "A genus of bulbs",
-          "text": "Tulipa is a genus of bulbous plants in the lily family Liliaceae, rather than a single species."
-        },
-        {
-          "title": "Spring bloomers",
-          "text": "Many cultivated tulips flower in mid to late spring, although flowering time varies by group and climate."
-        },
-        {
-          "title": "A flower that travelled",
-          "text": "Tulips were cultivated by the Ottomans before becoming deeply associated with Dutch horticulture and the international bulb trade."
+          "title": "Pink is a cultivated colour expression",
+          "text": "“Pink tulip” identifies a colour form or cultivar group rather than one single species of Tulipa."
         }
       ],
-      "culturalNotes": [
-        {
-          "title": "Ottoman cultivation and Europe",
-          "text": "The tulip was cultivated in the Ottoman world before being introduced to Western Europe; its later popularity in the Netherlands became associated with the historical episode known as Tulipomania."
-        },
-        {
-          "title": "Victorian flower language",
-          "text": "In Victorian-style flower-language traditions, tulips were associated with passion; such meanings are historical conventions rather than universal botanical properties."
-        }
-      ],
+      "culturalNotes": [],
       "symbolism": [
-        "love",
-        "passion",
+        "affection",
         "care",
-        "spring",
-        "devotion"
+        "renewal"
       ],
-      "sundayGardenInterpretation": "For Ginaa, the tulip becomes a flower of caring for something while it is still in bloom. The meaning here comes from her words—not from a universal rule about pink tulips—and the flower becomes a quiet image of love that is valued simply because it can be given.",
+      "sundayGardenInterpretation": "The pink tulip becomes a quiet language for affection in Gina’s story, while the botanical identity stays broader than the feeling attached to it.",
       "sources": [
         {
-          "title": "Tulipa L. | Plants of the World Online",
-          "publisher": "Royal Botanic Gardens, Kew",
+          "title": "Kew — Plants of the World Online: Tulipa",
           "url": "https://powo.science.kew.org/taxon/24874-1",
-          "type": "taxonomy & botanical reference"
-        },
-        {
-          "title": "How to grow tulips",
-          "publisher": "Royal Horticultural Society",
-          "url": "https://www.rhs.org.uk/plants/tulip/growing-guide",
-          "type": "botanical & horticultural reference"
-        },
-        {
-          "title": "Four Tulips: Boter man, Joncker, Grote geplumaceerde, and Voorwint",
-          "publisher": "The Metropolitan Museum of Art",
-          "url": "https://www.metmuseum.org/art/collection/search/337769",
-          "type": "cultural history"
-        },
-        {
-          "title": "Floral Fashions: From Bouquets to Buttonholes",
-          "publisher": "Smithsonian Gardens",
-          "url": "https://gardens.si.edu/exhibitions/current-exhibitions/floral-fashions-from-bouquets-to-buttonholes/",
-          "type": "symbolism reference"
+          "type": "Botanical reference"
         }
       ],
       "classification": {
         "kingdom": "Plantae",
-        "order": "Liliales"
+        "family": "Liliaceae",
+        "genus": "Tulipa"
       },
       "distribution": {
-        "nativeRange": "South-central and eastern Europe, the Mediterranean region, and eastward to Mongolia at the genus level."
+        "nativeRange": "Southern Central and Eastern Europe through the Mediterranean region to Mongolia."
       },
       "habitatProfile": {
-        "growthForm": "Bulbous perennial geophyte.",
-        "habitat": "Species occupy varied habitats, while cultivated tulips are commonly grown in sunny, free-draining soils."
+        "habitat": "See genus-level botanical reference.",
+        "growthForm": "Bulbous geophytes in the genus Tulipa."
       },
       "flowering": {
-        "season": "Many garden tulips flower in mid to late spring.",
-        "colour": "Cultivated tulips occur in a wide range of colours, including pink."
+        "flowerPosition": "Flowers are borne above the vegetative structure.",
+        "colour": "Varies among species and cultivars."
       },
       "reproduction": {
-        "pollination": "Flowers are pollinated by animals, including insects.",
-        "methods": "Tulips reproduce by seed and, in cultivation, commonly by daughter bulbs or offsets."
-      },
-      "lifeCycle": {
-        "type": "Perennial bulb",
-        "afterFlowering": "Leaves should remain active after flowering so the bulb can replenish stored resources."
-      },
-      "ecology": {
-        "role": "Tulip flowers provide floral resources for visiting insects; ecological details vary by species and setting.",
-        "adaptations": "The bulb allows the plant to survive an unfavourable season underground."
-      },
-      "conservation": {
-        "note": "Conservation status varies among Tulipa species; the colour “pink tulip” does not identify a single species."
-      },
-      "profileOrder": [
-        "commonName",
-        "scientificName",
-        "acceptedName",
-        "family",
-        "genus",
-        "growthForm",
-        "nativeRange",
-        "habitat"
-      ]
+        "flowers": "Sexual reproduction occurs through flowers and subsequent seed formation; details vary by species."
+      }
     },
     {
       "id": "white-lily",
       "commonName": "White Lily",
       "scientificName": "Lilium spp.",
       "acceptedName": "Lilium spp.",
-      "taxonomicNote": "“White lily” describes true lilies by flower colour rather than a single species. The entry uses the accepted genus Lilium unless a specific species or cultivar is supplied.",
+      "taxonomicNote": "This Garden entry uses Lilium spp. at genus level because the submitted story identifies the flower by common name/colour rather than a single species.",
       "family": "Liliaceae",
       "genus": "Lilium",
-      "growthForm": "Bulbous perennial herb.",
+      "growthForm": "Erect herbs arising from multi-scaled bulbs.",
       "morphology": {
-        "leaves": "Leaves are borne along the upright stem and may appear alternate or in whorls, depending on the species.",
-        "flowers": "Flowers are borne terminally, often in racemes, or may be solitary; shapes range from trumpets and bowls to recurved Turk’s-cap forms.",
-        "petals": "The flower has six petaloid tepals that may be white, pink, yellow, orange, red, or patterned; here the Gardener’s chosen colour is white.",
-        "stamens": "Six stamens surround the central pistil and often carry prominent anthers.",
-        "fruit": "A dry capsule develops after pollination and eventually releases the seeds.",
-        "seeds": "Seeds develop inside the capsule and are dispersed when mature."
+        "leaves": "Leaves are cauline and may appear alternate or whorled.",
+        "flowers": "Flowers vary in shape and colour and may occur in terminal inflorescences or singly.",
+        "petals": "Lily tepals may be erect, tubular, recurved, or otherwise shaped depending on species.",
+        "stamens": "Lily flowers have prominent stamens.",
+        "fruit": "A capsule develops after successful pollination.",
+        "seeds": "Seeds develop within the capsule."
       },
       "howItGrows": [
-        "The plant begins from a bulb composed of fleshy scales.",
-        "Roots develop from the bulb while the stem rises and produces leaves.",
-        "A terminal flowering shoot develops, opening into the characteristic lily blooms.",
-        "After flowering, the plant keeps its foliage active long enough to replenish the bulb before the above-ground growth dies back."
+        "The bulb persists underground and sends up an erect leafy stem.",
+        "Leaves develop along the stem and the flowering structure forms toward the top.",
+        "Flowers open above the foliage; pollination can lead to seed capsules."
       ],
       "interestingFacts": [
         {
-          "title": "True lilies have six tepals",
-          "text": "The characteristic lily flower is built around six petaloid tepals and six stamens, although floral form varies widely across the genus."
-        },
-        {
-          "title": "A wide northern distribution",
-          "text": "Kew records the native range of Lilium from temperate parts of the Northern Hemisphere to the northern Philippines."
-        },
-        {
-          "title": "Many garden forms",
-          "text": "White lilies occur among multiple Lilium species and horticultural groups, so flower colour alone cannot identify a species."
+          "title": "White lily is broader than one species",
+          "text": "“White lily” can refer to white-flowered lilies across Lilium; the colour alone does not identify a single species."
         }
       ],
-      "culturalNotes": [
-        {
-          "title": "Purity in white",
-          "text": "White lilies have been associated with innocence, chastity, and purity of heart in documented Western cultural and religious traditions."
-        },
-        {
-          "title": "A flower of contrasts",
-          "text": "Smithsonian’s overview of lily symbolism notes that lilies can carry contrasting associations, including purity, passion, life, and death, depending on colour and context."
-        }
-      ],
+      "culturalNotes": [],
       "symbolism": [
         "purity",
-        "innocence",
-        "steadfastness",
-        "peace",
-        "devotion"
+        "devotion",
+        "steadfastness"
       ],
-      "sundayGardenInterpretation": "For Leo, the white lily is not a claim that whiteness means weakness or that lilies universally represent purity. It is a personal image of standing firmly while keeping the heart clean—an interpretation shaped by the Gardener’s own words and the documented history of white-lily symbolism.",
+      "sundayGardenInterpretation": "For Sunday Garden, the meaning remains with Leo: the white lily is a chosen image for standing firmly without giving up a clean heart.",
       "sources": [
         {
-          "title": "Lilium Tourn. ex L. | Plants of the World Online",
-          "publisher": "Royal Botanic Gardens, Kew",
+          "title": "Kew — Plants of the World Online: Lilium",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30009317-2/general-information",
-          "type": "taxonomy & botanical reference"
-        },
-        {
-          "title": "Lilies | RHS Plant Guide",
-          "publisher": "Royal Horticultural Society",
-          "url": "https://www.rhs.org.uk/plants/lilies",
-          "type": "botanical & horticultural reference"
-        },
-        {
-          "title": "How to grow lilies",
-          "publisher": "Royal Horticultural Society",
-          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
-          "type": "growth & horticultural reference"
-        },
-        {
-          "title": "Lily / Marcia Reiss",
-          "publisher": "Smithsonian Libraries and Archives",
-          "url": "https://www.si.edu/object/lily-marcia-reiss%3Asiris_sil_1018845",
-          "type": "cultural history & symbolism"
+          "type": "Botanical reference"
         }
       ],
       "classification": {
         "kingdom": "Plantae",
-        "order": "Liliales"
+        "family": "Liliaceae",
+        "genus": "Lilium"
       },
       "distribution": {
-        "nativeRange": "Temperate Northern Hemisphere to the northern Philippines at the genus level."
+        "nativeRange": "Temperate Northern Hemisphere to the northern Philippines."
       },
       "habitatProfile": {
-        "growthForm": "Bulbous perennial herb.",
-        "habitat": "Species occur in varied habitats; cultivated lilies generally prefer well-drained soils with sun or partial shade."
+        "habitat": "See genus-level botanical reference.",
+        "growthForm": "Erect herbs arising from multi-scaled bulbs."
       },
       "flowering": {
-        "season": "Many garden lilies flower in summer, although timing varies by species and group.",
-        "colour": "White is one of many colours found across Lilium."
+        "flowerPosition": "Flowers are borne above the vegetative structure.",
+        "colour": "Varies among species and cultivars."
       },
       "reproduction": {
-        "pollination": "Flowers are commonly pollinated by animals, with pollination ecology varying among species and floral forms.",
-        "methods": "Lilium reproduces by seed; some lilies can also be propagated through bulbils and scales."
-      },
-      "lifeCycle": {
-        "type": "Perennial bulb",
-        "afterFlowering": "Foliage remains active after flowering before naturally dying back, allowing resources to return to the bulb."
-      },
-      "ecology": {
-        "role": "Lily flowers provide floral resources to visiting pollinators; exact relationships vary by species.",
-        "adaptations": "The bulb provides an underground storage organ that helps the plant persist between growing periods."
-      },
-      "conservation": {
-        "note": "Conservation status varies among Lilium species; “white lily” does not identify a single species."
-      },
-      "profileOrder": [
-        "commonName",
-        "scientificName",
-        "acceptedName",
-        "family",
-        "genus",
-        "growthForm",
-        "nativeRange",
-        "habitat"
-      ]
+        "flowers": "Sexual reproduction occurs through flowers and subsequent seed formation; details vary by species."
+      }
     }
   ]
 }
