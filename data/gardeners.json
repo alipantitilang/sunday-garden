@@ -1,0 +1,46 @@
+{
+  "gardeners": [
+    {
+      "id": "alip-blue-lotus",
+      "displayName": "Alip",
+      "flower": {
+        "id": "blue-lotus",
+        "name": "Blue Lotus",
+        "scientificName": "Nymphaea caerulea"
+      },
+      "story": "Aku mau jadi blue lotus, karena cara ia hidup terasa seperti cerminan diriku. Akarnya tertanam jauh di dasar lumpur, seolah mengingatkanku untuk nggak melupakan dari mana aku berasal. Batangnya tumbuh menembus air, perlahan mencari permukaan, seperti perjalanan yang nggak selalu mudah tapi tetap punya arah. Lalu bunganya mekar di atas air, sementara kelopaknya yang biru terasa seperti simbol ketenangan dan kedalaman. Ia hidup di ekosistem yang penuh kehidupan, tapi tetap punya ruang untuk mekar dengan caranya sendiri. Mungkin aku juga begitu; dibentuk oleh hal-hal yang nggak selalu indah, membawa masa lalu sebagai akar, melewati keruhnya perjalanan sebagai batang, lalu terus mencari cahaya. Karena pada akhirnya, aku nggak ingin menjadi seseorang yang mekar karena hidupnya selalu bersih dari lumpur. Aku ingin menjadi blue lotus—yang pernah berakar di dalam gelap, pernah melewati air yang keruh, tapi tetap memilih mengangkat wajahnya ke cahaya dan mekar dengan tenang.",
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790218239/alip-blue-lotus-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790218242/alip-blue-lotus-card.jpg",
+        "altText": "Alip — Blue Lotus Garden Card"
+      },
+      "status": "published",
+      "about": {
+        "display": false,
+        "content": [],
+        "links": []
+      }
+    },
+    {
+      "id": "sarah-pink-white-lily",
+      "displayName": "Sarah",
+      "flower": {
+        "id": "pink-white-lily",
+        "name": "Pink & White Lily",
+        "scientificName": "Lilium spp."
+      },
+      "story": "Aku ingin menjadi pink lily,\nagar hatiku selalu tahu cara menyayangi dengan lembut.\n\nDan aku ingin menjadi white lily,\nagar setiap rasa yang tumbuh tetap tulus dan damai.\n\nSemoga aku mekar tanpa kehilangan kelembutan,\ndan mencintai tanpa kehilangan ketulusan.",
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228525/sarah-pink-white-lily-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228693/sarah-pink-white-lily-card.jpg",
+        "altText": "Sarah — Pink & White Lily Garden Card"
+      },
+      "status": "published",
+      "about": {
+        "display": false,
+        "content": [],
+        "links": []
+      }
+    }
+  ]
+}

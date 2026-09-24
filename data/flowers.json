@@ -1,0 +1,297 @@
+{
+  "flowers": [
+    {
+      "id": "blue-lotus",
+      "commonName": "Blue Lotus",
+      "scientificName": "Nymphaea caerulea Savigny",
+      "acceptedName": "Nymphaea nouchali var. caerulea (Savigny) Verdc.",
+      "taxonomicNote": "Kew's Plants of the World Online currently accepts Nymphaea nouchali var. caerulea and treats Nymphaea caerulea as a synonym.",
+      "family": "Nymphaeaceae",
+      "genus": "Nymphaea",
+      "growthForm": "Rhizomatous hydrogeophyte — an aquatic plant that persists through an underground rhizome.",
+      "morphology": {
+        "leaves": "Leaves are generally round to elliptic, borne on long petioles, with a basal notch and prominent veins on the underside.",
+        "flowers": "Flowers are blue or pinkish and about 8–12 cm across in the Flora Zambesiaca treatment cited by Kew.",
+        "petals": "Typically 14–20 petals are described for the taxon in Flora Zambesiaca.",
+        "stamens": "The flowers have very numerous stamens, around 100–200 or more in the cited Flora Zambesiaca description.",
+        "fruit": "The fruit is depressed-globose; cited specimens are around 2.2 × 3.2 cm.",
+        "seeds": "Seeds are small and ellipsoid, about 1.2 mm long in the cited description."
+      },
+      "howItGrows": [
+        "A rhizome anchors the plant in the substrate beneath the water.",
+        "Long petioles carry leaves upward until their blades reach the water surface.",
+        "Flowers are held at or above the water surface, where they become the most visible part of the plant.",
+        "After flowering, the reproductive structures develop into a fruit associated with the aquatic life cycle."
+      ],
+      "interestingFacts": [
+        {
+          "title": "It is not a true lotus",
+          "text": "Despite the common name, Blue Lotus belongs to Nymphaea, the water-lily genus. True lotuses belong to the separate genus Nelumbo."
+        },
+        {
+          "title": "Its scientific name has a taxonomic history",
+          "text": "Nymphaea caerulea was published by Savigny in 1798. Kew currently treats that name as a synonym of Nymphaea nouchali var. caerulea."
+        },
+        {
+          "title": "A flower packed with stamens",
+          "text": "The Flora Zambesiaca description cited by Kew records approximately 100–200 or more stamens in a flower."
+        },
+        {
+          "title": "The visible flower is only part of the plant",
+          "text": "The plant is rhizomatous: much of its structure remains beneath the water, while long petioles connect the submerged base to leaves and flowers at the surface."
+        },
+        {
+          "title": "A flower with an ancient visual history",
+          "text": "Blue lotus imagery appears repeatedly in ancient Egyptian art, including objects and funerary contexts from the New Kingdom and earlier periods."
+        }
+      ],
+      "culturalNotes": [
+        {
+          "title": "Ancient Egypt",
+          "text": "Blue water-lily imagery is documented in ancient Egyptian art and ceremonial objects. The Walters Art Museum identifies Nymphaea caerulea in New Kingdom imagery and describes associations with rebirth and regeneration."
+        },
+        {
+          "title": "A recurring motif",
+          "text": "Museum collections preserve Egyptian vessels and decorative objects shaped like or decorated with the blue lotus, showing how deeply the flower entered visual culture."
+        },
+        {
+          "title": "A distinction worth keeping",
+          "text": "Historical symbolism belongs to particular cultures and periods. Sunday Garden treats those meanings as cultural history rather than a universal definition of what the flower must mean today."
+        }
+      ],
+      "symbolism": [
+        "renewal",
+        "rebirth",
+        "emergence from water",
+        "quiet beauty",
+        "continuity"
+      ],
+      "sundayGardenInterpretation": "A flower can carry its roots beneath the surface without being defined by the mud around them. The Blue Lotus becomes a Sunday Garden metaphor for moving through what shaped you, finding the surface, and choosing to bloom without pretending the water was always clear.",
+      "sources": [
+        {
+          "title": "Kew — Plants of the World Online: Nymphaea nouchali var. caerulea",
+          "url": "https://powo.science.kew.org/taxon/955147-1",
+          "type": "Botanical reference"
+        },
+        {
+          "title": "Kew — Plants of the World Online: Nymphaea caerulea",
+          "url": "https://powo.science.kew.org/taxon/605514-1",
+          "type": "Taxonomic reference"
+        },
+        {
+          "title": "Walters Art Museum — Bowl with Fish and Lotuses",
+          "url": "https://art.thewalters.org/object/48.400/",
+          "type": "Museum / historical reference"
+        },
+        {
+          "title": "Walters Art Museum — Lotus-Shaped Chalice",
+          "url": "https://art.thewalters.org/object/48.416/",
+          "type": "Museum / historical reference"
+        },
+        {
+          "title": "Journal of Experimental Botany — Symbolism of plants",
+          "url": "https://academic.oup.com/jxb/article/60/9/2461/514910",
+          "type": "Academic reference"
+        }
+      ],
+      "classification": {
+        "kingdom": "Plantae",
+        "order": "Nymphaeales",
+        "family": "Nymphaeaceae",
+        "genus": "Nymphaea",
+        "acceptedTaxon": "Nymphaea nouchali var. caerulea"
+      },
+      "distribution": {
+        "nativeRange": "Egypt to southern Africa, the southern Arabian Peninsula, and the Comoros.",
+        "introducedElsewhere": "Kew records introductions in parts of South America, South Asia, the Pacific, and Australasia.",
+        "distributionNote": "The native range is distinct from places where the taxon has been introduced."
+      },
+      "habitatProfile": {
+        "habitat": "Wet tropical environments and freshwater habitats.",
+        "growthEnvironment": "Primarily associated with wet tropical biomes and freshwater aquatic environments.",
+        "growthForm": "Rhizomatous hydrogeophyte — an aquatic plant that persists through an underground rhizome."
+      },
+      "flowering": {
+        "flowerPosition": "Flowers are held at or above the water surface.",
+        "flowerSize": "About 8–12 cm across in the Flora Zambesiaca description cited by Kew.",
+        "colour": "Blue or pinkish in the cited Flora Zambesiaca treatment."
+      },
+      "reproduction": {
+        "flowers": "Flowers contain numerous stamens and multiple carpels; the cited Flora Zambesiaca description records about 100–200 or more stamens and 14–24 carpels.",
+        "fruit": "The fruit is depressed-globose in the cited description.",
+        "seeds": "Seeds are small and ellipsoid, about 1.2 mm long in the cited description.",
+        "note": "These reproductive details describe the documented morphology; the page does not infer a specific pollinator or pollination mechanism without a source."
+      },
+      "lifeCycle": {
+        "persistence": "It is a rhizomatous hydrogeophyte, meaning the plant persists through a rhizome while its leaves and flowers occupy the aquatic surface zone.",
+        "seasonalityNote": "Exact flowering season can vary with geography and growing conditions, so Sunday Garden does not assign a single universal flowering season."
+      },
+      "ecology": {
+        "role": "A freshwater aquatic flowering plant rooted in the substrate, with leaves and flowers extending toward the water surface.",
+        "caution": "The available sources used here do not support a simple claim about a single specialised ecological role or pollinator, so those claims are intentionally omitted."
+      },
+      "conservation": {
+        "note": "This page does not assign a global conservation status to the taxon from a source that directly evaluates this variety. Distribution records are provided separately from conservation assessment."
+      },
+      "profileOrder": [
+        "commonName",
+        "scientificName",
+        "acceptedName",
+        "family",
+        "genus",
+        "growthForm",
+        "nativeRange",
+        "habitat"
+      ]
+    },
+    {
+      "id": "pink-white-lily",
+      "commonName": "Pink & White Lily",
+      "scientificName": "Lilium spp.",
+      "acceptedName": "Lilium spp.",
+      "taxonomicNote": "“Pink & White Lily” describes a colour combination rather than a single botanical species. True lilies belong to the genus Lilium, and many species and cultivated hybrids produce white, pink, or bicoloured flowers. Because the exact cultivar or species represented by the Gardener’s image is not specified, this page uses Lilium spp. rather than assigning a particular species.",
+      "family": "Liliaceae",
+      "genus": "Lilium",
+      "growthForm": "Bulbous perennial herb — lilies grow from scaly underground bulbs and send up an erect leafy stem each growing season.",
+      "morphology": {
+        "leaves": "Leaves are borne along the erect stem and may appear alternately or in whorls, depending on the species.",
+        "flowers": "Lilium flowers vary widely in shape, including trumpet, bowl, funnel and recurved Turk’s-cap forms. White, pink and bicoloured flowers occur across cultivated lilies.",
+        "petals": "True lilies have six tepals arranged in two whorls of three; the tepals may be upright, spreading, or recurved.",
+        "stamens": "Flowers have six stamens, surrounding a central ovary and style.",
+        "fruit": "The fruit is a capsule in the genus Lilium.",
+        "seeds": "Lilium capsules contain numerous seeds; seed form varies among species."
+      },
+      "howItGrows": [
+        "The plant persists underground as a many-scaled bulb, which stores resources between periods of active growth.",
+        "An upright, usually unbranched stem emerges from the bulb and develops leaves along its length.",
+        "Flower buds form toward the upper part of the stem, with flowers ranging from trumpet-shaped to recurved depending on the lily group.",
+        "After flowering, the plant develops a seed-bearing capsule while the bulb stores resources for future growth."
+      ],
+      "interestingFacts": [
+        {
+          "title": "Pink & white is not one species",
+          "text": "“Pink & White Lily” is a descriptive garden name, not a single botanical species. The true lilies belong to the genus Lilium, which contains many species and cultivated hybrids with different flower colours and forms."
+        },
+        {
+          "title": "Lilies grow from bulbs",
+          "text": "Unlike water lilies, true lilies are terrestrial bulbous plants. Their underground bulbs are made of overlapping, fleshy scales."
+        },
+        {
+          "title": "Six is a recurring number",
+          "text": "Typical Lilium flowers have six tepals and six stamens, arranged around a three-locular ovary."
+        },
+        {
+          "title": "Their colours are remarkably varied",
+          "text": "RHS describes lilies ranging from white and pastel shades to strong colours and bicoloured flowers. Flower form also varies from trumpets and bowls to recurved Turk’s-cap shapes."
+        },
+        {
+          "title": "The genus is northern-hemisphere native",
+          "text": "Kew records the native range of Lilium as extending from the temperate Northern Hemisphere to the northern Philippines, with species diversity especially high in eastern Asia."
+        }
+      ],
+      "culturalNotes": [
+        {
+          "title": "White lily and purity",
+          "text": "White lilies have a long history of association with purity and chastity in European and Christian art. The Metropolitan Museum of Art discusses Lilium candidum, the Madonna lily, as a traditional symbol of purity in medieval imagery."
+        },
+        {
+          "title": "Lily meanings are contextual",
+          "text": "The cultural meaning of a lily is not universal. Smithsonian and museum sources document different associations across historical traditions, which is why Sunday Garden keeps symbolism tied to its cultural context rather than presenting one fixed definition."
+        },
+        {
+          "title": "A flower of many occasions",
+          "text": "Historical and modern sources describe lilies appearing in contexts ranging from weddings to funerals, illustrating how a single flower can carry different meanings depending on colour, culture and setting."
+        }
+      ],
+      "symbolism": [
+        "gentleness",
+        "purity",
+        "sincerity",
+        "affection",
+        "peace"
+      ],
+      "sundayGardenInterpretation": "Pink and white become two sides of the same hope: to love gently without becoming less sincere, and to remain sincere without losing peace. In Sarah’s story, the colours are not competing meanings. They bloom together as a wish for tenderness that stays true to itself.",
+      "sources": [
+        {
+          "title": "Kew — Plants of the World Online: Lilium",
+          "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30009317-2/general-information",
+          "type": "Botanical / taxonomic reference"
+        },
+        {
+          "title": "Kew — Plants of the World Online: Liliaceae",
+          "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30000259-2/general-information",
+          "type": "Family / botanical reference"
+        },
+        {
+          "title": "RHS — Lilies",
+          "url": "https://www.rhs.org.uk/plants/lilies",
+          "type": "Horticultural reference"
+        },
+        {
+          "title": "RHS — How to grow lilies",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "type": "Horticultural / growth reference"
+        },
+        {
+          "title": "The Metropolitan Museum of Art — Botanical Imagery in European Painting",
+          "url": "https://www.metmuseum.org/toah/hd/bota/hd_bota.htm",
+          "type": "Cultural / historical reference"
+        },
+        {
+          "title": "Smithsonian Libraries and Archives — Lily / Marcia Reiss",
+          "url": "https://www.si.edu/object/lily-marcia-reiss%3Asiris_sil_1018845",
+          "type": "Cultural / historical reference"
+        }
+      ],
+      "classification": {
+        "kingdom": "Plantae",
+        "order": "Liliales",
+        "family": "Liliaceae",
+        "genus": "Lilium",
+        "acceptedTaxon": "Lilium spp."
+      },
+      "distribution": {
+        "nativeRange": "The genus Lilium is native from the temperate Northern Hemisphere to the northern Philippines, with many species concentrated in Asia.",
+        "introducedElsewhere": "Individual Lilium species and hybrids are widely cultivated beyond their native ranges.",
+        "distributionNote": "Because “Pink & White Lily” is a colour description rather than a species, a single native range cannot be assigned to Sarah’s flower without knowing the exact species or cultivar."
+      },
+      "habitatProfile": {
+        "habitat": "Habitats vary widely among Lilium species, including woodland, meadow, montane and open habitats.",
+        "growthEnvironment": "Most cultivated lilies prefer well-drained soil and sun or light shade, although requirements differ among lily groups.",
+        "growthForm": "Bulbous perennial herb growing from a many-scaled bulb."
+      },
+      "flowering": {
+        "flowerPosition": "Flowers are produced toward the upper portions of erect leafy stems.",
+        "flowerSize": "Flower size varies substantially among species and cultivars.",
+        "colour": "White, pink and bicoloured flowers are all found among lilies; exact colour depends on species or cultivar."
+      },
+      "reproduction": {
+        "flowers": "Typical Lilium flowers have six stamens and a superior, three-locular ovary.",
+        "fruit": "The fruit is a capsule containing seeds.",
+        "seeds": "Seeds are produced within the capsule after successful reproduction.",
+        "note": "Exact pollination relationships vary among Lilium species, so no single pollinator is assigned to this colour-based flower entry."
+      },
+      "lifeCycle": {
+        "persistence": "Lilies are perennial plants that persist through an underground bulb while the above-ground shoot dies back between growing periods in many cultivated forms.",
+        "seasonalityNote": "Flowering time varies by species, hybrid group and climate, so this page does not assign one universal flowering season."
+      },
+      "ecology": {
+        "role": "Lilium species are flowering plants that can contribute nectar and pollen resources to local pollinators, with ecological relationships varying by species and habitat.",
+        "caution": "The exact ecological role of Sarah’s flower cannot be assigned without identifying the species or cultivar."
+      },
+      "conservation": {
+        "note": "Conservation status varies among individual Lilium species. Because this entry represents a colour category rather than one species, no single global conservation status is assigned."
+      },
+      "profileOrder": [
+        "commonName",
+        "scientificName",
+        "acceptedName",
+        "family",
+        "genus",
+        "growthForm",
+        "nativeRange",
+        "habitat"
+      ]
+    }
+  ]
+}

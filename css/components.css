@@ -1,0 +1,306 @@
+/* Sunday Garden — global components */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--border);
+  background: rgba(243, 238, 227, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 78px;
+}
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.site-brand img {
+  width: clamp(150px, 18vw, 220px);
+  height: auto;
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.25rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav__links a {
+  position: relative;
+  display: inline-block;
+  padding-block: .35rem;
+  color: var(--ink);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-nav__links a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  background: var(--forest);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 180ms ease;
+}
+
+.site-nav__links a:hover::after,
+.site-nav__links a:focus-visible::after,
+.site-nav__links a[aria-current="page"]::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.site-nav__links a[aria-current="page"] {
+  color: var(--forest);
+}
+
+.site-nav__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.site-nav__toggle-bars {
+  display: grid;
+  gap: 5px;
+  width: 18px;
+  margin-inline: auto;
+}
+
+.site-nav__toggle-bars span {
+  display: block;
+  height: 1px;
+  background: var(--forest);
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.site-nav__toggle[aria-expanded="true"] .site-nav__toggle-bars span:first-child {
+  transform: translateY(3px) rotate(45deg);
+}
+
+.site-nav__toggle[aria-expanded="true"] .site-nav__toggle-bars span:last-child {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+.site-footer {
+  padding: 3.5rem var(--gutter);
+  border-top: 1px solid var(--border);
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+}
+
+.site-footer__mark {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.site-footer__meta {
+  max-width: 36rem;
+  margin: 0;
+  color: rgba(41, 48, 43, .65);
+  font-size: .78rem;
+  line-height: 1.7;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.25rem;
+  margin-top: .9rem;
+}
+
+.site-footer__links a {
+  color: var(--forest);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: .25rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .7rem 1.15rem;
+  border: 1px solid var(--forest);
+  border-radius: 0;
+  color: var(--paper);
+  background: var(--forest);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  color: var(--forest);
+  background: transparent;
+}
+
+.button--outline {
+  color: var(--forest);
+  background: transparent;
+}
+
+.button--outline:hover,
+.button--outline:focus-visible {
+  color: var(--paper);
+  background: var(--forest);
+}
+
+@media (max-width: 680px) {
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .site-nav {
+    position: relative;
+    min-height: 70px;
+    padding-block: .85rem;
+  }
+
+  .site-nav__toggle {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .site-nav__links {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    display: grid;
+    gap: 0;
+    padding: .5rem var(--gutter) .9rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--paper);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+  }
+
+  .site-nav__links[data-open="true"] {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .site-nav__links li {
+    border-bottom: 1px solid rgba(52, 70, 58, .1);
+  }
+
+  .site-nav__links li:last-child {
+    border-bottom: 0;
+  }
+
+  .site-nav__links a {
+    display: block;
+    padding: .85rem 0;
+  }
+
+  .site-nav__links a::after {
+    display: none;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav__links,
+  .site-nav__links a::after,
+  .site-nav__toggle-bars span,
+  .button {
+    transition: none;
+  }
+}
+
+/* Phase 07 — navigation refinement */
+@media (max-width: 900px) and (min-width: 681px) {
+  .site-nav { min-height: 72px; }
+  .site-brand img { width: clamp(145px, 20vw, 190px); }
+  .site-nav__links { gap: 1.15rem; }
+  .site-nav__links a { font-size: .7rem; }
+}
+
+@media (max-width: 680px) {
+  .site-brand img { width: min(46vw, 175px); }
+
+  .site-nav__links a {
+    display: block;
+    padding: .85rem .1rem;
+    font-size: .78rem;
+  }
+
+  .site-nav__links a::after { bottom: .45rem; }
+
+  .site-footer { padding-block: 2.75rem; }
+  .site-footer__inner { flex-direction: column; }
+  .site-footer__meta { max-width: 28rem; }
+}
+
+
+/* Phase 08 — accessible interaction details */
+.site-nav__links a,
+.button,
+.text-link,
+.site-footer__links a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-nav__toggle:focus-visible,
+.garden-search input:focus-visible,
+.garden-filter select:focus-visible {
+  outline-offset: 3px;
+}

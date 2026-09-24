@@ -1,0 +1,361 @@
+/* Sunday Garden — The Garden */
+
+.garden-intro {
+  min-height: min(620px, calc(100svh - 78px));
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.garden-intro__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(220px, .55fr);
+  align-items: end;
+  gap: clamp(3rem, 10vw, 9rem);
+}
+
+.garden-intro__copy {
+  max-width: 760px;
+}
+
+.garden-intro h1 {
+  margin-bottom: 1.5rem;
+  color: var(--forest);
+  font-size: clamp(4rem, 8.5vw, 8rem);
+  letter-spacing: -.045em;
+}
+
+.garden-intro h1 em {
+  font-weight: 400;
+}
+
+.garden-intro__lead {
+  max-width: 590px;
+  margin: 0;
+  color: rgba(41, 48, 43, .7);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.85;
+}
+
+.garden-intro__aside {
+  align-self: end;
+  max-width: 280px;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--forest);
+}
+
+.garden-intro__mark {
+  display: block;
+  margin-bottom: .7rem;
+  color: var(--sage);
+  font-size: 1.25rem;
+}
+
+.garden-intro__aside p {
+  margin: 0;
+  color: var(--forest);
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+.garden-collection {
+  overflow: hidden;
+}
+
+.garden-toolbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.garden-toolbar h2 {
+  margin: 0;
+  color: var(--forest);
+  letter-spacing: -.025em;
+}
+
+.garden-controls {
+  display: flex;
+  align-items: stretch;
+  gap: .6rem;
+}
+
+.garden-search input,
+.garden-filter select {
+  min-height: 44px;
+  border: 1px solid rgba(52, 70, 58, .3);
+  border-radius: 0;
+  color: var(--ink);
+  background: rgba(243, 238, 227, .6);
+  font-size: .8rem;
+}
+
+.garden-search input {
+  width: clamp(190px, 20vw, 260px);
+  padding: .7rem .8rem;
+}
+
+.garden-filter select {
+  min-width: 145px;
+  padding: .7rem 2rem .7rem .8rem;
+}
+
+.garden-search input::placeholder {
+  color: rgba(41, 48, 43, .5);
+}
+
+.garden-search input:focus,
+.garden-filter select:focus {
+  outline: 2px solid rgba(52, 70, 58, .32);
+  outline-offset: 2px;
+  border-color: var(--forest);
+}
+
+.garden-count {
+  min-height: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: rgba(41, 48, 43, .52);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.garden-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.5rem, 5vw, 5rem) clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.garden-card {
+  min-width: 0;
+}
+
+.garden-card[hidden] {
+  display: none;
+}
+
+.garden-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.garden-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(52, 70, 58, .18);
+  background: rgba(52, 70, 58, .05);
+}
+
+.garden-card__image-wrap::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(243, 238, 227, .22);
+  content: "";
+  pointer-events: none;
+}
+
+.garden-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.garden-card__link:hover .garden-card__image,
+.garden-card__link:focus-visible .garden-card__image {
+  transform: scale(1.018);
+}
+
+.garden-card__caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--border);
+}
+
+.garden-card__name {
+  margin: 0;
+  color: var(--forest);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.garden-card__flower {
+  flex: 0 0 auto;
+  color: var(--sage);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.garden-card__scientific {
+  margin: .5rem 0 0;
+  color: rgba(41, 48, 43, .55);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.garden-status {
+  grid-column: 1 / -1;
+  padding-block: 2rem;
+  color: rgba(41, 48, 43, .58);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+.garden-note {
+  padding-top: 0;
+}
+
+.garden-note__inner {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin-inline: auto;
+  padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 5vw, 4rem);
+  border-block: 1px solid var(--border);
+  text-align: center;
+}
+
+.garden-note__inner::before,
+.garden-note__inner::after {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 1px solid rgba(52, 70, 58, .1);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.garden-note__inner::before {
+  top: -100px;
+  left: -80px;
+}
+
+.garden-note__inner::after {
+  right: -80px;
+  bottom: -100px;
+}
+
+.garden-note h2,
+.garden-note p,
+.garden-note a {
+  position: relative;
+  z-index: 1;
+}
+
+.garden-note h2 {
+  max-width: 650px;
+  margin-inline: auto;
+  color: var(--forest);
+}
+
+.garden-note__inner > p:not(.eyebrow) {
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  color: rgba(41, 48, 43, .68);
+}
+
+@media (max-width: 800px) {
+  .garden-intro {
+    min-height: auto;
+  }
+
+  .garden-intro__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .garden-intro__aside {
+    justify-self: end;
+  }
+
+  .garden-toolbar {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .garden-controls {
+    width: 100%;
+  }
+
+  .garden-search {
+    flex: 1;
+  }
+
+  .garden-search input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .garden-controls {
+    flex-direction: column;
+  }
+
+  .garden-filter select {
+    width: 100%;
+  }
+
+  .garden-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .garden-card__caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .45rem;
+  }
+
+  .garden-card__flower {
+    text-align: left;
+  }
+}
+
+/* Phase 07 — garden responsive refinement */
+@media (max-width: 1000px) and (min-width: 801px) {
+  .garden-grid { gap: 2.25rem 1.5rem; }
+  .garden-card__name { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+}
+
+@media (max-width: 620px) {
+  .garden-intro__aside { justify-self: start; }
+  .garden-card__image-wrap { aspect-ratio: 16 / 9; }
+  .garden-card__name { font-size: clamp(2rem, 10vw, 2.75rem); }
+  .garden-note__inner { padding-inline: 1.25rem; }
+}
+
+
+/* Phase 08 — image fallback */
+.garden-card__image-wrap--missing {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  background: rgba(52, 70, 58, .06);
+}
+
+.garden-card__image-wrap--missing::before {
+  content: "Image unavailable";
+  color: rgba(41, 48, 43, .52);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+}

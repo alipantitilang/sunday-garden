@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --forest: #34463A;
+  --sage: #87977A;
+  --paper: #F3EEE3;
+  --taupe: #A69B88;
+  --mist: #A8B9BC;
+  --lotus-blue: #7188B5;
+  --dusty-rose: #C49A98;
+  --ink: #29302B;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Manrope", Arial, sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  --content-width: 1180px;
+  --reading-width: 760px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-space: clamp(4rem, 9vw, 8rem);
+  --border: rgba(52, 70, 58, 0.22);
+  --shadow-paper: 0 12px 30px rgba(41, 48, 43, 0.06);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: url("../assets/textures/paper.webp");
+  background-repeat: repeat;
+  background-size: 700px auto;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: inherit; }
+
+button, input, textarea, select { font: inherit; }
+
+button { color: inherit; }
+
+h1, h2, h3, p { margin-top: 0; }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+h1 { font-size: clamp(3rem, 8vw, 7rem); }
+h2 { font-size: clamp(2.2rem, 5vw, 4.2rem); }
+h3 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+
+::selection {
+  color: var(--paper);
+  background: var(--forest);
+}
+
+:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 1rem;
+  left: 1rem;
+  padding: .65rem 1rem;
+  color: var(--paper);
+  background: var(--forest);
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+.skip-link:focus { transform: translateY(0); }
+
+.container {
+  width: min(100% - (var(--gutter) * 2), var(--content-width));
+  margin-inline: auto;
+}
+
+.reading-width {
+  width: min(100%, var(--reading-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-space);
+}
+
+.eyebrow {
+  margin-bottom: .75rem;
+  color: var(--sage);
+  font-family: var(--font-body);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.muted { color: rgba(41, 48, 43, .68); }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-center { text-align: center; }
+
+.flow > * + * { margin-top: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* Phase 07 — responsive refinement */
+:root {
+  --header-height: 78px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --section-space: clamp(3.75rem, 8vw, 6rem);
+  }
+
+  h1 { font-size: clamp(3rem, 9vw, 5.75rem); }
+  h2 { font-size: clamp(2.1rem, 6vw, 3.75rem); }
+
+  .section { padding-block: var(--section-space); }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --gutter: 1.15rem;
+    --section-space: 4rem;
+  }
+
+  body {
+    font-size: 15px;
+    background-size: 520px auto;
+  }
+
+  h1 { font-size: clamp(2.9rem, 14vw, 4.4rem); }
+  h2 { font-size: clamp(2.15rem, 10vw, 3.2rem); }
+  h3 { font-size: clamp(1.5rem, 7vw, 2rem); }
+
+  .container {
+    width: min(100% - (var(--gutter) * 2), var(--content-width));
+  }
+
+  .button {
+    min-height: 46px;
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  :root { --gutter: 1rem; }
+  body { font-size: 14px; }
+}
+
+
+/* Phase 08 — accessibility + performance */
+img {
+  color: rgba(41, 48, 43, .62);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .site-header {
+    background: var(--paper);
+  }
+}
+
+
+.noscript-note {
+  padding: 1rem 0;
+  color: rgba(41, 48, 43, .68);
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+/* Phase 10 — final polish */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+button, a, input, select { -webkit-tap-highlight-color: transparent; }
+
+.text-link,
+.site-nav__links a,
+.site-footer__links a,
+.button {
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 680px) {
+  .skip-link { left: .75rem; top: .75rem; }
+}
