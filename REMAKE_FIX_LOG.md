@@ -203,3 +203,47 @@ The visual system must never invent, merge, delete, or reorder biological phases
 ### Result
 
 RF-008 closes the Growth Cycle remake scope. Future changes to an existing Growth Cycle implementation should be logged as a new RF; a genuinely new interaction/capability should use the next Phase.
+## RF-009 — Flower Data Language Consistency Remake — COMPLETED
+
+**Date:** 2026-09-25  
+**Scope:** Existing `data/flowers.json` visitor-facing language consistency and content-language compliance
+
+### Problem
+
+The project language standard requires flower content intended for visitors to be written primarily in Indonesian. The existing flower records still contained visitor-facing botanical, ecological, cultural, historical, growth-cycle, and explanatory fields written in English.
+
+### Changes
+
+- Audited the five current flower records in `data/flowers.json`.
+- Migrated visitor-facing botanical and editorial prose to Indonesian.
+- Migrated displayed flower common names to the established Indonesian naming standard:
+  - Blue Lotus → **Teratai Biru**
+  - Red Rose → **Mawar Merah**
+  - Pink Tulip → **Tulip Merah Muda**
+  - White Lily → **Lili Putih**
+  - Pink & White Lily → **Lili Merah Muda & Putih**
+- Translated nested content across taxonomy notes, morphology, distribution, habitat, flowering, reproduction, life cycle, ecology, conservation, Growth Cycle descriptions, interesting facts, cultural notes, symbolism, and Sunday Garden interpretations.
+- Translated source metadata **types** into Indonesian while preserving original source titles and URLs.
+- Preserved scientific names, taxonomic nomenclature, proper names, source titles, URLs, technical IDs, schema values, and other fields that should remain in their original form.
+- Preserved Gardener stories; no personal story was translated or rewritten by this RF.
+- Kept category-level flowers at their documented taxonomic scope; no species identification was introduced merely to localize the language.
+
+### Language boundary
+
+The standard is now: **visitor-facing botanical/editorial content → Indonesian; scientific nomenclature and source identity → preserved; original-language evidence → preserved when required.**
+
+Source titles such as *Plants of the World Online*, museum collection titles, academic journal titles, and cultivar names remain in their original language because translating the title would alter source identity.
+
+### Validation
+
+- `node --check js/flower.js` passed.
+- `node --check js/main.js` passed.
+- `node tools/validate-data.mjs` passed.
+- Registry remains valid: **5 Gardeners, 5 flowers, 5 researched, 0 pending**.
+- JSON syntax validated successfully.
+- No Gardener story content was changed.
+- No scientific/taxonomic identifier was localized incorrectly.
+
+### Result
+
+RF-009 closes the current Flower Data Language Consistency remake scope. If another existing-system issue is discovered later, it should be classified independently and assigned to the next RF when appropriate. New flower research remains content workflow governed by `FLOWER_RESEARCH_PROMPT.md`, not a new Phase.

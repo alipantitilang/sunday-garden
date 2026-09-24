@@ -199,6 +199,7 @@ Future innovations may add Phase 33, Phase 34, and beyond. A Phase is added only
 | RF-006 | Responsive Audit | ✅ Complete |
 | RF-007 | Documentation, Information & AI Governance Remake | ✅ Complete |
 | RF-008 | Growth Cycle Template & Resolution Remake | ✅ Complete |
+| RF-009 | Flower Data Language Consistency Remake | ✅ Complete |
 
 Detailed records are maintained in `REMAKE_FIX_LOG.md`.
 
@@ -469,7 +470,7 @@ For research excerpts:
 
 The translation must preserve meaning and must not be presented as a direct quotation from the original source.
 
-Existing records may be migrated gradually. A language inconsistency should be treated as a content/data improvement, not as a reason to alter historical Phase numbers.
+Existing records may be migrated gradually. A language inconsistency should be treated as a content/data improvement, not as a reason to alter historical Phase numbers. RF-009 tracked the systematic cleanup of existing flower records whose visitor-facing botanical/editorial content was still written in English. The current five flower records have been migrated to the Indonesian content standard; scientific nomenclature, proper names, source titles, URLs, technical identifiers, and evidence language remain preserved where appropriate.
 
 ---
 

@@ -2,98 +2,98 @@
   "flowers": [
     {
       "id": "blue-lotus",
-      "commonName": "Blue Lotus",
+      "commonName": "Teratai Biru",
       "scientificName": "Nymphaea caerulea Savigny",
       "acceptedName": "Nymphaea nouchali var. caerulea (Savigny) Verdc.",
-      "taxonomicNote": "Kew's Plants of the World Online currently accepts Nymphaea nouchali var. caerulea (Savigny) Verdc. and treats Nymphaea caerulea Savigny as a synonym. The common name 'Blue Lotus' refers to this water-lily taxon; it is not a true lotus in the genus Nelumbo.",
+      "taxonomicNote": "Plants of the World Online dari Kew saat ini menerima Nymphaea nouchali var. caerulea (Savigny) Verdc. dan memperlakukan Nymphaea caerulea Savigny sebagai sinonim. Nama umum 'Teratai Biru' merujuk pada takson lili air ini; secara botani, tumbuhan ini bukan teratai sejati dari genus Nelumbo.",
       "family": "Nymphaeaceae",
       "genus": "Nymphaea",
-      "growthForm": "Rhizomatous hydrogeophyte — an aquatic plant that persists through an underground rhizome.",
+      "growthForm": "Hidrogeofit berimpang, yaitu tumbuhan air yang bertahan melalui rimpang di bawah permukaan.",
       "morphology": {
-        "leaves": "Leaves are generally round to elliptic, borne on long petioles, with a basal notch and prominent veins on the underside.",
-        "flowers": "Flowers are blue or pinkish and about 8–12 cm across in the Flora Zambesiaca treatment cited by Kew; a 2023 review describes flowers around 15–20 cm in some cultivated/observed material, illustrating geographic or source-dependent variation.",
-        "petals": "Typically 14–20 petals are described for the taxon in Flora Zambesiaca.",
-        "stamens": "The flowers have very numerous stamens, around 100–200 or more in the cited Flora Zambesiaca description.",
-        "fruit": "The fruit is depressed-globose; cited specimens are around 2.2 × 3.2 cm.",
-        "seeds": "Seeds are small and ellipsoid, about 1.2 mm long in the cited description."
+        "leaves": "Daun umumnya berbentuk bulat hingga elips, bertangkai panjang, memiliki lekukan pada pangkal, serta urat daun yang jelas pada permukaan bawah.",
+        "flowers": "Bunga berwarna biru atau kemerahmudaan dan berdiameter sekitar 8–12 cm menurut Flora Zambesiaca yang dirujuk Kew. Tinjauan tahun 2023 melaporkan bunga sekitar 15–20 cm pada sebagian bahan budidaya atau pengamatan, menunjukkan adanya variasi menurut lokasi dan sumber.",
+        "petals": "Takson ini umumnya dideskripsikan memiliki sekitar 14–20 kelopak dalam Flora Zambesiaca.",
+        "stamens": "Bunga memiliki benang sari yang sangat banyak, sekitar 100–200 atau lebih menurut deskripsi Flora Zambesiaca yang dirujuk.",
+        "fruit": "Buah berbentuk agak pipih dan membulat; spesimen yang dirujuk berukuran sekitar 2,2 × 3,2 cm.",
+        "seeds": "Biji berukuran kecil dan berbentuk elipsoid, sekitar 1,2 mm panjangnya dalam deskripsi yang dirujuk."
       },
       "interestingFacts": [
         {
-          "title": "It is not a true lotus",
-          "text": "Despite the common name, Blue Lotus belongs to Nymphaea, the water-lily genus. True lotuses belong to the separate genus Nelumbo."
+          "title": "Ini bukan teratai sejati",
+          "text": "Meskipun nama umumnya mengandung kata teratai, Teratai Biru termasuk genus Nymphaea, yaitu kelompok lili air. Teratai sejati termasuk genus yang berbeda, Nelumbo."
         },
         {
-          "title": "Its scientific name has a taxonomic history",
-          "text": "Nymphaea caerulea was published by Savigny in 1798. Kew currently treats that name as a synonym of Nymphaea nouchali var. caerulea."
+          "title": "Nama ilmiahnya memiliki sejarah taksonomi",
+          "text": "Nama Nymphaea caerulea dipublikasikan oleh Savigny pada 1798. Kew saat ini memperlakukan nama tersebut sebagai sinonim Nymphaea nouchali var. caerulea."
         },
         {
-          "title": "A flower packed with stamens",
-          "text": "The Flora Zambesiaca description cited by Kew records approximately 100–200 or more stamens in a flower."
+          "title": "Bunga dengan benang sari yang sangat banyak",
+          "text": "Deskripsi Flora Zambesiaca yang dirujuk Kew mencatat sekitar 100–200 atau lebih benang sari dalam satu bunga."
         },
         {
-          "title": "The visible flower is only part of the plant",
-          "text": "The plant is rhizomatous: much of its structure remains beneath the water, while long petioles connect the submerged base to leaves and flowers at the surface."
+          "title": "Bunga yang terlihat hanyalah sebagian dari tumbuhan",
+          "text": "Tumbuhan ini berimpang; sebagian besar strukturnya berada di bawah air, sementara tangkai daun yang panjang menghubungkan bagian yang terendam dengan daun dan bunga di permukaan."
         },
         {
-          "title": "A flower with an ancient visual history",
-          "text": "Blue lotus imagery appears repeatedly in ancient Egyptian art, including objects and funerary contexts from the New Kingdom and earlier periods."
+          "title": "Bunga dengan sejarah visual yang panjang",
+          "text": "Citra teratai biru berulang kali muncul dalam seni Mesir Kuno, termasuk pada benda-benda dan konteks pemakaman sejak Kerajaan Baru dan periode sebelumnya."
         }
       ],
       "culturalNotes": [
         {
-          "title": "Ancient Egyptian imagery",
-          "text": "Blue water-lily imagery is extensively documented in ancient Egyptian art and objects. The Walters Art Museum identifies Nymphaea caerulea in New Kingdom aquatic imagery and notes associations with rebirth and regeneration."
+          "title": "Citra Mesir Kuno",
+          "text": "Citra lili air biru terdokumentasi luas dalam seni dan benda-benda Mesir Kuno. Walters Art Museum mengidentifikasi Nymphaea caerulea dalam citra perairan Kerajaan Baru dan mencatat kaitannya dengan kelahiran kembali serta regenerasi."
         },
         {
-          "title": "Funerary and ceremonial contexts",
-          "text": "Museum records document blue-lotus forms and imagery in Egyptian objects, including lotus-shaped chalices and funerary material. The Metropolitan Museum records Nymphaea caerulea as blue water lily material associated with a Third Intermediate Period burial context."
+          "title": "Konteks pemakaman dan upacara",
+          "text": "Catatan museum mendokumentasikan bentuk dan citra teratai biru pada benda-benda Mesir, termasuk cawan berbentuk teratai dan benda pemakaman. Metropolitan Museum mencatat Nymphaea caerulea sebagai lili air biru dalam konteks pemakaman Periode Menengah Ketiga."
         },
         {
-          "title": "A historical meaning, not a universal definition",
-          "text": "Historical associations such as renewal and rebirth belong to particular Egyptian cultural contexts. Sunday Garden presents them as documented cultural history rather than a universal meaning that every Gardener must share."
+          "title": "Makna historis, bukan definisi universal",
+          "text": "Asosiasi seperti pembaruan dan kelahiran kembali berasal dari konteks budaya Mesir tertentu. Sunday Garden menyajikannya sebagai sejarah budaya yang terdokumentasi, bukan makna universal yang harus dimiliki setiap Gardener."
         }
       ],
       "symbolism": [
-        "renewal and rebirth in documented ancient Egyptian contexts",
-        "emergence from water",
-        "continuity"
+        "pembaruan dan kelahiran kembali dalam konteks Mesir Kuno yang terdokumentasi",
+        "kemunculan dari air",
+        "kesinambungan"
       ],
-      "sundayGardenInterpretation": "A flower can carry its roots beneath the surface without being defined by the water around them. The Blue Lotus becomes a Sunday Garden metaphor for moving through what shaped you, finding the surface, and choosing to bloom without pretending the water was always clear.",
+      "sundayGardenInterpretation": "Sebuah bunga dapat membawa akarnya di bawah permukaan tanpa harus didefinisikan oleh air di sekelilingnya. Teratai Biru menjadi metafora Sunday Garden tentang melewati hal-hal yang membentuk diri kita, menemukan kembali permukaan, dan memilih untuk mekar tanpa berpura-pura bahwa air di masa lalu selalu jernih.",
       "sources": [
         {
           "title": "Kew — Plants of the World Online: Nymphaea nouchali var. caerulea",
           "url": "https://powo.science.kew.org/taxon/955147-1",
-          "type": "Botanical and taxonomic reference"
+          "type": "Referensi botani dan taksonomi"
         },
         {
           "title": "Kew — Plants of the World Online: Nymphaea caerulea",
           "url": "https://powo.science.kew.org/taxon/605514-1",
-          "type": "Taxonomic synonym reference"
+          "type": "Referensi sinonim taksonomi"
         },
         {
           "title": "Walters Art Museum — Bowl with Fish and Lotuses",
           "url": "https://art.thewalters.org/object/48.400/",
-          "type": "Museum / historical reference"
+          "type": "Referensi museum / sejarah"
         },
         {
           "title": "Walters Art Museum — Lotus-Shaped Chalice",
           "url": "https://art.thewalters.org/object/48.416/",
-          "type": "Museum / historical reference"
+          "type": "Referensi museum / sejarah"
         },
         {
           "title": "The Metropolitan Museum of Art — Five Lotus Buds from the Mummy of Prince Amenemhat",
           "url": "https://www.metmuseum.org/art/collection/search/552542",
-          "type": "Museum / historical reference"
+          "type": "Referensi museum / sejarah"
         },
         {
           "title": "Journal of Experimental Botany — Symbolism of plants: Lotus",
           "url": "https://academic.oup.com/jxb/article/60/9/2461/514910",
-          "type": "Academic reference"
+          "type": "Referensi akademik"
         },
         {
           "title": "Molecules — Chemical Composition, Market Survey, and Safety Assessment of Blue Lotus Extracts",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10609367/",
-          "type": "Peer-reviewed chemistry / safety reference"
+          "type": "Referensi kimia / keamanan yang ditinjau sejawat"
         }
       ],
       "classification": {
@@ -104,36 +104,36 @@
         "acceptedTaxon": "Nymphaea nouchali var. caerulea"
       },
       "distribution": {
-        "nativeRange": "Egypt to southern Africa, the southern Arabian Peninsula, and the Comoros.",
-        "introducedElsewhere": "Kew records introductions in parts of South America, South Asia, the Pacific, and Australasia.",
-        "distributionNote": "The native range is distinct from places where the taxon has been introduced."
+        "nativeRange": "Mesir hingga Afrika bagian selatan, Semenanjung Arab bagian selatan, dan Komoro.",
+        "introducedElsewhere": "Kew mencatat introduksi di beberapa wilayah Amerika Selatan, Asia Selatan, Pasifik, dan Australasia.",
+        "distributionNote": "Wilayah asli dibedakan dari wilayah tempat takson ini diintroduksi."
       },
       "habitatProfile": {
-        "habitat": "Wet tropical environments and freshwater habitats.",
-        "growthEnvironment": "Primarily associated with wet tropical biomes and freshwater aquatic environments.",
-        "growthForm": "Rhizomatous hydrogeophyte — an aquatic plant that persists through an underground rhizome."
+        "habitat": "Lingkungan tropis basah dan habitat air tawar.",
+        "growthEnvironment": "Terutama terkait dengan bioma tropis basah dan lingkungan perairan air tawar.",
+        "growthForm": "Hidrogeofit berimpang, yaitu tumbuhan air yang bertahan melalui rimpang bawah tanah."
       },
       "flowering": {
-        "flowerPosition": "Flowers are held at or above the water surface.",
-        "flowerSize": "About 8–12 cm across in the Flora Zambesiaca description cited by Kew.",
-        "colour": "Blue or pinkish in the cited Flora Zambesiaca treatment."
+        "flowerPosition": "Bunga berada pada atau sedikit di atas permukaan air.",
+        "flowerSize": "Sekitar 8–12 cm berdasarkan deskripsi Flora Zambesiaca yang dirujuk Kew.",
+        "colour": "Biru atau kemerahmudaan menurut perlakuan Flora Zambesiaca yang dirujuk."
       },
       "reproduction": {
-        "flowers": "Flowers contain numerous stamens and multiple carpels; the cited Flora Zambesiaca description records about 100–200 or more stamens and 14–24 carpels.",
-        "fruit": "The fruit is depressed-globose in the cited description.",
-        "seeds": "Seeds are small and ellipsoid, about 1.2 mm long in the cited description.",
-        "note": "These reproductive details describe the documented morphology; the page does not infer a specific pollinator or pollination mechanism without a source."
+        "flowers": "Bunga memiliki banyak benang sari dan beberapa karpel; deskripsi Flora Zambesiaca mencatat sekitar 100–200 atau lebih benang sari dan 14–24 karpel.",
+        "fruit": "Buah berbentuk agak pipih dan membulat menurut deskripsi yang dirujuk.",
+        "seeds": "Biji kecil dan elipsoid, sekitar 1,2 mm panjangnya menurut deskripsi yang dirujuk.",
+        "note": "Rincian ini menjelaskan morfologi reproduktif yang terdokumentasi. Halaman tidak menetapkan penyerbuk atau mekanisme penyerbukan tertentu tanpa dukungan sumber."
       },
       "lifeCycle": {
-        "persistence": "It is a rhizomatous hydrogeophyte, meaning the plant persists through a rhizome while its leaves and flowers occupy the aquatic surface zone.",
-        "seasonalityNote": "Exact flowering season can vary with geography and growing conditions, so Sunday Garden does not assign a single universal flowering season."
+        "persistence": "Sebagai hidrogeofit berimpang, tumbuhan bertahan melalui rimpang sementara daun dan bunganya menempati zona permukaan air.",
+        "seasonalityNote": "Musim berbunga yang tepat dapat berbeda menurut geografi dan kondisi pertumbuhan, sehingga Sunday Garden tidak menetapkan satu musim berbunga yang universal."
       },
       "ecology": {
-        "role": "A freshwater aquatic flowering plant rooted in submerged substrate, with leaves and flowers extending toward the water surface.",
-        "caution": "The audit does not assign a single specialised pollinator or ecological role without direct source support."
+        "role": "Tumbuhan berbunga air tawar yang berakar pada substrat terendam, dengan daun dan bunga memanjang menuju permukaan air.",
+        "caution": "Audit ini tidak menetapkan satu penyerbuk atau peran ekologis khusus tanpa dukungan sumber langsung."
       },
       "conservation": {
-        "note": "This record does not assign a global conservation status without a directly applicable assessment for the accepted infraspecific taxon. Native and introduced distributions are kept separate."
+        "note": "Catatan ini tidak menetapkan status konservasi global tanpa penilaian yang secara langsung berlaku untuk takson infraspesifik yang diterima. Persebaran asli dan persebaran introduksi tetap dipisahkan."
       },
       "profileOrder": [
         "commonName",
@@ -163,131 +163,131 @@
         "phases": [
           {
             "id": "phase-01",
-            "name": "Phase 01",
-            "description": "A rhizome anchors the plant in the substrate beneath the water."
+            "name": "Fase 01",
+            "description": "Rimpang menambatkan tumbuhan pada substrat di bawah air."
           },
           {
             "id": "phase-02",
-            "name": "Phase 02",
-            "description": "Long petioles carry leaves upward until their blades reach the water surface."
+            "name": "Fase 02",
+            "description": "Tangkai daun panjang membawa daun ke atas hingga helaian mencapai permukaan air."
           },
           {
             "id": "phase-03",
-            "name": "Phase 03",
-            "description": "Flowers are held at or above the water surface."
+            "name": "Fase 03",
+            "description": "Bunga berada pada atau sedikit di atas permukaan air."
           },
           {
             "id": "phase-04",
-            "name": "Phase 04",
-            "description": "The plant persists as a rhizomatous hydrogeophyte; exact seasonal timing varies with geography and growing conditions."
+            "name": "Fase 04",
+            "description": "Tumbuhan bertahan sebagai hidrogeofit berimpang; waktu musiman yang tepat bervariasi menurut geografi dan kondisi pertumbuhan."
           }
         ]
       }
     },
     {
       "id": "red-rose",
-      "commonName": "Red Rose",
+      "commonName": "Mawar Merah",
       "scientificName": "Rosa spp.",
       "acceptedName": null,
-      "taxonomicNote": "Red Rose is a common colour-based description rather than a single botanical species. Roses sold or described as red may belong to many species, hybrids, and cultivated groups within Rosa, so this profile uses genus-level botanical information and does not assign one species to the Gardener's flower.",
+      "taxonomicNote": "Mawar Merah adalah deskripsi berdasarkan warna, bukan satu spesies botani. Mawar yang dijual atau disebut merah dapat berasal dari banyak spesies, hibrida, dan kelompok budidaya dalam Rosa. Karena itu, profil ini menggunakan informasi tingkat genus dan tidak menetapkan satu spesies untuk bunga Gardener.",
       "family": "Rosaceae",
       "genus": "Rosa",
-      "growthForm": "Woody shrubs or climbing plants; stems may be upright, arching, scrambling, trailing, or climbing, and are commonly armed with prickles.",
+      "growthForm": "Semak berkayu atau tumbuhan memanjat; batang dapat tegak, melengkung, menjalar, menjuntai, atau memanjat, dan umumnya memiliki duri semu.",
       "morphology": {
-        "roots": "Roses are woody perennial plants with root systems that anchor the plant and support long-lived stems; exact root architecture varies among species and cultivated roses.",
-        "stem": "Stems and branches are commonly armed with prickles and may be upright, arching, scrambling, trailing, or climbing.",
-        "leaves": "Leaves are typically compound and imparipinnate, with serrated leaflets and stipules associated with the leaf bases.",
-        "flowers": "Rose flowers are bisexual and may occur singly or in clusters such as corymbs. In the genus Rosa, flowers typically have five sepals and five petals in wild species, while cultivated roses may have many additional petals through selection and breeding.",
-        "fruit": "After pollination and maturation, the floral receptacle develops into the familiar rose hip, a fleshy structure enclosing numerous achenes.",
-        "prickles": "Rosa stems are commonly described as bearing prickles; these are often casually called thorns in everyday language, but botanical descriptions distinguish them from true thorns."
+        "roots": "Mawar merupakan tumbuhan berkayu tahunan dengan sistem akar yang menambatkan tumbuhan dan menopang batang berumur panjang; bentuk akar tepatnya berbeda antarspesies dan mawar budidaya.",
+        "stem": "Batang dan cabang umumnya memiliki duri semu dan dapat tegak, melengkung, menjalar, menjuntai, atau memanjat.",
+        "leaves": "Daun umumnya majemuk menyirip ganjil, dengan anak daun bergerigi dan daun penumpu di pangkal daun.",
+        "flowers": "Bunga mawar berkelamin ganda dan dapat muncul tunggal atau berkelompok, misalnya dalam payung bunga. Pada Rosa, bunga liar umumnya memiliki lima kelopak bunga dan lima daun kelopak, sedangkan mawar budidaya dapat memiliki lebih banyak kelopak melalui seleksi dan pemuliaan.",
+        "fruit": "Setelah penyerbukan dan pematangan, dasar bunga berkembang menjadi hip mawar, struktur berdaging yang mengandung banyak buah kurung.",
+        "prickles": "Batang Rosa umumnya memiliki duri semu. Dalam bahasa sehari-hari duri semu ini sering disebut duri, tetapi deskripsi botani membedakannya dari duri sejati."
       },
       "interestingFacts": [
         {
-          "title": "Red Rose is not one species",
-          "text": "The phrase Red Rose describes flower colour, not a single species. The genus Rosa contains many species and a very large diversity of cultivated hybrids and selections."
+          "title": "Mawar Merah bukan satu spesies",
+          "text": "Istilah Mawar Merah menggambarkan warna bunga, bukan satu spesies. Genus Rosa mencakup banyak spesies serta keragaman hibrida dan hasil seleksi budidaya."
         },
         {
-          "title": "Roses are prickly, not technically thorny",
-          "text": "Kew describes Rosa stems and branches as usually having prickles and/or thorns in its genus treatment, while horticultural sources commonly use 'thorns' in everyday language. The distinction can depend on the botanical context."
+          "title": "Mawar memiliki duri semu, bukan duri sejati secara botani",
+          "text": "Kew mendeskripsikan batang dan cabang Rosa sebagai umumnya memiliki duri semu dan/atau duri. Sumber hortikultura sering memakai istilah duri dalam bahasa sehari-hari; pembedaan botani bergantung pada konteks."
         },
         {
-          "title": "Rose hips are fruits",
-          "text": "Many roses form hips after flowering. The hip develops from the flower's receptacle and contains numerous achenes; hips can persist into autumn and provide food for birds in some landscapes."
+          "title": "Hip mawar adalah buah",
+          "text": "Banyak mawar membentuk hip setelah berbunga. Hip berkembang dari dasar bunga dan mengandung banyak buah kurung; pada sebagian lanskap dapat bertahan hingga musim gugur dan menjadi makanan bagi burung."
         },
         {
-          "title": "Wild roses and cultivated roses are very different in form",
-          "text": "Roses range from simple five-petalled wild flowers to highly selected modern cultivars with complex flower forms, including rosettes and many-petalled blooms."
+          "title": "Mawar liar dan mawar budidaya memiliki bentuk yang sangat beragam",
+          "text": "Mawar berkisar dari bunga liar sederhana dengan lima kelopak hingga kultivar modern hasil seleksi dengan bentuk bunga kompleks, termasuk bentuk roset dan bunga berkelopak banyak."
         },
         {
-          "title": "Colour does not define the taxonomy",
-          "text": "A red-flowered rose can belong to different species or cultivated lineages. Colour alone is therefore not enough to identify a rose botanically."
+          "title": "Warna tidak menentukan taksonomi",
+          "text": "Mawar berbunga merah dapat berasal dari spesies atau garis budidaya yang berbeda. Karena itu, warna saja tidak cukup untuk mengidentifikasi mawar secara botani."
         }
       ],
       "culturalNotes": [
         {
-          "title": "Love and romantic imagery",
-          "text": "Roses have long been associated with love and beauty in European and Mediterranean cultural traditions. Museum and historical sources document the rose as a recurring emblem of romantic love, while the exact meaning depends on period and context."
+          "title": "Citra cinta dan romantisme",
+          "text": "Mawar telah lama dikaitkan dengan cinta dan keindahan dalam tradisi budaya Eropa dan Mediterania. Sumber museum dan sejarah mendokumentasikan mawar sebagai lambang cinta romantis, sementara makna tepatnya bergantung pada periode dan konteks."
         },
         {
-          "title": "Medieval heraldry",
-          "text": "The rose became a prominent heraldic emblem in medieval Europe. The Metropolitan Museum of Art notes associations ranging from the Virgin Mary and the Five Wounds of Christ to romantic love, showing that the flower carried multiple meanings rather than one universal definition."
+          "title": "Heraldik abad pertengahan",
+          "text": "Mawar menjadi lambang heraldik penting di Eropa abad pertengahan. Metropolitan Museum of Art mencatat asosiasi dengan Perawan Maria, Lima Luka Kristus, hingga cinta romantis, menunjukkan bahwa bunga ini memiliki banyak makna dan bukan satu definisi universal."
         },
         {
-          "title": "The red and white roses of English history",
-          "text": "The red rose became associated with the House of Lancaster while the white rose was associated with the House of York in the fifteenth-century conflict later called the Wars of the Roses. The Tudor rose subsequently combined red and white imagery."
+          "title": "Mawar merah dan putih dalam sejarah Inggris",
+          "text": "Mawar merah dikaitkan dengan Wangsa Lancaster, sedangkan mawar putih dikaitkan dengan Wangsa York dalam konflik abad ke-15 yang kemudian dikenal sebagai Perang Mawar. Mawar Tudor kemudian menggabungkan citra merah dan putih."
         },
         {
-          "title": "Victorian language of flowers",
-          "text": "Victorian floriography assigned messages to flowers and flower colours. Smithsonian material records the red rose as a sign of passionate love within that particular nineteenth-century symbolic system."
+          "title": "Bahasa bunga pada era Victoria",
+          "text": "Floriografi Victoria memberikan pesan tertentu pada bunga dan warna bunga. Materi Smithsonian mencatat mawar merah sebagai lambang cinta yang penuh gairah dalam sistem simbolisme abad ke-19 tersebut."
         },
         {
-          "title": "A symbol shaped by context",
-          "text": "Historical sources show the rose appearing in religious art, heraldry, romantic imagery, literature, and political or national symbolism. Sunday Garden therefore treats symbolism as culturally situated rather than as a fixed botanical meaning."
+          "title": "Simbol yang dibentuk oleh konteks",
+          "text": "Sumber sejarah menunjukkan mawar hadir dalam seni religius, heraldik, citra romantis, sastra, serta simbolisme politik dan nasional. Karena itu, Sunday Garden memperlakukan simbolisme sebagai sesuatu yang terikat konteks budaya, bukan makna botani yang tetap."
         }
       ],
       "symbolism": [
-        "romantic love — documented especially in European and Victorian traditions",
-        "passionate love — documented in Victorian floriography",
-        "beauty and desire — recurring cultural associations",
-        "strength and vulnerability — an interpretive pairing often drawn from the contrast between the flower and prickly stems",
-        "heritage and allegiance — documented in medieval and English heraldic history"
+        "cinta romantis — terutama terdokumentasi dalam tradisi Eropa dan Victoria",
+        "cinta yang penuh gairah — terdokumentasi dalam floriografi Victoria",
+        "keindahan dan hasrat — asosiasi budaya yang berulang",
+        "kekuatan dan kerentanan — pasangan interpretatif yang muncul dari kontras antara bunga dan batang berduri semu",
+        "warisan dan kesetiaan — terdokumentasi dalam sejarah heraldik abad pertengahan dan Inggris"
       ],
-      "sundayGardenInterpretation": "The Red Rose can be read as a meeting point between openness and boundaries. Its flower invites attention through colour, form, and fragrance, while its prickly stems remind us that beauty does not require unlimited access. In Sunday Garden, that contrast can become a metaphor for someone who is willing to be seen, to feel deeply, and still to know where their boundaries are.",
+      "sundayGardenInterpretation": "Mawar Merah dapat dibaca sebagai titik temu antara keterbukaan dan batas. Bunganya menarik perhatian melalui warna, bentuk, dan aroma, sementara batang berdurinya mengingatkan bahwa keindahan tidak berarti semua orang harus mendapat akses tanpa batas. Di Sunday Garden, kontras itu dapat menjadi metafora bagi seseorang yang berani terlihat dan merasakan dengan dalam, tetapi tetap mengetahui batas dirinya.",
       "sources": [
         {
           "title": "Kew — Plants of the World Online: Rosa L.",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30002432-2/general-information",
-          "type": "Botanical / taxonomic reference"
+          "type": "Referensi botani / taksonomi"
         },
         {
           "title": "RHS — Roses (Rosa)",
           "url": "https://www.rhs.org.uk/plants/roses",
-          "type": "Horticultural / botanical reference"
+          "type": "Referensi hortikultura / botani"
         },
         {
           "title": "RHS — How to grow roses",
           "url": "https://www.rhs.org.uk/plants/roses/growing-guide/",
-          "type": "Horticultural / growth reference"
+          "type": "Referensi hortikultura / pertumbuhan"
         },
         {
           "title": "RHS — Roses and their colourful hips",
           "url": "https://www.rhs.org.uk/garden-inspiration/seasonal/rose-hips",
-          "type": "Horticultural / ecology reference"
+          "type": "Referensi hortikultura / ekologi"
         },
         {
           "title": "The Metropolitan Museum of Art — The Garden in Heraldry",
           "url": "https://www.metmuseum.org/ja/perspectives/medieval-garden-enclosed-garden-in-heraldry",
-          "type": "Museum / historical-cultural reference"
+          "type": "Referensi museum / sejarah budaya"
         },
         {
           "title": "Smithsonian Institution — Victorian romantic symbolism",
           "url": "https://repository.si.edu/bitstream/handle/10088/11087/SSHT-0055.pdf",
-          "type": "Museum / historical-cultural reference"
+          "type": "Referensi museum / sejarah budaya"
         },
         {
           "title": "National Trust — Roses in our collections",
           "url": "https://www.nationaltrust.org.uk/discover/history/art-collections/roses-in-art-and-collections-we-care-for",
-          "type": "Historical / cultural reference"
+          "type": "Referensi sejarah / budaya"
         }
       ],
       "classification": {
@@ -298,36 +298,38 @@
         "acceptedTaxon": "Rosa L."
       },
       "distribution": {
-        "nativeRange": "The genus Rosa is native across temperate and subtropical parts of the Northern Hemisphere.",
-        "introducedElsewhere": "Individual cultivated roses have been introduced and grown far beyond the native ranges of their source species; distribution therefore varies by species and cultivar.",
-        "distributionNote": "Because Red Rose is a colour category rather than one species, no single native range can be assigned to it. Kew's genus-level treatment gives a Northern Hemisphere native range for Rosa."
+        "nativeRange": "Genus Rosa berasal dari wilayah beriklim sedang hingga subtropis di Belahan Bumi Utara.",
+        "introducedElsewhere": "Mawar budidaya telah diintroduksi dan ditanam jauh di luar wilayah asli spesies asalnya; karena itu persebarannya berbeda menurut spesies dan kultivar.",
+        "distributionNote": "Karena Mawar Merah merupakan kategori berdasarkan warna, bukan satu spesies, tidak ada satu wilayah asli yang dapat ditetapkan untuknya. Perlakuan tingkat genus Kew memberikan wilayah asli Rosa di Belahan Bumi Utara."
       },
       "habitatProfile": {
-        "habitat": "Rosa species occupy a wide range of habitats, including woodland edges, scrub, grassland, hedgerows, and other temperate or subtropical environments, depending on species.",
-        "growthEnvironment": "Cultivated roses generally perform best in fertile, moisture-retentive but well-drained soil and sunny positions, while wild species have species-specific ecological requirements.",
-        "growthForm": "Woody perennial shrubs, climbers, ramblers, trailers, and related forms within Rosa."
+        "habitat": "Spesies Rosa menempati beragam habitat, termasuk tepi hutan, semak, padang rumput, pagar hidup, serta lingkungan beriklim sedang atau subtropis, bergantung pada spesies.",
+        "growthEnvironment": "Mawar budidaya umumnya tumbuh baik pada tanah subur yang mampu mempertahankan kelembapan tetapi memiliki drainase baik, serta lokasi yang mendapat banyak cahaya matahari. Spesies liar memiliki kebutuhan ekologis masing-masing.",
+        "growthForm": "Semak tahunan berkayu, tumbuhan memanjat, menjalar, menjuntai, dan bentuk terkait lainnya dalam Rosa."
       },
       "flowering": {
-        "flowerPosition": "Flowers may be solitary or borne in clusters such as corymbs, depending on species and cultivar.",
-        "flowerSize": "Size varies considerably among species and cultivars, so no single size is assigned to Red Rose as a colour category.",
-        "colour": "Red is one of the many flower colours found across cultivated roses; the precise shade ranges from crimson and scarlet to darker red tones depending on cultivar."
+        "flowerPosition": "Bunga dapat muncul tunggal atau berkelompok seperti payung bunga, bergantung pada spesies dan kultivar.",
+        "flowerSize": "Ukuran sangat bervariasi antarspesies dan kultivar, sehingga tidak ada satu ukuran yang ditetapkan untuk Mawar Merah sebagai kategori warna.",
+        "colour": "Merah merupakan salah satu dari banyak warna bunga pada mawar budidaya; nuansanya dapat berkisar dari merah tua dan merah terang hingga merah gelap bergantung pada kultivar.",
+        "pattern": "Pembungaan sangat bervariasi menurut spesies dan kultivar; sebagian mawar dapat berbunga berulang dalam kondisi yang sesuai.",
+        "note": "Musim dan pola berbunga tidak ditetapkan sebagai satu karakter universal untuk kategori Mawar Merah."
       },
       "reproduction": {
-        "flowers": "Flowers are bisexual in the general Rosa genus description, with numerous stamens and multiple carpels.",
-        "fruit": "After flowering, the receptacle can enlarge into a rose hip containing numerous achenes.",
-        "seeds": "Seeds are contained within the hip as achenes; seed production and fruiting vary with species, cultivar, pollination, and whether spent flowers are removed.",
-        "note": "The genus contains both wild species and extensively bred cultivars, so reproductive biology can differ among roses. This profile avoids assigning a single pollination mechanism to every Red Rose."
+        "flowers": "Dalam deskripsi umum Rosa, bunga berkelamin ganda dengan banyak benang sari dan sejumlah karpel.",
+        "fruit": "Setelah berbunga, dasar bunga dapat membesar menjadi hip mawar yang mengandung banyak buah kurung.",
+        "seeds": "Biji terdapat di dalam hip sebagai buah kurung; produksi biji dan buah berbeda menurut spesies, kultivar, penyerbukan, dan apakah bunga yang telah layu dibuang.",
+        "note": "Genus ini mencakup spesies liar dan banyak kultivar hasil pemuliaan, sehingga biologi reproduksinya dapat berbeda antarjenis. Profil ini tidak menetapkan satu mekanisme penyerbukan untuk semua Mawar Merah."
       },
       "lifeCycle": {
-        "persistence": "Roses are woody perennial plants. Individual plants can persist for years while producing seasonal shoots, leaves, flowers, and, when allowed, hips.",
-        "seasonalityNote": "Flowering season varies by species, climate, and cultivar. Some roses flower in one main flush, while others can flower repeatedly through the growing season."
+        "persistence": "Mawar merupakan tumbuhan berkayu tahunan; struktur batang dan akarnya dapat bertahan selama beberapa tahun, sementara pertumbuhan dan pembungaan baru berlangsung secara musiman.",
+        "seasonalityNote": "Waktu pembungaan berbeda menurut spesies, kultivar, iklim, dan kondisi pertumbuhan."
       },
       "ecology": {
-        "role": "Wild and cultivated roses can contribute flowers and fruits to garden and wider plant communities. Rose hips are eaten by birds and can help distribute seeds in some species.",
-        "caution": "Ecological relationships vary among Rosa species and cultivars, so this entry does not assign one universal pollinator or ecological role to every Red Rose."
+        "role": "Mawar liar dan budidaya dapat menyediakan bunga dan buah bagi komunitas tumbuhan di kebun atau habitat tertentu. Hip mawar juga dimakan burung dan pada beberapa spesies membantu penyebaran biji.",
+        "caution": "Tidak ada satu penyerbuk atau peran ekologis yang dapat digeneralisasi untuk seluruh Rosa tanpa dukungan sumber spesifik."
       },
       "conservation": {
-        "note": "A conservation status cannot be assigned to 'Red Rose' as a colour category. Individual wild Rosa species have their own distributions and conservation assessments, while cultivated roses are managed horticultural plants."
+        "note": "Status konservasi tidak dapat ditetapkan untuk Mawar Merah sebagai kategori warna. Spesies Rosa liar memiliki sebaran dan penilaian konservasi masing-masing, sedangkan mawar budidaya merupakan tanaman hortikultura yang dikelola."
       },
       "profileOrder": [
         "commonName",
@@ -354,33 +356,33 @@
         "phases": [
           {
             "id": "phase-01",
-            "name": "Phase 01",
-            "description": "A rose establishes a perennial woody framework from which new shoots arise."
+            "name": "Fase 01",
+            "description": "Tumbuhan membangun kerangka batang berkayu tahunan; tunas baru tumbuh dari struktur ini."
           },
           {
             "id": "phase-02",
-            "name": "Phase 02",
-            "description": "Depending on the species or cultivar, growth may form a shrub, climber, rambler, groundcover, or compact container plant."
+            "name": "Fase 02",
+            "description": "Daun berkembang pada tunas dan struktur vegetatif bertambah selama pertumbuhan aktif."
           },
           {
             "id": "phase-03",
-            "name": "Phase 03",
-            "description": "Leaves develop along the shoots and flowers are produced on new or established flowering growth, with flowering behaviour varying substantially among rose groups."
+            "name": "Fase 03",
+            "description": "Daun berkembang sepanjang tunas dan bunga muncul pada pertumbuhan baru atau batang yang telah terbentuk; pola pembungaan sangat bervariasi antar kelompok mawar."
           },
           {
             "id": "phase-04",
-            "name": "Phase 04",
-            "description": "If flowers are allowed to mature rather than being removed, many roses develop hips containing seeds."
+            "name": "Fase 04",
+            "description": "Setelah berbunga, sebagian bunga berkembang menjadi hip mawar dan tumbuhan mempertahankan struktur berkayu untuk siklus pertumbuhan berikutnya."
           }
         ]
       }
     },
     {
       "id": "pink-tulip",
-      "commonName": "Pink Tulip",
+      "commonName": "Tulip Merah Muda",
       "scientificName": "Tulipa spp.",
       "researchStatus": "complete",
-      "taxonomicNote": "Pink Tulip is a descriptive colour category, not a single botanical species. Pink flowers occur across cultivated tulips and can also occur in different species and hybrids. This record therefore uses the accepted genus Tulipa rather than assigning one species without evidence.",
+      "taxonomicNote": "Tulip Merah Muda adalah kategori warna deskriptif, bukan satu spesies botani. Bunga merah muda terdapat pada berbagai tulip budidaya dan juga dapat muncul pada spesies serta hibrida yang berbeda. Karena itu, catatan ini menggunakan genus Tulipa yang diterima, bukan menetapkan satu spesies tanpa bukti.",
       "taxonomy": {
         "kingdom": "Plantae",
         "order": "Liliales",
@@ -391,148 +393,151 @@
       },
       "family": "Liliaceae",
       "genus": "Tulipa",
-      "growthForm": "Bulbous geophyte — tulips persist through an underground bulb and produce seasonal above-ground leaves, stems and flowers.",
+      "growthForm": "Tumbuhan herba berumbi yang umumnya tumbuh musiman dan mengalami masa dormansi.",
       "morphology": {
-        "bulb": "Tulips grow from fleshy underground bulbs covered by a papery outer skin. The bulb stores resources for the next season.",
-        "roots": "Roots arise from the basal region of the bulb and support water and nutrient uptake after growth begins.",
-        "leaves": "Leaves are generally broad to narrow and strap-like, usually green to grey-green, and arise from the base of the plant.",
-        "stem": "Flowering stems rise above the foliage and commonly carry a single terminal flower in cultivated tulips, although form varies across the genus.",
-        "flower": "Tulip flowers vary greatly in size, shape and colour. Cup-shaped flowers are common, while cultivated forms include lily-flowered, fringed, parrot and peony-flowered types.",
-        "fruit": "After successful reproduction, a capsule can develop and contain seeds; many cultivated tulips are instead propagated vegetatively for reliable cultivar characteristics."
+        "bulb": "Umbi tersusun dari lapisan sisik berdaging yang menyimpan cadangan untuk pertumbuhan musim berikutnya.",
+        "roots": "Akar tumbuh dari bagian dasar umbi dan berfungsi menambatkan tumbuhan serta menyerap air dan unsur hara.",
+        "leaves": "Daun umumnya sederhana, memanjang, dan muncul dari pangkal tumbuhan; bentuk serta jumlahnya berbeda menurut jenis dan kultivar.",
+        "stem": "Batang pembungaan tumbuh di atas dedaunan dan umumnya membawa satu bunga terminal pada tulip budidaya, meskipun bentuknya bervariasi antarjenis.",
+        "flower": "Bunga tulip sangat bervariasi dalam ukuran, bentuk, dan warna. Bentuk seperti cangkir umum ditemukan, sementara kultivar juga dapat berbentuk lili, berjumbai, parrot, atau menyerupai peoni.",
+        "fruit": "Setelah penyerbukan, tulip dapat membentuk kapsul berisi biji, meskipun perbanyakan budidaya sering menggunakan umbi atau anakan."
       },
       "interestingFacts": [
         {
-          "title": "Pink is not a species name",
-          "text": "A pink tulip can belong to many cultivated tulip groups or species. Colour alone does not identify one species, which is why Sunday Garden keeps the record at Tulipa spp."
+          "title": "Merah muda adalah warna, bukan satu spesies",
+          "text": "Istilah Tulip Merah Muda mencakup banyak tulip dengan warna bunga serupa, bukan satu spesies tunggal."
         },
         {
-          "title": "Tulipa is a large genus",
-          "text": "Kew currently lists Tulipa as an accepted genus and its Plants of the World Online treatment includes 95 accepted species."
+          "title": "Tulip memiliki keragaman bentuk yang besar",
+          "text": "Genus Tulipa mencakup bentuk bunga dan kultivar yang sangat beragam, sehingga warna saja tidak cukup untuk menentukan identitas botani."
         },
         {
-          "title": "Tulips have underground storage",
-          "text": "The visible flower is seasonal; the plant persists through a bulb that stores resources between periods of above-ground growth."
+          "title": "Sebagian besar hidupnya berlangsung melalui umbi",
+          "text": "Umbi menyimpan cadangan yang memungkinkan tulip kembali tumbuh setelah masa dormansi dan menghasilkan daun serta bunga pada musim pertumbuhan berikutnya."
         },
         {
-          "title": "Cultivated forms are remarkably diverse",
-          "text": "RHS groups cultivated tulips into forms including lily-flowered, fringed, parrot and peony-flowered types, showing how much variation exists within the genus."
+          "title": "Tulip budidaya memiliki sejarah seleksi panjang",
+          "text": "Banyak bentuk tulip modern merupakan hasil seleksi dan pemuliaan selama sejarah budidaya yang panjang di berbagai wilayah."
         },
         {
-          "title": "Some tulips multiply naturally",
-          "text": "RHS notes that specialist tulips closely related to wild species often multiply in gardens, while many border tulips are less reliable at reflowering in their second year."
+          "title": "Tulip khusus dapat lebih mudah berbunga kembali",
+          "text": "RHS mencatat bahwa beberapa tulip khusus yang dekat dengan spesies liar dapat berkembang biak di kebun, sedangkan banyak tulip petak tanam kurang dapat diandalkan untuk berbunga kembali pada tahun kedua."
         },
         {
-          "title": "A pink form has been recorded within T. gesneriana",
-          "text": "Kew records Tulipa gesneriana var. rosea as a synonym of Tulipa gesneriana. This is one documented example of why a pink tulip should not automatically be treated as its own species."
+          "title": "Bentuk merah muda tercatat dalam T. gesneriana",
+          "text": "Kew mencatat Tulipa gesneriana var. rosea sebagai sinonim Tulipa gesneriana. Ini merupakan salah satu contoh terdokumentasi mengapa tulip merah muda tidak boleh otomatis dianggap sebagai spesies tersendiri."
         }
       ],
       "culturalNotes": [
         {
-          "title": "Ottoman floral culture",
-          "text": "Tulips became important motifs in Ottoman visual culture. The Metropolitan Museum documents tulips among the stylized floral motifs used on Iznik ceramics and Ottoman textiles."
+          "title": "Bahasa bunga",
+          "text": "Sumber Smithsonian Gardens mencatat bahwa tulip dapat memperoleh makna tertentu dalam tradisi bahasa bunga. Makna tersebut merupakan bagian dari tradisi simbolik, bukan sifat botani universal."
         },
         {
-          "title": "The Tulip Period",
-          "text": "The reign of Ahmed III (1703–1730) is commonly called the Tulip Period; the Metropolitan Museum notes that the flower’s popularity was reflected in floral decoration across textiles, illumination and architecture."
+          "title": "Tulip dalam sejarah budaya dan seni",
+          "text": "Tulip memiliki jejak penting dalam seni dan budaya Eropa serta Kekaisaran Utsmaniyah. Citra dan budidayanya berkembang dalam konteks sejarah yang berbeda-beda."
         },
         {
-          "title": "Arrival in western Europe",
-          "text": "The Metropolitan Museum records that tulips were imported into the Netherlands from Turkey in the 1580s and that Carolus Clusius helped establish their cultivation at Leiden."
+          "title": "Makna yang bergantung pada konteks",
+          "text": "Simbolisme tulip berubah menurut periode, warna, wilayah, dan tradisi. Sunday Garden memisahkan catatan budaya tersebut dari identitas botani tumbuhan."
         },
         {
-          "title": "Tulipomania and historical nuance",
-          "text": "Seventeenth-century Dutch fascination with rare tulips included intense speculation around particular bulbs. Museum and historical accounts often call this episode Tulipomania; later scholarship has challenged simplified stories that portray it as a straightforward economy-wide mania."
+          "title": "Tulipomania dan nuansa sejarah",
+          "text": "Ketertarikan masyarakat Belanda pada tulip langka pada abad ke-17 mencakup spekulasi intens terhadap umbi tertentu. Sumber museum dan sejarah sering menyebut episode ini Tulipomania; penelitian berikutnya mempertanyakan kisah sederhana yang menggambarkannya sebagai kegilaan ekonomi yang menyeluruh."
         },
         {
           "title": "A decorative language across cultures",
-          "text": "Museum collections show tulip motifs appearing in Ottoman ceramics, textiles and other decorative arts, while European botanical art later documented and celebrated cultivated tulip varieties."
+          "text": "Koleksi museum menunjukkan motif tulip muncul dalam keramik, tekstil, dan seni dekoratif Utsmaniyah, sementara seni botani Eropa kemudian mendokumentasikan dan merayakan beragam tulip budidaya."
         }
       ],
       "symbolism": [
-        "passion — documented in a Smithsonian Gardens language-of-flowers resource",
-        "beauty and cultivated variety — interpretive rather than a universal botanical meaning",
-        "renewal and seasonal return — Sunday Garden interpretation based on the plant’s seasonal growth cycle"
+        "gairah — terdokumentasi dalam sumber bahasa bunga Smithsonian Gardens",
+        "keindahan dan keragaman hasil budidaya — interpretasi, bukan makna botani universal",
+        "pembaruan dan kembalinya musim — interpretasi Sunday Garden berdasarkan siklus pertumbuhan musiman tulip"
       ],
-      "sundayGardenInterpretation": "A tulip reminds us that a visible bloom can come from something that spends much of its life beneath the surface. Its colour may be soft, vivid, unusual or ordinary, but the flower does not need to explain its shade before it is allowed to bloom. Pink Tulip, in particular, is not one fixed botanical identity; it is a colour shared across many cultivated forms. That makes it a fitting Sunday Garden metaphor for people who may share a feeling while carrying completely different stories. The flower is recognizable from a distance, but the life behind the bloom is always more specific.",
+      "sundayGardenInterpretation": "Tulip mengingatkan bahwa bunga yang terlihat di permukaan dapat berasal dari sesuatu yang menghabiskan sebagian besar hidupnya di bawah permukaan. Warnanya boleh lembut, kuat, tidak biasa, atau sederhana; bunga tidak perlu menjelaskan warnanya sebelum diizinkan mekar. Tulip Merah Muda bukan satu identitas botani yang tetap, melainkan warna yang dimiliki banyak bentuk budidaya. Itu menjadikannya metafora Sunday Garden bagi orang-orang yang mungkin memiliki perasaan serupa tetapi membawa cerita yang sepenuhnya berbeda. Bunganya dapat dikenali dari jauh, tetapi kehidupan di balik mekarnya selalu lebih spesifik.",
       "sources": [
         {
           "title": "Kew — Plants of the World Online: Tulipa L.",
           "url": "https://powo.science.kew.org/taxon/24874-1",
-          "type": "Botanical / taxonomic reference"
+          "type": "Referensi botani / taksonomi"
         },
         {
           "title": "Kew — Plants of the World Online: Tulipa gesneriana L.",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A542923-1",
-          "type": "Botanical / taxonomic reference"
+          "type": "Referensi botani / taksonomi"
         },
         {
           "title": "Kew — Plants of the World Online: Tulipa gesneriana var. rosea",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A77294078-1",
-          "type": "Botanical / taxonomic reference"
+          "type": "Referensi botani / taksonomi"
         },
         {
           "title": "RHS — Tulip: How to grow tulips",
           "url": "https://www.rhs.org.uk/plants/tulip/growing-guide",
-          "type": "Horticultural reference"
+          "type": "Referensi hortikultura"
         },
         {
           "title": "RHS — Tulip (Tulipa) Plant Guide",
           "url": "https://www.rhs.org.uk/plants/tulip",
-          "type": "Horticultural reference"
+          "type": "Referensi hortikultura"
         },
         {
           "title": "Smithsonian Gardens — The Meaning of Flowers",
           "url": "https://gardens.si.edu/meaning-of-flowers",
-          "type": "Cultural / symbolism reference"
+          "type": "Referensi budaya / simbolisme"
         },
         {
           "title": "The Metropolitan Museum of Art — The Art of the Ottomans after 1600",
           "url": "https://www.metmuseum.org/zh/essays/the-art-of-the-ottomans-after-1600",
-          "type": "Museum / cultural history reference"
+          "type": "Referensi museum / sejarah budaya"
         },
         {
           "title": "The Metropolitan Museum of Art — Four Tulips by Jacob Marrel",
           "url": "https://www.metmuseum.org/art/collection/search/337769",
-          "type": "Museum / European tulip history reference"
+          "type": "Referensi museum / sejarah tulip Eropa"
         },
         {
           "title": "Smithsonian Magazine — There Never Was a Real Tulip Fever",
           "url": "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
-          "type": "Historical context reference"
+          "type": "Referensi konteks sejarah"
         }
       ],
       "distribution": {
-        "nativeRange": "The genus Tulipa is native across a broad region from south-central and eastern Europe through the Mediterranean region to Mongolia, according to Kew.",
-        "introducedElsewhere": "Kew records Tulipa as introduced in several regions outside its native range, including parts of western and northern Europe, North America and Korea.",
-        "distributionNote": "These ranges apply to the genus Tulipa, not specifically to every pink-flowered cultivated tulip. Cultivars may have complex horticultural histories and are widely grown outside the genus’s native range."
+        "nativeRange": "Genus Tulipa berasal dari wilayah luas dari Eropa selatan-tengah dan timur melalui kawasan Mediterania hingga Mongolia, menurut Kew.",
+        "introducedElsewhere": "Kew mencatat Tulipa diintroduksi ke beberapa wilayah di luar wilayah aslinya, termasuk bagian Eropa barat dan utara, Amerika Utara, serta Korea.",
+        "distributionNote": "Wilayah ini berlaku untuk genus Tulipa, bukan khusus untuk setiap tulip merah muda budidaya. Kultivar dapat memiliki sejarah hortikultura yang kompleks dan banyak ditanam di luar wilayah asli genus."
       },
       "habitatProfile": {
-        "habitat": "Tulipa species occupy a variety of terrestrial habitats across their native range, while cultivated tulips are commonly grown in gardens, borders, rock gardens and containers.",
-        "growthEnvironment": "Many cultivated tulips perform best with good drainage, full sun and a seasonal pattern that provides cool, moist growth conditions followed by a relatively dry summer rest.",
+        "habitat": "Spesies Tulipa menempati beragam habitat daratan di wilayah aslinya, sementara tulip budidaya umumnya ditanam di kebun, petak tanam, taman batu, dan wadah.",
+        "growthEnvironment": "Tulip umumnya memerlukan media dengan drainase baik dan kondisi cahaya yang sesuai dengan kelompok serta iklimnya.",
         "growthForm": "Bulbous geophyte."
       },
       "flowering": {
-        "flowerPosition": "Flowers are borne on upright stems, commonly singly at the top of the stem in cultivated tulips.",
-        "flowerSize": "Size varies substantially among species and cultivars; no single universal size is assigned to the Pink Tulip category.",
-        "colour": "Pink is one of many flower colours found in cultivated tulips; colour intensity and pattern vary among cultivars.",
-        "season": "Most garden tulips flower in mid to late spring, although timing varies with cultivar, species and climate."
+        "flowerPosition": "Bunga biasanya muncul di ujung batang pembungaan di atas dedaunan.",
+        "flowerSize": "Ukuran sangat bervariasi menurut spesies dan kultivar; tidak ada satu ukuran universal untuk kategori Tulip Merah Muda.",
+        "colour": "Merah muda dalam berbagai nuansa; warna dapat berbeda menurut spesies dan kultivar.",
+        "season": "Sebagian besar tulip taman berbunga pada pertengahan hingga akhir musim semi, meskipun waktunya berbeda menurut kultivar, spesies, dan iklim."
       },
       "reproduction": {
-        "sexual": "Tulips can reproduce sexually by seed. Specialist tulips are more commonly propagated this way than many border cultivars.",
-        "vegetative": "Tulips can also multiply through offsets — young bulbs that form around the parent bulb. This is especially useful for maintaining cultivated forms.",
-        "note": "Seed-grown tulips can take several years to reach flowering size, while offsets provide a way to clone or increase established bulbs more predictably."
+        "sexual": "Tulip dapat bereproduksi secara seksual melalui biji. Tulip khusus lebih sering diperbanyak dengan cara ini dibanding banyak kultivar petak tanam.",
+        "vegetative": "Tulip juga dapat berkembang biak melalui anakan, yaitu umbi muda yang tumbuh di sekitar umbi induk. Cara ini berguna untuk mempertahankan bentuk budidaya.",
+        "note": "Tulip dapat bereproduksi secara seksual melalui biji dan secara vegetatif melalui organ umbi pada kondisi yang sesuai.",
+        "flowers": "Bunga memiliki benang sari dan putik yang memungkinkan reproduksi seksual melalui penyerbukan.",
+        "fruit": "Setelah penyerbukan, kapsul dapat berkembang dan menghasilkan biji.",
+        "seeds": "Biji berkembang di dalam kapsul; dalam budidaya, tulip juga sering diperbanyak melalui umbi dan anakan."
       },
       "lifeCycle": {
-        "persistence": "The bulb allows the plant to survive periods when leaves and flowers are absent. Above-ground growth emerges seasonally, flowers, then the foliage dies back after replenishing the bulb.",
-        "seasonalityNote": "Exact timing depends on species, cultivar and climate. RHS describes most garden tulips as flowering in mid to late spring and notes a summer dormant period for many tulips."
+        "persistence": "Tulip merupakan tumbuhan berumbi yang mengalami pertumbuhan musiman dan masa dormansi.",
+        "seasonalityNote": "Waktu pertumbuhan dan pembungaan berbeda menurut spesies, kultivar, dan iklim."
       },
       "ecology": {
-        "role": "Tulips are terrestrial flowering plants that contribute seasonal flowers and reproductive resources to their local environments. Exact ecological interactions vary among species and regions.",
-        "caution": "Because Pink Tulip is a broad horticultural category, this record does not assign one universal pollinator, habitat community or ecological role to every pink-flowered tulip."
+        "role": "Tulip berbunga berinteraksi dengan organisme di sekitarnya melalui bunga, serbuk sari, nektar, dan struktur vegetatifnya; peran ekologis spesifik berbeda antarspesies.",
+        "caution": "Karena Tulip Merah Muda merupakan kategori hortikultura yang luas, catatan ini tidak menetapkan satu penyerbuk, komunitas habitat, atau peran ekologis universal untuk semua tulip berbunga merah muda."
       },
       "conservation": {
-        "note": "No single conservation status is assigned here because Pink Tulip is a horticultural colour category rather than one species. Conservation needs differ among wild Tulipa species; cultivated tulips should not be treated as a proxy for the status of their wild relatives.",
-        "wildSpeciesNote": "Kew’s genus-level treatment contains many accepted species, including species with restricted native ranges. Conservation assessment should therefore be performed at species level when discussing a particular wild tulip."
+        "note": "Tidak ada satu status konservasi untuk kategori Tulip Merah Muda. Kebutuhan konservasi berbeda antarspesies Tulipa liar; tulip budidaya tidak boleh digunakan sebagai pengganti status kerabat liarnya.",
+        "wildSpeciesNote": "Perlakuan tingkat genus Kew mencakup banyak spesies yang diterima, termasuk spesies dengan wilayah asli terbatas. Karena itu, penilaian konservasi sebaiknya dilakukan pada tingkat spesies ketika membahas tulip liar tertentu."
       },
       "profileOrder": [
         "commonName",
@@ -550,38 +555,38 @@
         "phases": [
           {
             "id": "phase-01",
-            "name": "Phase 01",
-            "description": "The bulb remains dormant through part of the year and stores reserves underground."
+            "name": "Fase 01",
+            "description": "Umbi menyimpan cadangan selama masa dormansi."
           },
           {
             "id": "phase-02",
-            "name": "Phase 02",
-            "description": "With suitable seasonal conditions, leaves emerge and the plant develops a flowering stem."
+            "name": "Fase 02",
+            "description": "Daun dan batang baru tumbuh dari umbi ketika musim pertumbuhan dimulai."
           },
           {
             "id": "phase-03",
-            "name": "Phase 03",
-            "description": "Most cultivated tulips flower in mid to late spring, although flowering time varies by type and climate."
+            "name": "Fase 03",
+            "description": "Bunga berkembang di ujung batang pembungaan; bentuk dan warna bergantung pada spesies atau kultivar."
           },
           {
             "id": "phase-04",
-            "name": "Phase 04",
-            "description": "After flowering, the foliage continues to photosynthesise and replenish the bulb before gradually yellowing and dying back."
+            "name": "Fase 04",
+            "description": "Setelah berbunga, dedaunan terus berfotosintesis dan mengisi kembali cadangan umbi sebelum menguning dan mati kembali."
           },
           {
             "id": "phase-05",
-            "name": "Phase 05",
-            "description": "Many specialist tulips can persist and multiply in favourable conditions, while many bedding tulips are treated as seasonal displays because reliable reflowering is not guaranteed."
+            "name": "Fase 05",
+            "description": "Sebagian tulip khusus dapat bertahan dan berkembang biak dalam kondisi sesuai, sedangkan banyak tulip hamparan diperlakukan sebagai tanaman musiman karena pembungaan ulang tidak selalu dapat diandalkan."
           }
         ]
       }
     },
     {
       "id": "white-lily",
-      "commonName": "White Lily",
+      "commonName": "Lili Putih",
       "scientificName": "Lilium spp.",
       "researchStatus": "complete",
-      "taxonomicNote": "White Lily is a colour/common-category description rather than a single species. The genus Lilium contains multiple white-flowered species and cultivars. Lilium candidum is one well-documented species whose common names include white lily, but the Gardener entry does not provide enough evidence to identify the flower as that species.",
+      "taxonomicNote": "Lili Putih adalah deskripsi kategori warna, bukan satu spesies. Genus Lilium mencakup banyak spesies dan kultivar berbunga putih. Lilium candidum merupakan salah satu spesies yang terdokumentasi baik dan memiliki nama umum lili putih, tetapi data Gardener tidak cukup untuk mengidentifikasi bunganya sebagai spesies tersebut.",
       "taxonomy": {
         "kingdom": "Plantae",
         "order": "Liliales",
@@ -590,114 +595,114 @@
         "acceptedName": "Lilium Tourn. ex L.",
         "synonyms": []
       },
-      "growthForm": "Perennial bulbous geophytes; the genus produces annual leafy shoots from multi-scaled bulbs.",
+      "growthForm": "Geofit tahunan berumbi; genus ini menghasilkan tunas berdaun setiap tahun dari umbi yang terdiri atas banyak sisik.",
       "morphology": {
-        "roots": "Perennial roots arise from the bulb; some lilies can also form roots near the stem base.",
-        "bulb": "Bulbs are made of overlapping fleshy scales and, unlike tunicate bulbs such as onions, generally lack a complete tunic.",
-        "stem": "Stems are generally erect and leafy, usually unbranched.",
-        "leaves": "Leaves are simple and parallel-veined, arranged alternately or in whorls depending on species.",
-        "flower": "Lilium flowers vary greatly in shape and colour. They may be trumpet-, bowl-, funnel- or Turk’s-cap-shaped; white is one of the colours represented across the genus.",
-        "fruit": "The fruit is generally a capsule containing numerous seeds."
+        "roots": "Akar tahunan tumbuh dari umbi; sebagian lili juga dapat membentuk akar di dekat pangkal batang.",
+        "bulb": "Umbi tersusun dari sisik berdaging yang saling bertumpuk dan, berbeda dari umbi berlapis seperti bawang, umumnya tidak memiliki selubung utuh.",
+        "stem": "Batang umumnya tegak dan berdaun, biasanya tidak bercabang.",
+        "leaves": "Daun sederhana dengan urat sejajar, tersusun berseling atau berkarang bergantung pada spesies.",
+        "flower": "Bunga Lilium sangat beragam dalam bentuk dan warna. Bunga dapat berbentuk terompet, mangkuk, corong, atau topi Turki; putih merupakan salah satu warna yang terdapat dalam genus ini.",
+        "fruit": "Buah umumnya berupa kapsul yang berisi banyak biji."
       },
       "interestingFacts": [
         {
-          "title": "White Lily is not one species",
-          "text": "The name can describe several white-flowered lilies. The Sunday Garden record therefore stays at the genus level rather than assigning one species without evidence."
+          "title": "Lili Putih bukan satu spesies",
+          "text": "Nama ini dapat merujuk pada beberapa lili berbunga putih. Karena itu, catatan Sunday Garden tetap pada tingkat genus dan tidak menetapkan satu spesies tanpa bukti."
         },
         {
-          "title": "Lilium is a true-lily genus",
-          "text": "Kew treats Lilium as an accepted genus in Liliaceae. Its native range extends across temperate parts of the Northern Hemisphere to the northern Philippines."
+          "title": "Lilium adalah genus lili sejati",
+          "text": "Kew menerima Lilium sebagai genus dalam famili Liliaceae. Wilayah aslinya membentang di kawasan beriklim sedang Belahan Bumi Utara hingga Filipina bagian utara."
         },
         {
-          "title": "Madonna lily is one specific example",
-          "text": "Lilium candidum is an accepted species in Kew and is commonly known as Madonna lily; RHS also lists white lily among its common names."
+          "title": "Madonna lily adalah salah satu contoh spesifik",
+          "text": "Lilium candidum merupakan spesies yang diterima Kew dan umum dikenal sebagai Madonna lily; RHS juga mencantumkan lili putih sebagai salah satu nama umumnya."
         },
         {
-          "title": "Lilies have many flower forms",
-          "text": "RHS describes trumpet, bowl, funnel-shaped and Turk’s-cap flowers across cultivated lilies, showing why colour alone is not enough to identify a species."
+          "title": "Lili memiliki banyak bentuk bunga",
+          "text": "RHS mendeskripsikan bentuk terompet, mangkuk, corong, dan topi Turki pada lili budidaya. Ini menunjukkan bahwa warna saja tidak cukup untuk menentukan spesies."
         }
       ],
       "culturalNotes": [
         {
-          "title": "The white lily in European Christian art",
-          "text": "White lilies have a long documented association with Christian visual culture, particularly representations of purity and the Virgin Mary. These meanings belong to specific artistic and religious traditions rather than functioning as universal botanical meanings."
+          "title": "Lili putih dalam seni Kristen Eropa",
+          "text": "Lili putih memiliki hubungan historis yang panjang dengan budaya visual Kristen, terutama dalam representasi kemurnian dan Perawan Maria. Makna ini berasal dari tradisi seni dan agama tertentu, bukan makna botani universal."
         },
         {
-          "title": "Madonna lily as a historical species",
-          "text": "Lilium candidum has a long history in cultivation and European cultural imagery. Its common names include Madonna lily and Annunciation lily."
+          "title": "Madonna lily sebagai spesies historis",
+          "text": "Lilium candidum memiliki sejarah panjang dalam budidaya dan citra budaya Eropa. Nama umumnya mencakup Madonna lily dan Annunciation lily."
         },
         {
-          "title": "A flower with multiple cultural meanings",
-          "text": "Smithsonian Libraries describes lilies as culturally complex: white forms have been associated with innocence, chastity and purity of heart, while other lily colours and contexts have carried different associations."
+          "title": "Bunga dengan beragam makna budaya",
+          "text": "Smithsonian Libraries menggambarkan lili sebagai bunga yang memiliki konteks budaya kompleks: bentuk putih dikaitkan dengan kepolosan, kesucian, dan kemurnian hati, sementara warna dan konteks lain membawa asosiasi berbeda."
         }
       ],
       "symbolism": [
-        "purity — in particular European Christian and Victorian traditions",
-        "innocence — documented in historical flower symbolism",
-        "chastity — documented in historical religious and floral symbolism",
-        "renewal or life — in some cultural contexts, especially where the lily appears in life-cycle imagery"
+        "kemurnian — khususnya dalam tradisi Kristen Eropa dan Victoria",
+        "kepolosan — terdokumentasi dalam sejarah simbolisme bunga",
+        "kesucian — terdokumentasi dalam simbolisme religius dan bahasa bunga",
+        "pembaruan atau kehidupan — dalam beberapa konteks budaya, terutama ketika lili hadir dalam citra siklus kehidupan"
       ],
-      "sundayGardenInterpretation": "White Lily is a reminder that being gentle does not require being fragile. Its whiteness can be read as a quiet visual language of clarity and sincerity, while the botanical reality beneath that appearance is more varied: many different lilies can bloom white. In Sunday Garden, that becomes a small distinction worth keeping — what we see may be simple, while the life behind it can be much more complex.",
+      "sundayGardenInterpretation": "Lili Putih mengingatkan bahwa menjadi lembut tidak berarti harus rapuh. Warna putihnya dapat dibaca sebagai bahasa visual yang tenang tentang kejernihan dan ketulusan, sementara kenyataan botani di baliknya jauh lebih beragam: banyak lili berbeda dapat berbunga putih. Di Sunday Garden, perbedaan kecil itu layak dipertahankan — apa yang terlihat mungkin sederhana, tetapi kehidupan di baliknya dapat jauh lebih kompleks.",
       "sources": [
         {
           "title": "Kew — Plants of the World Online: Lilium",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30009317-2/general-information",
-          "type": "Botanical reference"
+          "type": "Referensi botani"
         },
         {
           "title": "Kew — Plants of the World Online: Lilium candidum",
           "url": "https://powo.science.kew.org/taxon/537512-1",
-          "type": "Species reference"
+          "type": "Referensi spesies"
         },
         {
           "title": "Kew — Plants of the World Online: Liliaceae",
           "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30000259-2/general-information",
-          "type": "Family reference"
+          "type": "Referensi famili"
         },
         {
           "title": "RHS — Lilies",
           "url": "https://www.rhs.org.uk/plants/lilies",
-          "type": "Horticultural reference"
+          "type": "Referensi hortikultura"
         },
         {
           "title": "RHS — Lilium candidum / Madonna lily",
           "url": "https://www.rhs.org.uk/plants/10162/lilium-candidum-%28ixb-a%29-madonna-lily-annunciation-lily/details",
-          "type": "Species and cultivation reference"
+          "type": "Referensi spesies dan budidaya"
         },
         {
           "title": "Smithsonian Libraries — Lily / Marcia Reiss",
           "url": "https://www.si.edu/object/lily-marcia-reiss%3Asiris_sil_1018845",
-          "type": "Cultural reference"
+          "type": "Referensi budaya"
         }
       ],
       "distribution": {
-        "nativeRange": "The genus Lilium is native from temperate parts of the Northern Hemisphere to the northern Philippines, with major diversity in Eastern Asia. Exact ranges differ by species.",
-        "introducedElsewhere": "Individual Lilium species and cultivars are widely cultivated outside their native ranges.",
-        "distributionNote": "Because White Lily is a category rather than a species, no single native range should be assigned to the Gardener’s flower."
+        "nativeRange": "Genus Lilium berasal dari wilayah beriklim sedang Belahan Bumi Utara hingga Filipina bagian utara, dengan keragaman utama di Asia Timur. Wilayah tepatnya berbeda antarspesies.",
+        "introducedElsewhere": "Spesies dan kultivar Lilium secara luas dibudidayakan di luar wilayah aslinya.",
+        "distributionNote": "Karena Lili Putih merupakan kategori, bukan spesies, tidak ada satu wilayah asli yang seharusnya ditetapkan untuk bunga Gardener."
       },
       "habitatProfile": {
-        "habitat": "Species of Lilium occupy varied habitats; cultivated lilies occur in gardens, borders and containers, while wild species occur in diverse temperate environments.",
-        "growthEnvironment": "RHS notes that cultivated lilies generally prefer moist, well-drained soil, with site preferences varying among species.",
-        "growthForm": "Perennial bulbous geophyte."
+        "habitat": "Spesies Lilium menempati beragam habitat; lili budidaya tumbuh di kebun, petak tanam, dan wadah, sedangkan spesies liar hidup di berbagai lingkungan beriklim sedang.",
+        "growthEnvironment": "RHS mencatat bahwa lili budidaya umumnya menyukai tanah lembap dengan drainase baik, dengan kebutuhan lokasi yang berbeda antarspesies.",
+        "growthForm": "Geofit tahunan berumbi."
       },
       "flowering": {
-        "pattern": "Flowering varies substantially by species and cultivar; cultivated lilies are commonly summer-flowering, while exact timing depends on the taxon and climate.",
-        "note": "Do not infer the flowering season of the Gardener’s White Lily without a species or cultivar identification."
+        "pattern": "Pembungaan sangat bervariasi menurut spesies dan kultivar. Lili budidaya umumnya berbunga pada musim panas, tetapi waktu tepatnya bergantung pada takson dan iklim.",
+        "note": "Jangan menyimpulkan musim berbunga Lili Putih milik Gardener tanpa identifikasi spesies atau kultivar."
       },
       "reproduction": {
-        "sexual": "Flowers can reproduce through pollination and seed formation; the resulting capsule contains seeds.",
-        "vegetative": "Lilies can also be propagated vegetatively, including by offsets in appropriate taxa and cultivation systems."
+        "sexual": "Bunga dapat bereproduksi melalui penyerbukan dan pembentukan biji; kapsul yang terbentuk berisi biji.",
+        "vegetative": "Lili juga dapat diperbanyak secara vegetatif, termasuk melalui anakan pada takson dan sistem budidaya tertentu."
       },
       "lifeCycle": {
-        "summary": "Perennial bulb → seasonal shoot and leaf growth → flowering → seed development where pollinated → dormancy/rest period → renewed growth."
+        "summary": "Umbi tahunan → pertumbuhan tunas dan daun musiman → pembungaan → perkembangan biji setelah penyerbukan → dormansi atau masa istirahat → pertumbuhan kembali."
       },
       "ecology": {
-        "pollination": "Flower shape, scent and nectar-related structures vary among Lilium species and can interact with different pollinators.",
-        "role": "Lilium flowers contribute nectar and pollen resources within their native ecosystems, while cultivated forms function primarily as ornamental plants."
+        "pollination": "Bentuk bunga, aroma, dan struktur yang berkaitan dengan nektar berbeda antarspesies Lilium dan dapat berinteraksi dengan berbagai penyerbuk.",
+        "role": "Bunga Lilium menyediakan sumber nektar dan serbuk sari dalam ekosistem aslinya, sedangkan bentuk budidaya terutama berfungsi sebagai tanaman hias."
       },
       "conservation": {
-        "status": "No single conservation status applies to “White Lily” as a category. Conservation status must be assessed species by species.",
-        "note": "Kew lists Lilium candidum as an accepted species and provides species-level distribution and conservation information; this cannot be generalized to all white-flowered lilies."
+        "status": "Tidak ada satu status konservasi untuk kategori Lili Putih. Status konservasi harus dinilai per spesies.",
+        "note": "Kew mencantumkan Lilium candidum sebagai spesies yang diterima dan menyediakan informasi sebaran serta konservasi tingkat spesies; informasi tersebut tidak dapat digeneralisasikan untuk semua lili berbunga putih."
       },
       "profileOrder": [
         "commonName",
@@ -717,33 +722,33 @@
         "phases": [
           {
             "id": "phase-01",
-            "name": "Phase 01",
-            "description": "The plant persists underground as a bulb through an annual cycle of growth."
+            "name": "Fase 01",
+            "description": "Tumbuhan bertahan di bawah tanah sebagai umbi melalui siklus pertumbuhan tahunan."
           },
           {
             "id": "phase-02",
-            "name": "Phase 02",
-            "description": "A leafy stem emerges from the bulb and develops its characteristic foliage."
+            "name": "Fase 02",
+            "description": "Batang berdaun muncul dari umbi dan mengembangkan dedaunan khasnya."
           },
           {
             "id": "phase-03",
-            "name": "Phase 03",
-            "description": "Flowers form toward the end of the stem, with shape, fragrance, number and flowering season varying among species and cultivars."
+            "name": "Fase 03",
+            "description": "Bunga terbentuk mendekati ujung batang; bentuk, aroma, jumlah, dan musim berbunga berbeda antarspesies dan kultivar."
           },
           {
             "id": "phase-04",
-            "name": "Phase 04",
-            "description": "After flowering, fertilised flowers can develop capsules and seeds while the plant replenishes its underground reserves for the next growth cycle."
+            "name": "Fase 04",
+            "description": "Setelah berbunga, bunga yang dibuahi dapat membentuk kapsul dan biji sementara tumbuhan mengisi kembali cadangan bawah tanah untuk siklus berikutnya."
           }
         ]
       }
     },
     {
       "id": "pink-white-lily",
-      "commonName": "Pink & White Lily",
+      "commonName": "Lili Merah Muda & Putih",
       "scientificName": "Lilium spp.",
       "researchStatus": "complete",
-      "taxonomicNote": "Pink & White Lily is a descriptive colour/pattern category, not a single species. The genus Lilium contains many species and cultivars with white flowers, pink flushing, spots, stripes, or combinations of colours.",
+      "taxonomicNote": "Lili Merah Muda & Putih adalah kategori deskriptif berdasarkan warna dan pola, bukan satu spesies. Genus Lilium mencakup banyak spesies dan kultivar dengan bunga putih, semburat merah muda, bintik, garis, atau kombinasi warna.",
       "taxonomy": {
         "kingdom": "Plantae",
         "order": "Liliales",
@@ -752,93 +757,93 @@
         "acceptedName": "Lilium Tourn. ex L.",
         "synonyms": []
       },
-      "growthForm": "Bulbous perennial herb.",
+      "growthForm": "Herba tahunan berumbi.",
       "morphology": {
-        "roots": "Roots develop from the bulb and stem base; some lilies also produce roots along the lower stem.",
-        "stem": "Erect, leafy stems arise from the bulb.",
-        "leaves": "Leaves may be arranged alternately, spirally, or in whorls depending on species.",
-        "flower": "Flowers can be trumpet-, bowl-, funnel-, or Turk’s-cap-shaped; colours include white, pink and many combinations.",
-        "fruit": "Lilies produce capsules containing seeds."
+        "roots": "Akar berkembang dari umbi dan pangkal batang; sebagian lili juga membentuk akar di sepanjang bagian bawah batang.",
+        "stem": "Batang tegak dan berdaun tumbuh dari umbi.",
+        "leaves": "Daun dapat tersusun berseling, spiral, atau berkarang bergantung pada spesies.",
+        "flower": "Bunga dapat berbentuk terompet, mangkuk, corong, atau topi Turki; warnanya mencakup putih, merah muda, dan berbagai kombinasi.",
+        "fruit": "Lili menghasilkan kapsul yang berisi biji."
       },
       "interestingFacts": [
         {
-          "title": "The colour combination is real",
-          "text": "RHS documents Lilium regale with white trumpet flowers flushed with pink and Lilium Muscadet with white flowers carrying a pink flush and dark pink speckles."
+          "title": "Kombinasi warna ini benar-benar ditemukan",
+          "text": "RHS mendokumentasikan Lilium regale dengan bunga terompet putih yang memiliki semburat merah muda dan Lilium Muscadet dengan bunga putih, semburat merah muda, serta bintik merah muda tua."
         },
         {
-          "title": "It is not one species",
-          "text": "The label Pink & White Lily can describe multiple Lilium species and cultivated selections."
+          "title": "Ini bukan satu spesies",
+          "text": "Label Lili Merah Muda & Putih dapat menggambarkan beberapa spesies Lilium dan pilihan budidaya."
         },
         {
-          "title": "Lily flowers are highly diverse",
-          "text": "RHS describes trumpet, bowl, funnel-shaped and Turk’s-cap flowers across the genus, with colours ranging from white and pastels to bold bicolours."
+          "title": "Bunga lili sangat beragam",
+          "text": "RHS mendeskripsikan bunga berbentuk terompet, mangkuk, corong, dan topi Turki di seluruh genus, dengan warna dari putih dan pastel hingga kombinasi dua warna yang tegas."
         }
       ],
       "culturalNotes": [
         {
-          "title": "A category rather than a historical name",
-          "text": "Pink & White Lily is treated here as a visual category. Cultural associations should therefore be attached to documented species, traditions, artworks or flower-language sources rather than presented as a universal meaning."
+          "title": "Kategori, bukan nama historis",
+          "text": "Lili Merah Muda & Putih diperlakukan di sini sebagai kategori visual. Karena itu, asosiasi budaya sebaiknya dikaitkan dengan spesies, tradisi, karya seni, atau sumber bahasa bunga yang terdokumentasi, bukan disajikan sebagai makna universal."
         }
       ],
       "symbolism": [
-        "beauty and affection in selected flower-language traditions",
-        "purity or innocence in traditions associated with white lilies",
-        "personal meaning defined by the Gardener"
+        "keindahan dan kasih sayang dalam tradisi bahasa bunga tertentu",
+        "kemurnian atau kepolosan dalam tradisi yang berkaitan dengan lili putih",
+        "makna pribadi yang ditentukan oleh Gardener"
       ],
-      "sundayGardenInterpretation": "Pink and white can coexist without one needing to erase the other. For Sunday Garden, the flower becomes a quiet reminder that tenderness and clarity can share the same petals, while the meaning ultimately belongs to the person who chose it.",
+      "sundayGardenInterpretation": "Merah muda dan putih dapat hidup berdampingan tanpa salah satunya harus menghapus yang lain. Bagi Sunday Garden, bunga ini menjadi pengingat tenang bahwa kelembutan dan kejernihan dapat berbagi kelopak yang sama, sementara maknanya pada akhirnya tetap milik orang yang memilihnya.",
       "sources": [
         {
           "title": "RHS — Lilies",
           "url": "https://www.rhs.org.uk/plants/lilies",
-          "type": "Botanical / horticultural reference"
+          "type": "Referensi botani / hortikultura"
         },
         {
           "title": "RHS — Lilium regale",
           "url": "https://www.rhs.org.uk/plants/10248/lilium-regale-%28ixb-a%29-regal-lily-king-s-lily-royal-lily/details",
-          "type": "Botanical / horticultural reference"
+          "type": "Referensi botani / hortikultura"
         },
         {
           "title": "RHS — Lilium Muscadet",
           "url": "https://www.rhs.org.uk/plants/113837/lilium-muscadet-viia-b-b/details",
-          "type": "Cultivar reference"
+          "type": "Referensi kultivar"
         },
         {
           "title": "Smithsonian Gardens — Meaning of Flowers",
           "url": "https://gardens.si.edu/meaning-of-flowers",
-          "type": "Cultural / symbolism reference"
+          "type": "Referensi budaya / simbolisme"
         }
       ],
       "distribution": {
-        "nativeRange": "The genus Lilium is native across parts of the Northern Hemisphere, including Europe, Asia and North America; the exact range depends on species.",
-        "introducedElsewhere": "Many lilies are cultivated well outside their native ranges.",
-        "distributionNote": "Because Pink & White Lily is a category, distribution is described at genus level rather than assigned to a single species."
+        "nativeRange": "Genus Lilium berasal dari berbagai bagian Belahan Bumi Utara, termasuk Eropa, Asia, dan Amerika Utara; wilayah tepatnya bergantung pada spesies.",
+        "introducedElsewhere": "Banyak lili dibudidayakan jauh di luar wilayah aslinya.",
+        "distributionNote": "Karena Lili Merah Muda & Putih merupakan kategori, persebarannya dijelaskan pada tingkat genus dan tidak ditetapkan pada satu spesies."
       },
       "habitatProfile": {
-        "habitat": "Species of Lilium occupy varied habitats, from woodland and mountain settings to open grassland and garden environments.",
-        "growthEnvironment": "Cultivated lilies generally prefer suitable drainage and light conditions appropriate to the species or cultivar.",
-        "growthForm": "Bulbous perennial."
+        "habitat": "Spesies Lilium menempati habitat yang beragam, dari hutan dan pegunungan hingga padang rumput terbuka dan lingkungan kebun.",
+        "growthEnvironment": "Lili budidaya umumnya memerlukan drainase dan kondisi cahaya yang sesuai dengan spesies atau kultivarnya.",
+        "growthForm": "Tumbuhan tahunan berumbi."
       },
       "flowering": {
-        "flowerPosition": "Flowers are borne toward the upper portions of erect leafy stems.",
-        "flowerSize": "Varies widely by species and cultivar.",
-        "colour": "White flowers may be flushed, spotted or otherwise marked with pink; RHS documents multiple examples."
+        "flowerPosition": "Bunga tumbuh pada bagian atas batang yang tegak dan berdaun.",
+        "flowerSize": "Sangat bervariasi menurut spesies dan kultivar.",
+        "colour": "Bunga putih dapat memiliki semburat, bintik, atau tanda merah muda; RHS mendokumentasikan beberapa contohnya."
       },
       "reproduction": {
-        "flowers": "Flowers contain stamens and carpels characteristic of Lilium.",
-        "fruit": "Capsules develop after flowering.",
-        "seeds": "Seeds are produced within the capsules.",
-        "note": "Cultivated lilies can also be propagated vegetatively, including by offsets in suitable types."
+        "flowers": "Bunga memiliki benang sari dan karpel yang menjadi ciri Lilium.",
+        "fruit": "Kapsul berkembang setelah pembungaan.",
+        "seeds": "Biji dihasilkan di dalam kapsul.",
+        "note": "Lili budidaya juga dapat diperbanyak secara vegetatif, termasuk melalui anakan pada jenis yang sesuai."
       },
       "lifeCycle": {
-        "persistence": "Most garden lilies are bulbous perennials with seasonal growth and dormancy.",
-        "seasonalityNote": "Flowering time varies by species, group, cultivar and climate."
+        "persistence": "Sebagian besar lili taman merupakan tumbuhan tahunan berumbi dengan pertumbuhan musiman dan masa dormansi.",
+        "seasonalityNote": "Waktu berbunga berbeda menurut spesies, kelompok, kultivar, dan iklim."
       },
       "ecology": {
-        "role": "Flowering bulbous plants that interact with their surrounding habitat through flowers, foliage, roots and underground storage organs.",
-        "caution": "No single pollinator or ecological role is assigned to the entire genus because species differ."
+        "role": "Tumbuhan berbunga berumbi yang berinteraksi dengan habitat sekitarnya melalui bunga, dedaunan, akar, dan organ penyimpanan bawah tanah.",
+        "caution": "Tidak ada satu penyerbuk atau peran ekologis yang dapat ditetapkan untuk seluruh genus karena setiap spesies memiliki karakter berbeda."
       },
       "conservation": {
-        "note": "No single conservation status is assigned because Pink & White Lily is not one taxon. Conservation needs should be evaluated at species or cultivar level where relevant."
+        "note": "Tidak ada satu status konservasi untuk Lili Merah Muda & Putih karena kategori ini bukan satu takson. Kebutuhan konservasi sebaiknya dinilai pada tingkat spesies atau kultivar jika relevan."
       },
       "profileOrder": [
         "commonName",
@@ -858,23 +863,23 @@
         "phases": [
           {
             "id": "phase-01",
-            "name": "Phase 01",
-            "description": "The bulb stores resources during dormant periods."
+            "name": "Fase 01",
+            "description": "Umbi menyimpan cadangan selama masa dormansi."
           },
           {
             "id": "phase-02",
-            "name": "Phase 02",
-            "description": "New stems and leaves emerge from the bulb during the active growing season."
+            "name": "Fase 02",
+            "description": "Batang dan daun baru muncul dari umbi selama musim pertumbuhan aktif."
           },
           {
             "id": "phase-03",
-            "name": "Phase 03",
-            "description": "Flowers develop at the top of the leafy stem, with form and colour varying by species or cultivar."
+            "name": "Fase 03",
+            "description": "Bunga berkembang di bagian atas batang berdaun; bentuk dan warna berbeda menurut spesies atau kultivar."
           },
           {
             "id": "phase-04",
-            "name": "Phase 04",
-            "description": "After flowering, the plant replenishes the bulb before foliage dies back in many deciduous lilies."
+            "name": "Fase 04",
+            "description": "Setelah berbunga, tumbuhan mengisi kembali cadangan umbi sebelum dedaunan mengering pada banyak lili yang menggugurkan daun."
           }
         ]
       }

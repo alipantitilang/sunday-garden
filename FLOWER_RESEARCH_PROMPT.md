@@ -269,3 +269,7 @@ Report:
 7. validation performed;
 8. remaining uncertainties;
 9. whether an existing system requires an RF or whether the work is content-only.
+
+### Visitor-facing language check
+
+Before finalizing a researched flower record, audit all visitor-facing botanical/editorial prose and write it primarily in Indonesian. Preserve scientific nomenclature, proper names, source titles, URLs, technical schema values, and original-language evidence where appropriate. A new flower or research update does not require an RF solely because it is new content; an RF is used when correcting an existing-system/data consistency issue.

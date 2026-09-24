@@ -327,3 +327,10 @@ Before release, check as applicable:
 - accessibility;
 - missing-data markers;
 - documentation status.
+
+### Flower Data Language Consistency
+
+- Visitor-facing botanical and editorial flower content should be written primarily in Indonesian.
+- Preserve scientific names, taxonomic nomenclature, proper names, source titles, URLs, technical identifiers, and original-language evidence where translation would change their identity or evidentiary function.
+- Do not translate Gardener stories unless explicitly requested.
+- A language inconsistency in an existing record is an RF/content-data correction, not a new Phase.

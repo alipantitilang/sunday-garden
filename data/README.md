@@ -124,3 +124,7 @@ Use `growthCycle` as the canonical growth-cycle field:
 ```
 
 The number of phases must come from the research resolution being used. It must not be changed solely to satisfy a visual template. `howItGrows` is a legacy compatibility field and should not be used for new records.
+
+### Visitor-facing language
+
+Flower records should keep visitor-facing botanical, ecological, cultural, historical, and editorial prose primarily in Indonesian. Scientific names, taxonomic nomenclature, proper names, source titles, URLs, technical IDs, and original-language evidence may remain in their original form.
