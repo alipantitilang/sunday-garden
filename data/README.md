@@ -128,3 +128,7 @@ The number of phases must come from the research resolution being used. It must 
 ### Visitor-facing language
 
 Flower records should keep visitor-facing botanical, ecological, cultural, historical, and editorial prose primarily in Indonesian. Scientific names, taxonomic nomenclature, proper names, source titles, URLs, technical IDs, and original-language evidence may remain in their original form.
+
+
+### Flower Page Hero Language
+The Flower Page hero is an intentional English editorial surface. Flower records may define `heroName` for the English common flower name used only in the hero. The canonical `commonName` remains the Indonesian visitor-facing name used elsewhere. Scientific names remain unchanged.

@@ -19,7 +19,8 @@ const SundayGardenI18n = Object.freeze({
     slowGrowth: 'Sunday Garden tumbuh perlahan. Satu bunga, satu orang, satu cerita dalam satu waktu.'
   },
   flower: {
-    chosenBy: 'Dipilih oleh',
+    chosenBy: 'Chosen by',
+    heroLabel: "A Gardener's Flower",
     commonName: 'Nama umum',
     scientificName: 'Nama ilmiah',
     taxonomicTreatment: 'Perlakuan taksonomi',

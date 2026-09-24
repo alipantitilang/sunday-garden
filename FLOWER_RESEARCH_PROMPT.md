@@ -273,3 +273,7 @@ Report:
 ### Visitor-facing language check
 
 Before finalizing a researched flower record, audit all visitor-facing botanical/editorial prose and write it primarily in Indonesian. Preserve scientific nomenclature, proper names, source titles, URLs, technical schema values, and original-language evidence where appropriate. A new flower or research update does not require an RF solely because it is new content; an RF is used when correcting an existing-system/data consistency issue.
+
+
+### Flower Page Hero Language
+The Flower Page hero is an intentional English editorial surface. Flower records may define `heroName` for the English common flower name used only in the hero. The canonical `commonName` remains the Indonesian visitor-facing name used elsewhere. Scientific names remain unchanged.

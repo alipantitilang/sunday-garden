@@ -244,6 +244,31 @@ Source titles such as *Plants of the World Online*, museum collection titles, ac
 - No Gardener story content was changed.
 - No scientific/taxonomic identifier was localized incorrectly.
 
+### RF-009 Hero Language Correction — ITERATION 2
+
+A follow-up audit found that the Flower Page hero had been localized to Indonesian even though the project language system intentionally reserves the hero/editorial opening for English. The correction remains inside RF-009 because it is part of the same Flower Data Language Consistency scope.
+
+- Added a dedicated `heroName` presentation field to each canonical flower record.
+- Restored the English common flower name in the Flower Page hero only:
+  - Teratai Biru → **Blue Lotus**
+  - Mawar Merah → **Red Rose**
+  - Tulip Merah Muda → **Pink Tulip**
+  - Lili Putih → **White Lily**
+  - Lili Merah Muda & Putih → **Pink & White Lily**
+- Restored the hero eyebrow to **“A Gardener's Flower”**.
+- Restored the hero byline to **“Chosen by”**.
+- Kept the rest of the visitor-facing flower data in Indonesian.
+- Kept scientific names unchanged.
+- Garden and other non-hero displays continue to use the Indonesian `commonName`.
+
+### Validation
+
+- `node --check js/flower.js` passed.
+- `node --check js/main.js` passed.
+- `node tools/validate-data.mjs` passed.
+- All five flower records contain a valid English `heroName`.
+- The hero uses `heroName` only; Indonesian `commonName` remains the canonical visitor-facing data name elsewhere.
+
 ### Result
 
-RF-009 closes the current Flower Data Language Consistency remake scope. If another existing-system issue is discovered later, it should be classified independently and assigned to the next RF when appropriate. New flower research remains content workflow governed by `FLOWER_RESEARCH_PROMPT.md`, not a new Phase.
+RF-009 remains **ongoing**. Future language inconsistencies discovered during the same audit should continue to be corrected under RF-009 without changing its name. Once the agreed language audit is stable, RF-009 can be formally closed.

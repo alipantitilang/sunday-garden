@@ -234,8 +234,8 @@ const SundayGardenFlower = (() => {
         <header class="flower-hero">
           <div class="flower-hero__image-wrap"><img src="${escapeHTML(g.media.hero)}" alt="${escapeHTML(f.commonName)} dipilih oleh ${escapeHTML(g.displayName)}" class="flower-hero__image" width="3413" height="1920" fetchpriority="high" decoding="async"></div>
           <div class="flower-hero__content container">
-            <p class="eyebrow">A Gardener's Flower</p>
-            <h1>${escapeHTML(f.commonName)}</h1>
+            <p class="eyebrow">${SundayGardenI18n.flower.heroLabel}</p>
+            <h1>${escapeHTML(f.heroName || f.commonName)}</h1>
             <p class="flower-hero__scientific"><em>${escapeHTML(f.scientificName)}</em></p>
             <p class="flower-hero__byline">${SundayGardenI18n.flower.chosenBy} <strong>${escapeHTML(g.displayName)}</strong></p>
           </div>

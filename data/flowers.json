@@ -182,7 +182,8 @@
             "description": "Tumbuhan bertahan sebagai hidrogeofit berimpang; waktu musiman yang tepat bervariasi menurut geografi dan kondisi pertumbuhan."
           }
         ]
-      }
+      },
+      "heroName": "Blue Lotus"
     },
     {
       "id": "red-rose",
@@ -375,7 +376,8 @@
             "description": "Setelah berbunga, sebagian bunga berkembang menjadi hip mawar dan tumbuhan mempertahankan struktur berkayu untuk siklus pertumbuhan berikutnya."
           }
         ]
-      }
+      },
+      "heroName": "Red Rose"
     },
     {
       "id": "pink-tulip",
@@ -579,7 +581,8 @@
             "description": "Sebagian tulip khusus dapat bertahan dan berkembang biak dalam kondisi sesuai, sedangkan banyak tulip hamparan diperlakukan sebagai tanaman musiman karena pembungaan ulang tidak selalu dapat diandalkan."
           }
         ]
-      }
+      },
+      "heroName": "Pink Tulip"
     },
     {
       "id": "white-lily",
@@ -741,7 +744,8 @@
             "description": "Setelah berbunga, bunga yang dibuahi dapat membentuk kapsul dan biji sementara tumbuhan mengisi kembali cadangan bawah tanah untuk siklus berikutnya."
           }
         ]
-      }
+      },
+      "heroName": "White Lily"
     },
     {
       "id": "pink-white-lily",
@@ -882,7 +886,8 @@
             "description": "Setelah berbunga, tumbuhan mengisi kembali cadangan umbi sebelum dedaunan mengering pada banyak lili yang menggugurkan daun."
           }
         ]
-      }
+      },
+      "heroName": "Pink & White Lily"
     }
   ]
 }
