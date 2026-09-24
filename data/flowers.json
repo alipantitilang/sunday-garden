@@ -156,7 +156,7 @@
       "morphology": {
         "leaves": "Leaves are borne along the erect stem and may appear alternately or in whorls, depending on the species.",
         "flowers": "Lilium flowers vary widely in shape, including trumpet, bowl, funnel and recurved Turk’s-cap forms. White, pink and bicoloured flowers occur across cultivated lilies.",
-        "petals": "True lilies have six tepals arranged in two whorls of three; the tepals may be upright, spreading, or recurved.",
+        "tepals": "True lilies have six tepals arranged in two whorls of three; the tepals may be upright, spreading, or recurved.",
         "stamens": "Flowers have six stamens, surrounding a central ovary and style.",
         "fruit": "The fruit is a capsule in the genus Lilium.",
         "seeds": "Lilium capsules contain numerous seeds; seed form varies among species."
@@ -281,6 +281,372 @@
       },
       "conservation": {
         "note": "Conservation status varies among individual Lilium species. Because this entry represents a colour category rather than one species, no single global conservation status is assigned."
+      },
+      "profileOrder": [
+        "commonName",
+        "scientificName",
+        "acceptedName",
+        "family",
+        "genus",
+        "growthForm",
+        "nativeRange",
+        "habitat"
+      ]
+    },
+    {
+      "id": "red-rose",
+      "commonName": "Red Rose",
+      "scientificName": "Rosa spp.",
+      "acceptedName": "Rosa spp.",
+      "taxonomicNote": "“Red rose” describes roses by flower colour rather than a single botanical species or cultivar. Without a named cultivar or species, the botanical entry is kept at the genus level.",
+      "family": "Rosaceae",
+      "genus": "Rosa",
+      "growthForm": "Woody shrubs, climbers, ramblers, and other perennial garden forms.",
+      "morphology": {
+        "leaves": "Leaves are generally pinnate, with serrated leaflets and stipules at the leaf bases.",
+        "flowers": "Flowers may be solitary or borne in clusters; cultivated roses vary greatly in form and petal number.",
+        "petals": "Wild Rosa species typically have five petals; cultivated roses may have many more through selection and hybridisation.",
+        "stamens": "Flowers have numerous stamens, especially conspicuous in many single-flowered forms.",
+        "fruit": "After flowering, many roses can develop fleshy rose hips containing numerous achenes.",
+        "seeds": "The individual achenes inside rose hips are the seed-bearing fruits of the rose."
+      },
+      "howItGrows": [
+        "A woody perennial establishes stems and roots, often producing new shoots from the base or along climbing growth.",
+        "Leaves and flowering shoots develop as the plant enters active growth.",
+        "Flower buds form and open; many cultivated roses repeat flowering during the growing season.",
+        "After pollination, some roses develop hips as the floral receptacle enlarges and matures."
+      ],
+      "interestingFacts": [
+        {
+          "title": "A genus, not one flower",
+          "text": "Rosa is a diverse genus, so a “red rose” can refer to many species, hybrids, and cultivars rather than one botanical taxon."
+        },
+        {
+          "title": "The thorns people call thorns",
+          "text": "Roses are characteristically armed with prickles on their stems; botanical sources distinguish these from true thorns."
+        },
+        {
+          "title": "Rose hips",
+          "text": "Many roses produce colourful hips after flowering, and the fruits can persist into the cooler season."
+        }
+      ],
+      "culturalNotes": [
+        {
+          "title": "Love and passion",
+          "text": "In Western artistic and literary traditions, the red rose has been associated with love, beauty, romance, and passion."
+        },
+        {
+          "title": "A long history in art",
+          "text": "The rose has appeared extensively in European art and literature, with meanings that vary by period and context."
+        }
+      ],
+      "symbolism": [
+        "love",
+        "beauty",
+        "romance",
+        "passion",
+        "boundaries"
+      ],
+      "sundayGardenInterpretation": "The red rose carries a useful tension for Hyunwo’s story: softness and beauty on one side, boundaries and self-knowledge on the other. Here, the colour and prickles are not treated as universal definitions, but as a personal language for being visible without surrendering one’s limits.",
+      "sources": [
+        {
+          "title": "Rosa L. | Plants of the World Online",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30002432-2/general-information",
+          "type": "taxonomy & botanical reference"
+        },
+        {
+          "title": "Roses (Rosa) | RHS Plant Guide",
+          "publisher": "Royal Horticultural Society",
+          "url": "https://www.rhs.org.uk/plants/roses",
+          "type": "botanical & horticultural reference"
+        },
+        {
+          "title": "The Red Rose",
+          "publisher": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/es/exhibitions/sleeping-beauties-reawakening-fashion/visiting-guide",
+          "type": "cultural history"
+        },
+        {
+          "title": "Floral Fashions: From Bouquets to Buttonholes",
+          "publisher": "Smithsonian Gardens",
+          "url": "https://gardens.si.edu/exhibitions/current-exhibitions/floral-fashions-from-bouquets-to-buttonholes/",
+          "type": "symbolism reference"
+        }
+      ],
+      "classification": {
+        "kingdom": "Plantae",
+        "order": "Rosales"
+      },
+      "distribution": {
+        "nativeRange": "Temperate and subtropical regions of the Northern Hemisphere at the genus level."
+      },
+      "habitatProfile": {
+        "growthForm": "Woody shrubs, climbers and other perennial forms.",
+        "habitat": "Varies widely among species; cultivated roses are commonly grown in sunny, well-drained garden settings."
+      },
+      "flowering": {
+        "season": "Varies by species and cultivar; many garden roses flower in summer, with repeat-flowering cultivars continuing into autumn.",
+        "colour": "Red is one of many colours found among cultivated roses."
+      },
+      "reproduction": {
+        "pollination": "Flowers are pollinated by animals, including insects, depending on species and floral form.",
+        "methods": "Seed production occurs after pollination; cultivated roses may also be propagated vegetatively by cuttings, budding, or grafting."
+      },
+      "lifeCycle": {
+        "type": "Perennial woody plant",
+        "afterFlowering": "Many roses may form hips after flowers are pollinated."
+      },
+      "ecology": {
+        "role": "Roses provide flowers and, where hips are produced, fruit resources within garden and natural ecosystems.",
+        "adaptations": "Prickles can help deter browsing and climbing growth forms help plants occupy different spaces."
+      },
+      "conservation": {
+        "note": "Conservation status varies by species; “red rose” is not a single species."
+      },
+      "profileOrder": [
+        "commonName",
+        "scientificName",
+        "acceptedName",
+        "family",
+        "genus",
+        "growthForm",
+        "nativeRange",
+        "habitat"
+      ]
+    },
+    {
+      "id": "pink-tulip",
+      "commonName": "Pink Tulip",
+      "scientificName": "Tulipa spp.",
+      "acceptedName": "Tulipa spp.",
+      "taxonomicNote": "“Pink tulip” describes tulips by flower colour rather than a single species. The entry therefore uses the accepted genus Tulipa unless a specific species or cultivar is supplied.",
+      "family": "Liliaceae",
+      "genus": "Tulipa",
+      "growthForm": "Bulbous perennial geophyte.",
+      "morphology": {
+        "leaves": "Tulips produce fleshy, strap-like to lance-shaped basal or lower leaves, depending on species and cultivar.",
+        "flowers": "Flowers are usually solitary and terminal, with a cup- or goblet-like form in many cultivated tulips.",
+        "petals": "The visible floral parts are six petaloid tepals, often brightly coloured and sometimes marked or patterned.",
+        "stamens": "There are typically six stamens surrounding the central ovary.",
+        "fruit": "After successful pollination, a dry capsule develops and can split to release seeds.",
+        "seeds": "Seeds are produced inside the capsule; cultivated tulips are also commonly propagated from bulbs and offsets."
+      },
+      "howItGrows": [
+        "The underground bulb stores resources through the dormant period.",
+        "Roots and shoots emerge as conditions become suitable, producing leaves above ground.",
+        "A flowering stem develops and the flower opens, commonly in spring for many garden tulips.",
+        "After flowering, foliage continues to photosynthesise before the plant returns to dormancy and the bulb stores resources for the next cycle."
+      ],
+      "interestingFacts": [
+        {
+          "title": "A genus of bulbs",
+          "text": "Tulipa is a genus of bulbous plants in the lily family Liliaceae, rather than a single species."
+        },
+        {
+          "title": "Spring bloomers",
+          "text": "Many cultivated tulips flower in mid to late spring, although flowering time varies by group and climate."
+        },
+        {
+          "title": "A flower that travelled",
+          "text": "Tulips were cultivated by the Ottomans before becoming deeply associated with Dutch horticulture and the international bulb trade."
+        }
+      ],
+      "culturalNotes": [
+        {
+          "title": "Ottoman cultivation and Europe",
+          "text": "The tulip was cultivated in the Ottoman world before being introduced to Western Europe; its later popularity in the Netherlands became associated with the historical episode known as Tulipomania."
+        },
+        {
+          "title": "Victorian flower language",
+          "text": "In Victorian-style flower-language traditions, tulips were associated with passion; such meanings are historical conventions rather than universal botanical properties."
+        }
+      ],
+      "symbolism": [
+        "love",
+        "passion",
+        "care",
+        "spring",
+        "devotion"
+      ],
+      "sundayGardenInterpretation": "For Ginaa, the tulip becomes a flower of caring for something while it is still in bloom. The meaning here comes from her words—not from a universal rule about pink tulips—and the flower becomes a quiet image of love that is valued simply because it can be given.",
+      "sources": [
+        {
+          "title": "Tulipa L. | Plants of the World Online",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/24874-1",
+          "type": "taxonomy & botanical reference"
+        },
+        {
+          "title": "How to grow tulips",
+          "publisher": "Royal Horticultural Society",
+          "url": "https://www.rhs.org.uk/plants/tulip/growing-guide",
+          "type": "botanical & horticultural reference"
+        },
+        {
+          "title": "Four Tulips: Boter man, Joncker, Grote geplumaceerde, and Voorwint",
+          "publisher": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/art/collection/search/337769",
+          "type": "cultural history"
+        },
+        {
+          "title": "Floral Fashions: From Bouquets to Buttonholes",
+          "publisher": "Smithsonian Gardens",
+          "url": "https://gardens.si.edu/exhibitions/current-exhibitions/floral-fashions-from-bouquets-to-buttonholes/",
+          "type": "symbolism reference"
+        }
+      ],
+      "classification": {
+        "kingdom": "Plantae",
+        "order": "Liliales"
+      },
+      "distribution": {
+        "nativeRange": "South-central and eastern Europe, the Mediterranean region, and eastward to Mongolia at the genus level."
+      },
+      "habitatProfile": {
+        "growthForm": "Bulbous perennial geophyte.",
+        "habitat": "Species occupy varied habitats, while cultivated tulips are commonly grown in sunny, free-draining soils."
+      },
+      "flowering": {
+        "season": "Many garden tulips flower in mid to late spring.",
+        "colour": "Cultivated tulips occur in a wide range of colours, including pink."
+      },
+      "reproduction": {
+        "pollination": "Flowers are pollinated by animals, including insects.",
+        "methods": "Tulips reproduce by seed and, in cultivation, commonly by daughter bulbs or offsets."
+      },
+      "lifeCycle": {
+        "type": "Perennial bulb",
+        "afterFlowering": "Leaves should remain active after flowering so the bulb can replenish stored resources."
+      },
+      "ecology": {
+        "role": "Tulip flowers provide floral resources for visiting insects; ecological details vary by species and setting.",
+        "adaptations": "The bulb allows the plant to survive an unfavourable season underground."
+      },
+      "conservation": {
+        "note": "Conservation status varies among Tulipa species; the colour “pink tulip” does not identify a single species."
+      },
+      "profileOrder": [
+        "commonName",
+        "scientificName",
+        "acceptedName",
+        "family",
+        "genus",
+        "growthForm",
+        "nativeRange",
+        "habitat"
+      ]
+    },
+    {
+      "id": "white-lily",
+      "commonName": "White Lily",
+      "scientificName": "Lilium spp.",
+      "acceptedName": "Lilium spp.",
+      "taxonomicNote": "“White lily” describes true lilies by flower colour rather than a single species. The entry uses the accepted genus Lilium unless a specific species or cultivar is supplied.",
+      "family": "Liliaceae",
+      "genus": "Lilium",
+      "growthForm": "Bulbous perennial herb.",
+      "morphology": {
+        "leaves": "Leaves are borne along the upright stem and may appear alternate or in whorls, depending on the species.",
+        "flowers": "Flowers are borne terminally, often in racemes, or may be solitary; shapes range from trumpets and bowls to recurved Turk’s-cap forms.",
+        "petals": "The flower has six petaloid tepals that may be white, pink, yellow, orange, red, or patterned; here the Gardener’s chosen colour is white.",
+        "stamens": "Six stamens surround the central pistil and often carry prominent anthers.",
+        "fruit": "A dry capsule develops after pollination and eventually releases the seeds.",
+        "seeds": "Seeds develop inside the capsule and are dispersed when mature."
+      },
+      "howItGrows": [
+        "The plant begins from a bulb composed of fleshy scales.",
+        "Roots develop from the bulb while the stem rises and produces leaves.",
+        "A terminal flowering shoot develops, opening into the characteristic lily blooms.",
+        "After flowering, the plant keeps its foliage active long enough to replenish the bulb before the above-ground growth dies back."
+      ],
+      "interestingFacts": [
+        {
+          "title": "True lilies have six tepals",
+          "text": "The characteristic lily flower is built around six petaloid tepals and six stamens, although floral form varies widely across the genus."
+        },
+        {
+          "title": "A wide northern distribution",
+          "text": "Kew records the native range of Lilium from temperate parts of the Northern Hemisphere to the northern Philippines."
+        },
+        {
+          "title": "Many garden forms",
+          "text": "White lilies occur among multiple Lilium species and horticultural groups, so flower colour alone cannot identify a species."
+        }
+      ],
+      "culturalNotes": [
+        {
+          "title": "Purity in white",
+          "text": "White lilies have been associated with innocence, chastity, and purity of heart in documented Western cultural and religious traditions."
+        },
+        {
+          "title": "A flower of contrasts",
+          "text": "Smithsonian’s overview of lily symbolism notes that lilies can carry contrasting associations, including purity, passion, life, and death, depending on colour and context."
+        }
+      ],
+      "symbolism": [
+        "purity",
+        "innocence",
+        "steadfastness",
+        "peace",
+        "devotion"
+      ],
+      "sundayGardenInterpretation": "For Leo, the white lily is not a claim that whiteness means weakness or that lilies universally represent purity. It is a personal image of standing firmly while keeping the heart clean—an interpretation shaped by the Gardener’s own words and the documented history of white-lily symbolism.",
+      "sources": [
+        {
+          "title": "Lilium Tourn. ex L. | Plants of the World Online",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A30009317-2/general-information",
+          "type": "taxonomy & botanical reference"
+        },
+        {
+          "title": "Lilies | RHS Plant Guide",
+          "publisher": "Royal Horticultural Society",
+          "url": "https://www.rhs.org.uk/plants/lilies",
+          "type": "botanical & horticultural reference"
+        },
+        {
+          "title": "How to grow lilies",
+          "publisher": "Royal Horticultural Society",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "type": "growth & horticultural reference"
+        },
+        {
+          "title": "Lily / Marcia Reiss",
+          "publisher": "Smithsonian Libraries and Archives",
+          "url": "https://www.si.edu/object/lily-marcia-reiss%3Asiris_sil_1018845",
+          "type": "cultural history & symbolism"
+        }
+      ],
+      "classification": {
+        "kingdom": "Plantae",
+        "order": "Liliales"
+      },
+      "distribution": {
+        "nativeRange": "Temperate Northern Hemisphere to the northern Philippines at the genus level."
+      },
+      "habitatProfile": {
+        "growthForm": "Bulbous perennial herb.",
+        "habitat": "Species occur in varied habitats; cultivated lilies generally prefer well-drained soils with sun or partial shade."
+      },
+      "flowering": {
+        "season": "Many garden lilies flower in summer, although timing varies by species and group.",
+        "colour": "White is one of many colours found across Lilium."
+      },
+      "reproduction": {
+        "pollination": "Flowers are commonly pollinated by animals, with pollination ecology varying among species and floral forms.",
+        "methods": "Lilium reproduces by seed; some lilies can also be propagated through bulbils and scales."
+      },
+      "lifeCycle": {
+        "type": "Perennial bulb",
+        "afterFlowering": "Foliage remains active after flowering before naturally dying back, allowing resources to return to the bulb."
+      },
+      "ecology": {
+        "role": "Lily flowers provide floral resources to visiting pollinators; exact relationships vary by species.",
+        "adaptations": "The bulb provides an underground storage organ that helps the plant persist between growing periods."
+      },
+      "conservation": {
+        "note": "Conservation status varies among Lilium species; “white lily” does not identify a single species."
       },
       "profileOrder": [
         "commonName",

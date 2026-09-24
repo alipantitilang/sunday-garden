@@ -41,6 +41,69 @@
         "content": [],
         "links": []
       }
+    },
+    {
+      "id": "hyunwo-red-rose",
+      "displayName": "hyunwo",
+      "flower": {
+        "id": "red-rose",
+        "name": "Red Rose",
+        "scientificName": "Rosa spp."
+      },
+      "story": "Aku adalah mawar merah.\n\nKelopakku adalah keberanianku untuk terlihat,\nwarnaku adalah gairah yang tidak kusembunyikan,\ndan duriku adalah batas yang tidak akan kulewati.\n\nAku tidak harus memilih antara indah dan kuat.\nSebab keduanya tumbuh dari batang yang sama.\n\nAku mekar karena aku tahu siapa diriku—\ndan aku berduri karena aku tahu nilai diriku.",
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255250/hyunwo-red-rose-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255240/hyunwo-red-rose-card.jpg",
+        "altText": "hyunwo — Red Rose Garden Card"
+      },
+      "status": "published",
+      "about": {
+        "display": false,
+        "content": [],
+        "links": []
+      }
+    },
+    {
+      "id": "ginaa-pink-tulip",
+      "displayName": "ginaa",
+      "flower": {
+        "id": "pink-tulip",
+        "name": "Pink Tulip",
+        "scientificName": "Tulipa spp."
+      },
+      "story": "Aku ingin menjadi pink tulip,\nkarena mencintai seseorang saja sudah menjadi kebahagiaan bagiku.\n\nAku tidak tahu sejauh mana cinta ini akan tumbuh,\nnamun aku ingin menjaganya selama ia masih mekar.\n\nSebab bagiku, dicintai adalah kebahagiaan—\ntetapi bisa mencintai dengan seluruh hati adalah anugerah.",
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255329/gina-pink-tulip-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255314/gina-pink-tulip-card.jpg",
+        "altText": "ginaa — Pink Tulip Garden Card"
+      },
+      "status": "published",
+      "about": {
+        "display": false,
+        "content": [],
+        "links": []
+      }
+    },
+    {
+      "id": "leo-white-lily",
+      "displayName": "leo",
+      "flower": {
+        "id": "white-lily",
+        "name": "White Lily",
+        "scientificName": "Lilium spp."
+      },
+      "story": "Aku memilih white lily,\nbukan hanya karena warnanya,\ntetapi karena ia mengingatkanku pada keberanian\nyang tetap mampu berdiri dengan hati yang bersih.\n\nPutih bukan berarti lemah.\nIa adalah keteguhan yang tidak perlu kehilangan kemurniannya.\n\nBerani untuk berdiri,\ntulus untuk tetap menjadi diri sendiri.\n\nSeperti The Lilywhites—\naku ingin tetap teguh dengan apa yang kupercaya,\ntanpa harus kehilangan hati yang bersih.",
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255377/leo-white-lily-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255342/leo-white-lily-card.jpg",
+        "altText": "leo — White Lily Garden Card"
+      },
+      "status": "published",
+      "about": {
+        "display": false,
+        "content": [],
+        "links": []
+      }
     }
   ]
 }
