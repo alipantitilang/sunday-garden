@@ -5,8 +5,20 @@ const gardeners = read('./data/gardeners.json').gardeners;
 const flowers = read('./data/flowers.json').flowers;
 
 const errors = [];
-const flowerIds = new Set(flowers.map((f) => f.id));
+const flowerIds = new Set();
 const gardenerIds = new Set();
+
+for (const f of flowers) {
+  if (!f.id || !f.commonName || !f.scientificName) errors.push(`Incomplete flower identity: ${f.id || '(missing id)'}`);
+  if (flowerIds.has(f.id)) errors.push(`Duplicate flower id: ${f.id}`);
+  flowerIds.add(f.id);
+  if (!['pending', 'complete'].includes(f.researchStatus)) errors.push(`Invalid flower researchStatus: ${f.id}`);
+  if (!f.taxonomy || f.taxonomy.family !== f.family || f.taxonomy.genus !== f.genus) errors.push(`Taxonomy mismatch: ${f.id}`);
+  if (f.researchStatus === 'complete') {
+    if (!Array.isArray(f.sources) || f.sources.length === 0) errors.push(`No sources: ${f.id}`);
+    if (!Array.isArray(f.interestingFacts) || f.interestingFacts.length === 0) errors.push(`No interesting facts: ${f.id}`);
+  }
+}
 
 for (const g of gardeners) {
   if (!g.id || gardenerIds.has(g.id)) errors.push(`Invalid or duplicate gardener id: ${g.id}`);
@@ -18,15 +30,10 @@ for (const g of gardeners) {
   if (!g.media?.gardenCard) errors.push(`Missing gardenCard media: ${g.id}`);
 }
 
-for (const f of flowers) {
-  if (!f.id || !f.commonName || !f.scientificName) errors.push(`Incomplete flower identity: ${f.id || '(missing id)'}`);
-  if (!Array.isArray(f.sources) || f.sources.length === 0) errors.push(`No sources: ${f.id}`);
-  if (!Array.isArray(f.interestingFacts) || f.interestingFacts.length === 0) errors.push(`No interesting facts: ${f.id}`);
-}
-
 if (errors.length) {
   console.error(errors.map((e) => `- ${e}`).join('\n'));
   process.exit(1);
 }
 
-console.log(`Sunday Garden data valid: ${gardeners.length} Gardener(s), ${flowers.length} flower(s).`);
+const complete = flowers.filter(f => f.researchStatus === 'complete').length;
+console.log(`Sunday Garden registry valid: ${gardeners.length} Gardener(s), ${flowers.length} flower(s), ${complete} researched / ${flowers.length - complete} pending.`);

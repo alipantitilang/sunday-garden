@@ -111,59 +111,15 @@ When something is unspecified, choose the simplest maintainable solution consist
 
 If a decision materially changes architecture, ask first.
 
-## Navigation & page flow
-
-Primary navbar order:
-- Home
-- About
-- The Garden
-
-Home and About should guide visitors through the story of Sunday Garden before they enter the full collection:
-- Home Hero CTA → About
-- About primary CTA → The Garden
-- The navbar may still provide direct access to all three pages.
-
-Do not redesign the site when changing navigation. Keep the existing visual identity, typography, spacing language, and botanical-journal aesthetic intact.
-
-## Garden collection layout
-
-The Garden collection should support a four-card landscape/desktop layout:
-- Large landscape/desktop screens → 4 Garden Cards per row.
-- Smaller screens → reduce the column count responsively without horizontal overflow.
-- Mobile → use a single-column layout when the available width requires it.
-
-Garden Cards may use subtle, smooth rounded corners for the image/card surface. Corners should remain restrained and editorial, not pill-shaped or excessively rounded.
-
-Do not modify the Garden Card artwork itself. Garden Card images are prepared by the Garden Keeper; code only controls layout, rendering, linking, and responsive presentation.
-
 ## Development phases
 
-1. Foundation
-2. Navbar + global components
-3. Home
-4. Garden
-5. Flower Page
-6. About
-7. Responsive refinement
-8. Accessibility + performance
-9. Content/data
-10. Final polish
+The original phases 01–10 form the baseline. The detailed post-baseline roadmap is maintained in `PHASE_PLAN.md`.
 
-Current layout/navigation update should be implemented incrementally in these sub-phases:
-- Phase 1 — Update project rules/documentation for the new navigation and Garden layout.
-- Phase 2 — Update navbar order and page CTAs.
-- Phase 3 — Update The Garden grid to four cards on landscape/desktop and add subtle card rounding.
-- Phase 4 — Validate links, responsive behavior, and visual consistency.
+The current structured work begins with:
+11. Data Source Audit
+12. Gardener Schema Normalization
+13. Existing Gardener Media Migration
+14. Flower Registry Normalization
+15+. One dedicated research/content phase per flower
 
-Build incrementally. Consistency is more important than adding features.
-
-
-## Phase 5 — Final integration
-
-Before release, validate the canonical project as one coherent static site:
-- Keep stable Gardener IDs even when display names are corrected.
-- Reuse existing Flower IDs when the same flower is selected; create a distinct flower entry only when the displayed flower identity differs.
-- External/CDN image URLs are valid media sources; do not invent local copies.
-- Preserve submitted stories exactly.
-- Verify JSON references, navigation, responsive layout, and universal Flower Page routing.
-- Do not replace missing source assets with invented artwork.
+Build incrementally. Keep data normalization, botanical research, UI refinement, and community features in separate phases whenever practical. Consistency is more important than adding features.

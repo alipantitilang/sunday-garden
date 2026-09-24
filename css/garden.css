@@ -128,8 +128,8 @@
 
 .garden-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(2rem, 3vw, 3rem) clamp(1rem, 2.2vw, 2rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.5rem, 5vw, 5rem) clamp(1.5rem, 4vw, 3.5rem);
 }
 
 .garden-card {
@@ -151,7 +151,6 @@
   overflow: hidden;
   aspect-ratio: 16 / 9;
   border: 1px solid rgba(52, 70, 58, .18);
-  border-radius: 12px;
   background: rgba(52, 70, 58, .05);
 }
 
@@ -275,10 +274,6 @@
 }
 
 @media (max-width: 800px) {
-  .garden-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .garden-intro {
     min-height: auto;
   }
@@ -332,13 +327,6 @@
 
   .garden-card__flower {
     text-align: left;
-  }
-}
-
-/* Phase 03 — four-card landscape grid */
-@media (max-width: 1199px) and (min-width: 801px) {
-  .garden-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

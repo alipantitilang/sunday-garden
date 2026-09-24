@@ -41,3 +41,36 @@ Use the current accepted treatment from a recognised botanical authority when av
 ### Image rule
 
 Large images should remain external/CDN-hosted in production where practical. JSON should store the URL/path, not image binary data.
+
+## Canonical flower registry
+
+Each flower gets exactly one stable `id`. Gardener records reference that ID instead of duplicating botanical research.
+
+Every flower record uses the same top-level shape, even before research is complete:
+
+- `id`, `commonName`, `scientificName`
+- `researchStatus` — `pending` or `complete`
+- `family`, `genus`, and `taxonomy`
+- `taxonomicNote`
+- `growthForm`
+- `morphology`
+- `howItGrows`
+- `interestingFacts`
+- `culturalNotes`
+- `symbolism`
+- `sundayGardenInterpretation`
+- `distribution`
+- `habitatProfile`
+- `flowering`
+- `reproduction`
+- `lifeCycle`
+- `ecology`
+- `conservation`
+- `sources`
+- `profileOrder`
+
+A `pending` record is a registry placeholder, not a completed research entry. It must not be filled with guessed botanical facts merely to satisfy the schema. Dedicated research phases promote it to `complete` after sources and claims have been verified.
+
+### Category-name rule
+
+Names such as `White Lily`, `Pink Tulip`, `Red Rose`, or `Pink & White Lily` can describe a colour/common category rather than one species. The registry may therefore use a genus-level scientific placeholder (`Lilium spp.`, `Tulipa spp.`, `Rosa spp.`) until research establishes a more precise taxonomic scope. Never invent a species from a common colour name alone.

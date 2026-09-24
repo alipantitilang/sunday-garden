@@ -9,17 +9,18 @@
         "scientificName": "Nymphaea caerulea"
       },
       "story": "Aku mau jadi blue lotus, karena cara ia hidup terasa seperti cerminan diriku. Akarnya tertanam jauh di dasar lumpur, seolah mengingatkanku untuk nggak melupakan dari mana aku berasal. Batangnya tumbuh menembus air, perlahan mencari permukaan, seperti perjalanan yang nggak selalu mudah tapi tetap punya arah. Lalu bunganya mekar di atas air, sementara kelopaknya yang biru terasa seperti simbol ketenangan dan kedalaman. Ia hidup di ekosistem yang penuh kehidupan, tapi tetap punya ruang untuk mekar dengan caranya sendiri. Mungkin aku juga begitu; dibentuk oleh hal-hal yang nggak selalu indah, membawa masa lalu sebagai akar, melewati keruhnya perjalanan sebagai batang, lalu terus mencari cahaya. Karena pada akhirnya, aku nggak ingin menjadi seseorang yang mekar karena hidupnya selalu bersih dari lumpur. Aku ingin menjadi blue lotus—yang pernah berakar di dalam gelap, pernah melewati air yang keruh, tapi tetap memilih mengangkat wajahnya ke cahaya dan mekar dengan tenang.",
-      "media": {
-        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790218239/alip-blue-lotus-hero.jpg",
-        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790218242/alip-blue-lotus-card.jpg",
-        "altText": "Alip — Blue Lotus Garden Card"
-      },
-      "status": "published",
       "about": {
         "display": false,
         "content": [],
         "links": []
-      }
+      },
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790218239/alip-blue-lotus-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790218242/alip-blue-lotus-card.jpg",
+        "gallery": [],
+        "altText": "Alip — Blue Lotus"
+      },
+      "status": "published"
     },
     {
       "id": "sarah-pink-white-lily",
@@ -30,17 +31,18 @@
         "scientificName": "Lilium spp."
       },
       "story": "Aku ingin menjadi pink lily,\nagar hatiku selalu tahu cara menyayangi dengan lembut.\n\nDan aku ingin menjadi white lily,\nagar setiap rasa yang tumbuh tetap tulus dan damai.\n\nSemoga aku mekar tanpa kehilangan kelembutan,\ndan mencintai tanpa kehilangan ketulusan.",
-      "media": {
-        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228525/sarah-pink-white-lily-hero.jpg",
-        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228693/sarah-pink-white-lily-card.jpg",
-        "altText": "Sarah — Pink & White Lily Garden Card"
-      },
-      "status": "published",
       "about": {
         "display": false,
         "content": [],
         "links": []
-      }
+      },
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228525/sarah-pink-white-lily-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228693/sarah-pink-white-lily-card.jpg",
+        "gallery": [],
+        "altText": "Sarah — Pink & White Lily"
+      },
+      "status": "published"
     },
     {
       "id": "hyunwo-red-rose",
@@ -51,17 +53,18 @@
         "scientificName": "Rosa spp."
       },
       "story": "Aku adalah mawar merah.\n\nKelopakku adalah keberanianku untuk terlihat,\nwarnaku adalah gairah yang tidak kusembunyikan,\ndan duriku adalah batas yang tidak akan kulewati.\n\nAku tidak harus memilih antara indah dan kuat.\nSebab keduanya tumbuh dari batang yang sama.\n\nAku mekar karena aku tahu siapa diriku—\ndan aku berduri karena aku tahu nilai diriku.",
-      "media": {
-        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255250/hyunwo-red-rose-hero.jpg",
-        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255240/hyunwo-red-rose-card.jpg",
-        "altText": "Hyunwo — Red Rose Garden Card"
-      },
-      "status": "published",
       "about": {
         "display": false,
         "content": [],
         "links": []
-      }
+      },
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255250/hyunwo-red-rose-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255240/hyunwo-red-rose-card.jpg",
+        "gallery": [],
+        "altText": "Hyunwo — Red Rose"
+      },
+      "status": "published"
     },
     {
       "id": "ginaa-pink-tulip",
@@ -72,17 +75,18 @@
         "scientificName": "Tulipa spp."
       },
       "story": "Aku ingin menjadi pink tulip,\nkarena mencintai seseorang saja sudah menjadi kebahagiaan bagiku.\n\nAku tidak tahu sejauh mana cinta ini akan tumbuh,\nnamun aku ingin menjaganya selama ia masih mekar.\n\nSebab bagiku, dicintai adalah kebahagiaan—\ntetapi bisa mencintai dengan seluruh hati adalah anugerah.",
-      "media": {
-        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255329/gina-pink-tulip-hero.jpg",
-        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255314/gina-pink-tulip-card.jpg",
-        "altText": "Gina — Pink Tulip Garden Card"
-      },
-      "status": "published",
       "about": {
         "display": false,
         "content": [],
         "links": []
-      }
+      },
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255329/gina-pink-tulip-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255314/gina-pink-tulip-card.jpg",
+        "gallery": [],
+        "altText": "Gina — Pink Tulip"
+      },
+      "status": "published"
     },
     {
       "id": "leo-white-lily",
@@ -93,17 +97,18 @@
         "scientificName": "Lilium spp."
       },
       "story": "Aku memilih white lily,\nbukan hanya karena warnanya,\ntetapi karena ia mengingatkanku pada keberanian\nyang tetap mampu berdiri dengan hati yang bersih.\n\nPutih bukan berarti lemah.\nIa adalah keteguhan yang tidak perlu kehilangan kemurniannya.\n\nBerani untuk berdiri,\ntulus untuk tetap menjadi diri sendiri.\n\nSeperti The Lilywhites—\naku ingin tetap teguh dengan apa yang kupercaya,\ntanpa harus kehilangan hati yang bersih.",
-      "media": {
-        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255377/leo-white-lily-hero.jpg",
-        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255342/leo-white-lily-card.jpg",
-        "altText": "Leo — White Lily Garden Card"
-      },
-      "status": "published",
       "about": {
         "display": false,
         "content": [],
         "links": []
-      }
+      },
+      "media": {
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255377/leo-white-lily-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790255342/leo-white-lily-card.jpg",
+        "gallery": [],
+        "altText": "Leo — White Lily"
+      },
+      "status": "published"
     }
   ]
 }

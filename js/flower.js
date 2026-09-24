@@ -19,7 +19,7 @@ const SundayGardenFlower = (() => {
     const rows = [
       ['Common name', flower.commonName],
       ['Scientific name', `<em>${flower.scientificName}</em>`],
-      ['Current Kew treatment', `<em>${flower.acceptedName}</em>`],
+      ['Current taxonomic treatment', flower.taxonomy?.acceptedName ? `<em>${flower.taxonomy.acceptedName}</em>` : 'Research pending'],
       ['Family', flower.family],
       ['Genus', `<em>${flower.genus}</em>`],
       ['Growth form', flower.habitatProfile?.growthForm || flower.growthForm],
@@ -74,12 +74,12 @@ const SundayGardenFlower = (() => {
         </section>
 
         <section class="flower-section container flower-profile">
-          <div class="section-heading"><p class="eyebrow">The flower</p><h2 id="flower-profile-title">A little about ${escapeHTML(f.commonName)}</h2><p>${escapeHTML(f.taxonomicNote)}</p></div>
+          <div class="section-heading"><p class="eyebrow">The flower</p><h2 id="flower-profile-title">A little about ${escapeHTML(f.commonName)}</h2><p>${escapeHTML(f.taxonomicNote || "Botanical research for this flower is still being prepared.")}</p></div>
           <dl class="fact-list">${profileMarkup(f)}</dl>
         </section>
 
         <section class="flower-section flower-growth">
-          <div class="container section-heading"><p class="eyebrow">From the roots to the bloom</p><h2>How it grows</h2><p>A quiet journey from what sustains the plant to the bloom we see.</p></div>
+          <div class="container section-heading"><p class="eyebrow">From the roots to the bloom</p><h2>How it grows</h2><p>A quiet journey beneath and above the water.</p></div>
           <div class="container growth-flow">${f.howItGrows.map((step, i) => `<article class="growth-step"><span>${String(i + 1).padStart(2, '0')}</span><p>${escapeHTML(step)}</p></article>`).join('')}</div>
         </section>
 
@@ -107,7 +107,7 @@ const SundayGardenFlower = (() => {
 
         <section class="flower-section container meaning-section">
           <div class="section-heading"><p class="eyebrow">What it can mean</p><h2>${escapeHTML(f.commonName)}, interpreted</h2></div>
-          <div class="meaning-layout"><div class="meaning-tags">${f.symbolism.map(word => `<span>${escapeHTML(word)}</span>`).join('')}</div><p class="meaning-text">${escapeHTML(f.sundayGardenInterpretation)}</p></div>
+          <div class="meaning-layout"><div class="meaning-tags">${(f.symbolism || []).map(word => `<span>${escapeHTML(word)}</span>`).join('')}</div><p class="meaning-text">${escapeHTML(f.sundayGardenInterpretation || 'This flower’s interpretation will be added after its dedicated research phase.')}</p></div>
         </section>
 
         <section class="flower-section sources-section container">
