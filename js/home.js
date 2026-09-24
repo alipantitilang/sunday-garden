@@ -15,7 +15,7 @@
 
     const link = document.createElement('a');
     link.href = `flower.html?id=${encodeURIComponent(gardener.id)}`;
-    link.setAttribute('aria-label', `Read ${gardener.displayName}'s ${gardener.flower.name} story`);
+    link.setAttribute('aria-label', `Baca cerita ${gardener.displayName} tentang ${gardener.flower.name}`);
 
     const imageWrap = document.createElement('div');
     imageWrap.className = 'featured-card__image-wrap';
@@ -29,7 +29,7 @@
     image.height = 1080;
     image.addEventListener('error', () => {
       image.removeAttribute('src');
-      image.alt = 'Featured Garden Card image unavailable';
+      image.alt = 'Gambar Garden Card pilihan tidak tersedia';
       imageWrap.classList.add('featured-card__image-wrap--missing');
     });
     imageWrap.appendChild(image);
@@ -69,7 +69,7 @@
       if (!gardeners.length) {
         const note = document.createElement('p');
         note.className = 'empty-note';
-        note.textContent = 'The first flowers are still being planted.';
+        note.textContent = SundayGardenI18n.garden.firstFlowers;
         featuredRoot.appendChild(note);
         return;
       }
@@ -83,7 +83,7 @@
 
       const note = document.createElement('p');
       note.className = 'empty-note';
-      note.textContent = 'The garden could not be opened right now. Please try again later.';
+      note.textContent = 'Taman tidak dapat dibuka saat ini. Coba lagi nanti.';
       featuredRoot.appendChild(note);
     }
   };

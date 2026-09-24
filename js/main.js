@@ -1,8 +1,54 @@
+const SundayGardenI18n = Object.freeze({
+  nav: { home: 'Beranda', garden: 'Taman', about: 'Tentang' },
+  cta: {
+    exploreGarden: 'Jelajahi Taman',
+    about: 'Tentang Sunday Garden',
+    plant: 'Tanam Bungamu',
+    visitSundayVibes: 'Kunjungi Sunday Vibes',
+    backToGarden: 'Kembali ke Taman'
+  },
+  garden: {
+    search: 'Cari Gardener atau bunga',
+    filter: 'Filter berdasarkan bunga',
+    allFlowers: 'Semua bunga',
+    opening: 'Membuka taman…',
+    enableJs: 'Aktifkan JavaScript untuk menjelajahi koleksi Taman.',
+    noMatch: 'Tidak ada bunga yang cocok dengan pencarian ini. Coba jalur lain di dalam taman.',
+    firstFlowers: 'Bunga-bunga pertama masih sedang ditanam.',
+    room: 'Masih ada ruang untuk bunga lain.',
+    slowGrowth: 'Sunday Garden tumbuh perlahan. Satu bunga, satu orang, satu cerita dalam satu waktu.'
+  },
+  flower: {
+    chosenBy: 'Dipilih oleh',
+    commonName: 'Nama umum',
+    scientificName: 'Nama ilmiah',
+    taxonomicTreatment: 'Perlakuan taksonomi',
+    genusLevelTreatment: 'Tidak ditetapkan sebagai satu spesies; profil menggunakan genus',
+    researchPending: 'Penelitian masih dipersiapkan',
+    family: 'Famili',
+    genus: 'Genus',
+    order: 'Ordo',
+    kingdom: 'Kerajaan',
+    synonyms: 'Sinonim',
+    growthForm: 'Bentuk pertumbuhan',
+    nativeRange: 'Persebaran asli',
+    habitat: 'Habitat',
+    taxonomicFallback: 'Penelitian botani untuk bunga ini masih dipersiapkan.',
+    growthIntro: 'Perjalanan tenang dari bawah permukaan hingga bunga yang terlihat.',
+    sourcesNewTab: '(terbuka di tab baru)',
+    meaningFallback: 'Interpretasi bunga ini akan ditambahkan setelah tahap penelitiannya selesai.'
+  },
+  accessibility: {
+    skip: 'Lewati ke konten utama',
+    home: 'Beranda Sunday Garden'
+  }
+});
+
 const SundayGarden = (() => {
   const navItems = [
-    { href: "index.html", label: "Home", key: "home" },
-    { href: "garden.html", label: "The Garden", key: "garden" },
-    { href: "about.html", label: "About", key: "about" }
+    { href: "index.html", label: SundayGardenI18n.nav.home, key: "home" },
+    { href: "garden.html", label: SundayGardenI18n.nav.garden, key: "garden" },
+    { href: "about.html", label: SundayGardenI18n.nav.about, key: "about" }
   ];
 
   function currentPage() {
@@ -20,8 +66,8 @@ const SundayGarden = (() => {
     const page = currentPage();
 
     header.innerHTML = `
-      <nav class="site-nav container" aria-label="Primary navigation">
-        <a class="site-brand" href="index.html" aria-label="Sunday Garden home">
+      <nav class="site-nav container" aria-label="Navigasi utama">
+        <a class="site-brand" href="index.html" aria-label="${SundayGardenI18n.accessibility.home}">
           <img src="assets/brand/logo.png" alt="Sunday Garden">
         </a>
 
@@ -30,7 +76,7 @@ const SundayGarden = (() => {
           type="button"
           aria-expanded="false"
           aria-controls="site-navigation"
-          aria-label="Open navigation menu"
+          aria-label="Buka menu navigasi"
         >
           <span class="site-nav__toggle-bars" aria-hidden="true">
             <span></span>
@@ -95,16 +141,16 @@ const SundayGarden = (() => {
       <div class="site-footer__inner">
         <div>
           <div class="site-footer__mark">Sunday Garden</div>
-          <div class="site-footer__links" aria-label="Footer links">
-            <a href="index.html">Home</a>
-            <a href="garden.html">The Garden</a>
-            <a href="about.html">About</a>
+          <div class="site-footer__links" aria-label="Tautan footer">
+            <a href="index.html">${SundayGardenI18n.nav.home}</a>
+            <a href="garden.html">${SundayGardenI18n.nav.garden}</a>
+            <a href="about.html">${SundayGardenI18n.nav.about}</a>
           </div>
         </div>
 
         <p class="site-footer__meta">
-          Everyone blooms in their own way.<br>
-          Different flowers. Different stories. One garden.
+          Setiap orang mekar dengan caranya sendiri.<br>
+          Bunga berbeda. Cerita berbeda. Satu taman.
         </p>
       </div>
     `;

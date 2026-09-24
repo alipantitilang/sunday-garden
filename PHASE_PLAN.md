@@ -115,6 +115,19 @@ Goal: review the existing Blue Lotus entry against the same canonical standard u
 
 **19 / 32 phases complete.**
 
+## Remake & Fix tracking
+
+Remake & Fix work is separate from the 01–32 phase history. It records redesigns, refactors, fixes, and visibility improvements applied to systems that have already been built.
+
+- **RF-001 — Language System Remake — COMPLETED**
+- **RF-002 — Flower Data Visibility Remake — COMPLETED**
+- **RF-003 — Dynamic Growth Cycle Remake — COMPLETED**
+- **RF-004 — “What It Can Mean” Section Remake — COMPLETED**
+- **RF-005 — Taxonomy & Fallback Robustness — COMPLETED**
+- **RF-006 — Responsive Audit — COMPLETED**
+
+Detailed history: `REMAKE_FIX_LOG.md`
+
 All five current flower records are now researched:
 - Blue Lotus — complete
 - Red Rose — complete

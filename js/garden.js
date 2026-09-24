@@ -28,7 +28,7 @@
     link.href = `flower.html?id=${encodeURIComponent(gardener.id)}`;
     link.setAttribute(
       'aria-label',
-      `Read ${gardener.displayName}'s ${gardener.flower?.name || 'flower'} story`
+      `Baca cerita ${gardener.displayName} tentang ${gardener.flower?.name || 'bunga ini'}`
     );
 
     const imageWrap = document.createElement('div');
@@ -37,14 +37,14 @@
     const image = document.createElement('img');
     image.className = 'garden-card__image';
     image.src = gardener.media?.gardenCard || gardener.media?.hero || 'assets/images/placeholder/garden-card-placeholder.jpg';
-    image.alt = `${gardener.displayName} — ${gardener.flower?.name || 'Flower'}`;
+    image.alt = `${gardener.displayName} — ${gardener.flower?.name || 'Bunga'}`;
     image.loading = 'lazy';
     image.decoding = 'async';
     image.width = 1920;
     image.height = 1080;
     image.addEventListener('error', () => {
       image.removeAttribute('src');
-      image.alt = 'Garden Card image unavailable';
+      image.alt = 'Gambar Garden Card tidak tersedia';
       imageWrap.classList.add('garden-card__image-wrap--missing');
     }, { once: true });
     imageWrap.appendChild(image);
@@ -58,7 +58,7 @@
 
     const flower = document.createElement('span');
     flower.className = 'garden-card__flower';
-    flower.textContent = gardener.flower?.name || 'Unknown flower';
+    flower.textContent = gardener.flower?.name || 'Bunga tidak diketahui';
 
     caption.append(name, flower);
 
@@ -83,7 +83,7 @@
         .map((gardener) => [normalize(gardener.flower.name), gardener.flower.name])
     ).values()].sort((a, b) => a.localeCompare(b));
 
-    filterSelect.replaceChildren(new Option('All flowers', 'all'));
+    filterSelect.replaceChildren(new Option(SundayGardenI18n.garden.allFlowers, 'all'));
     flowers.forEach((flower) => {
       filterSelect.appendChild(new Option(flower, normalize(flower)));
     });
@@ -103,7 +103,7 @@
       if (show) visible += 1;
     });
 
-    count.textContent = `${visible} ${visible === 1 ? 'Gardener' : 'Gardeners'}`;
+    count.textContent = `${visible} ${visible === 1 ? 'Gardener' : 'Gardener'}`;
 
     let empty = grid.querySelector('.garden-empty');
     if (!visible) {
@@ -112,7 +112,7 @@
         empty.className = 'garden-status garden-empty';
         grid.appendChild(empty);
       }
-      empty.textContent = 'No flowers match that search. Try another path through the garden.';
+      empty.textContent = SundayGardenI18n.garden.noMatch;
     } else if (empty) {
       empty.remove();
     }
@@ -124,9 +124,9 @@
     if (!gardeners.length) {
       const note = document.createElement('p');
       note.className = 'garden-status';
-      note.textContent = 'The first flowers are still being planted.';
+      note.textContent = SundayGardenI18n.garden.firstFlowers;
       grid.appendChild(note);
-      count.textContent = '0 Gardeners';
+      count.textContent = '0 Gardener';
       return;
     }
 
@@ -149,7 +149,7 @@
 
       const note = document.createElement('p');
       note.className = 'garden-status';
-      note.textContent = 'The garden could not be opened right now. Please try again later.';
+      note.textContent = 'Taman tidak dapat dibuka saat ini. Coba lagi nanti.';
       grid.appendChild(note);
       count.textContent = '';
     }

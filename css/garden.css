@@ -359,3 +359,34 @@
   font-size: 1.25rem;
   font-style: italic;
 }
+
+/* RF-006 — Garden responsive audit */
+.garden-grid > * { min-width: 0; }
+.garden-card__caption { min-width: 0; }
+.garden-card__name { overflow-wrap: anywhere; }
+
+@media (max-width: 900px) {
+  .garden-intro__inner { grid-template-columns: minmax(0, 1fr) minmax(190px, .55fr); gap: clamp(2rem, 7vw, 4rem); }
+  .garden-intro h1 { font-size: clamp(3.5rem, 10vw, 6rem); }
+  .garden-toolbar { align-items: flex-start; flex-direction: column; }
+  .garden-controls { width: 100%; flex-wrap: wrap; }
+}
+
+@media (max-width: 680px) {
+  .garden-intro { min-height: 520px; }
+  .garden-intro__inner { grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
+  .garden-intro h1 { font-size: clamp(3.2rem, 15vw, 5rem); }
+  .garden-intro__aside { max-width: 100%; }
+  .garden-toolbar { gap: 1.25rem; }
+  .garden-controls { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .garden-search input,
+  .garden-filter select { width: 100%; min-width: 0; }
+  .garden-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .garden-card__caption { display: grid; grid-template-columns: minmax(0, 1fr); gap: .35rem; }
+  .garden-card__flower { text-align: left; }
+}
+
+@media (max-width: 380px) {
+  .garden-intro { min-height: 500px; }
+  .garden-grid { gap: 2.5rem; }
+}

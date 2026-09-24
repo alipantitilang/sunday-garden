@@ -429,3 +429,27 @@
   .home-question__philosophy { font-size: 1.2rem; }
   .home-cta__inner { padding-inline: .25rem; }
 }
+
+/* RF-006 — Home responsive audit */
+.home-hero__inner,
+.home-question__layout,
+.home-featured__header { min-width: 0; }
+
+@media (max-width: 900px) {
+  .home-hero__inner { grid-template-columns: minmax(0, 1fr) minmax(280px, .9fr); gap: 2.5rem; }
+  .home-hero h1 { font-size: clamp(3.5rem, 9vw, 6rem); }
+  .home-question__layout { gap: 3rem; }
+}
+
+@media (max-width: 680px) {
+  .home-hero { min-height: auto; }
+  .home-hero__inner { grid-template-columns: 1fr; padding-block: 4.5rem 5rem; }
+  .home-hero__visual { justify-self: stretch; width: 100%; }
+  .home-hero h1 { font-size: clamp(3.2rem, 15vw, 5rem); }
+  .home-hero__scroll { display: none; }
+  .home-question__layout { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+@media (max-width: 380px) {
+  .home-hero__inner { padding-block: 3.5rem 4rem; }
+}

@@ -365,3 +365,16 @@
   .about-cta__actions { flex-direction: column; }
   .about-cta__actions .button { width: 100%; }
 }
+
+/* RF-006 — About responsive audit */
+@media (max-width: 900px) {
+  .about-hero__inner,
+  .about-story__layout,
+  .about-keeper__layout { gap: 3rem; }
+}
+
+@media (max-width: 680px) {
+  .about-hero__inner,
+  .about-story__layout,
+  .about-keeper__layout { grid-template-columns: 1fr; }
+}

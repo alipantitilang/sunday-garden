@@ -304,3 +304,19 @@
 .garden-filter select:focus-visible {
   outline-offset: 3px;
 }
+
+/* RF-006 — Global navigation/footer responsive audit */
+.site-nav,
+.site-footer__inner { min-width: 0; }
+.site-brand { min-width: 0; }
+.site-brand img { max-width: 100%; }
+
+@media (max-width: 900px) {
+  .site-nav { gap: 1rem; }
+  .site-nav__links { gap: clamp(.75rem, 2.5vw, 1.5rem); }
+}
+
+@media (max-width: 680px) {
+  .site-brand img { width: clamp(135px, 42vw, 185px); }
+  .site-footer__inner { flex-direction: column; gap: 1.5rem; }
+}
