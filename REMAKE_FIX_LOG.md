@@ -536,3 +536,9 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - Added transparent PNG copies for the navbar lockup, footer logo, and footer wordmark without changing the approved brand directory structure.
 - Increased Growth Cycle card height across landscape and portrait breakpoints so longer final-phase descriptions, especially Pink Tulip phase 05/05, no longer collide with the bottom phase number.
 - Preserved the portrait neighboring-card peek behavior and existing phase navigation logic.
+
+## RF-012 Iteration 7 — Phase label clearance
+- Moved the `Fase 01/05` phase label closer to the card frame edge.
+- Added stacking priority so the label remains above the centered phase content.
+- Applied tighter top positioning for portrait layouts as well.
+- No flower/growthCycle data schema changes.
