@@ -497,3 +497,14 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - Phase cards use fluid sizing so landscape layouts can keep the phase timeline and active phase viewer compact within the same viewport area, while portrait layouts retain the same horizontal reading concept.
 - Typography, card spacing, node sizing, and navigation scale with viewport width/height using `clamp()` and responsive media queries.
 - Reduced-motion behavior remains supported.
+
+## RF-012 Iteration 4 — Refined Phase Navigation & Compact Cards
+- Navigation controls restored as circular buttons with a restrained botanical-editorial treatment: thin border, subtle outer ring, paper surface, and responsive sizing.
+- Previous/next controls remain conditionally visible: previous appears from phase 2 onward; next disappears on the final phase.
+- Phase cards reduced in size and rebuilt as a single-column composition so content remains horizontal and readable rather than collapsing into narrow vertical columns.
+- `Fase 01/04` remains anchored to the upper frame edge.
+- The standalone phase number (`01`, `02`, etc.) is centered along the lower frame edge.
+- Phase title and description use the central card area with responsive horizontal padding.
+- Responsive sizing refined for landscape, portrait, and narrow mobile screens.
+- Data schema unchanged; renderer-only presentation update.
+- Status: RF-012 remains in progress.
