@@ -69,7 +69,7 @@ const SundayGarden = (() => {
     header.innerHTML = `
       <nav class="site-nav container" aria-label="Navigasi utama">
         <a class="site-brand" href="index.html" aria-label="${SundayGardenI18n.accessibility.home}">
-          <img src="assets/brand/lockup/sg-logo-wordmark-transparent.svg" alt="Sunday Garden">
+          <img src="assets/brand/lockup/sg-logo-wordmark-transparent.png" alt="Sunday Garden">
         </a>
 
         <button
@@ -142,8 +142,8 @@ const SundayGarden = (() => {
       <div class="site-footer__inner">
         <div class="site-footer__brand-block">
           <a class="site-footer__brand" href="index.html" aria-label="${SundayGardenI18n.accessibility.home}">
-            <img src="assets/brand/logo/sg-logo-transparent.svg" alt="" aria-hidden="true">
-            <img class="site-footer__wordmark" src="assets/brand/wordmark/sg-wordmark-transparent.svg" alt="Sunday Garden">
+            <img src="assets/brand/logo/sg-logo-transparent.png" alt="" aria-hidden="true">
+            <img class="site-footer__wordmark" src="assets/brand/wordmark/sg-wordmark-transparent.png" alt="Sunday Garden">
           </a>
           <div class="site-footer__links" aria-label="Tautan footer">
             <a href="index.html">${SundayGardenI18n.nav.home}</a>

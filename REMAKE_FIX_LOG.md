@@ -529,3 +529,10 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - `Fase 01/04` remains anchored at the card's upper edge; the phase number remains centered at the lower edge.
 - Card corners and internal spacing remain restrained and editorial.
 - No growth-cycle data/schema changes.
+
+
+### RF-012 Iteration 7 — Brand raster path repair & taller phase cards
+- The supplied transparent brand files carrying `.svg` filenames were confirmed to contain PNG raster data. Navbar/footer references now use explicit `.png` copies so browser MIME handling cannot reject the artwork.
+- Added transparent PNG copies for the navbar lockup, footer logo, and footer wordmark without changing the approved brand directory structure.
+- Increased Growth Cycle card height across landscape and portrait breakpoints so longer final-phase descriptions, especially Pink Tulip phase 05/05, no longer collide with the bottom phase number.
+- Preserved the portrait neighboring-card peek behavior and existing phase navigation logic.

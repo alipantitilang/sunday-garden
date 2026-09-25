@@ -1170,7 +1170,7 @@
 @media (min-width: 900px) and (orientation: landscape) {
   .growth-cycle {
     --growth-card-width: clamp(27rem, 50vw, 38rem);
-    --growth-card-min-height: clamp(9.5rem, 21vh, 13.5rem);
+    --growth-card-min-height: clamp(10.5rem, 23vh, 14.5rem);
   }
 }
 
@@ -1178,7 +1178,7 @@
   .growth-cycle {
     /* Deliberately narrower than the viewport so the neighboring phase cards remain visible. */
     --growth-card-width: clamp(12.5rem, 64vw, 20rem);
-    --growth-card-min-height: clamp(8.5rem, 27vw, 11.5rem);
+    --growth-card-min-height: clamp(10.75rem, 31vw, 13.25rem);
   }
 
   .growth-cycle__viewer {
@@ -1222,7 +1222,7 @@
 @media (max-width: 420px) and (orientation: portrait) {
   .growth-cycle {
     --growth-card-width: 63vw;
-    --growth-card-min-height: clamp(8rem, 27vw, 9.75rem);
+    --growth-card-min-height: clamp(10.75rem, 31vw, 12.75rem);
   }
 
   .growth-cycle__track {
