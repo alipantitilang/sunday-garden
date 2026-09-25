@@ -272,3 +272,27 @@ A follow-up audit found that the Flower Page hero had been localized to Indonesi
 ### Result
 
 RF-009 remains **ongoing**. Future language inconsistencies discovered during the same audit should continue to be corrected under RF-009 without changing its name. Once the agreed language audit is stable, RF-009 can be formally closed.
+
+
+## RF-009 Hero & Page Language Consistency — ITERATION 3
+**Status:** Ongoing
+
+This iteration applies the requested page-level language corrections without renaming RF-009.
+
+### English surfaces
+- Home / The Question: `If you could become a flower, which flower would you want to be?` and `There is no wrong flower.`
+- Home / Your Turn: `What flower do you want to bloom as?`
+- The Garden / Growing Here: `Meet the Gardeners`
+- The Garden / A Growing Collection: `There is still room for more flowers.`
+- Flower/Gardener pages: `A little about [Flower]`, `Every flower carries a different story.`, and the shared footer philosophy.
+- About: `It all began on a Sunday.`, `A garden where people can be seen without having to explain everything.`, `Gathering stories. Tending to them. Letting them bloom.`, and `Someone has to tend to the little things.`
+
+### Indonesian surfaces
+- Home / The Question rationale paragraph translated into Indonesian.
+- Flower/Gardener pages: the `Beyond botany` explanation and `Read further` source explanation are Indonesian.
+- About / Our Vision: both requested explanatory paragraphs are Indonesian.
+
+### Implementation notes
+- The Flower Page `A little about...` heading uses `heroName` when available so its editorial flower name remains English.
+- Shared footer text in `js/main.js` is now English for all pages.
+- RF-009 remains ongoing; future language issues must continue under RF-009 without creating RF-010 unless explicitly requested.

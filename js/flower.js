@@ -247,7 +247,7 @@ const SundayGardenFlower = (() => {
         </section>
 
         <section class="flower-section container flower-profile">
-          <div class="section-heading"><p class="eyebrow">The flower</p><h2 id="flower-profile-title">A little about ${escapeHTML(f.commonName)}</h2><p>${escapeHTML(f.taxonomicNote || SundayGardenI18n.flower.taxonomicFallback)}</p></div>
+          <div class="section-heading"><p class="eyebrow">The flower</p><h2 id="flower-profile-title">A little about ${escapeHTML(f.heroName || f.commonName)}</h2><p>${escapeHTML(f.taxonomicNote || SundayGardenI18n.flower.taxonomicFallback)}</p></div>
           <dl class="fact-list">${profileMarkup(f)}</dl>
         </section>
 
@@ -273,16 +273,16 @@ const SundayGardenFlower = (() => {
         </section>
 
         <section class="flower-section cultural-section">
-          <div class="container section-heading"><p class="eyebrow">Beyond botany</p><h2>Cultural & historical notes</h2><p>What the flower has meant in places and periods where it was documented.</p></div>
+          <div class="container section-heading"><p class="eyebrow">Beyond botany</p><h2>Cultural & historical notes</h2><p>Makna yang dimiliki bunga ini di tempat dan masa ketika keberadaannya telah didokumentasikan.</p></div>
           <div class="container facts-grid">${factsMarkup(f.culturalNotes)}</div>
         </section>
 
         <section class="flower-section sources-section container">
-          <div class="section-heading"><p class="eyebrow">Read further</p><h2>Sources & further reading</h2><p>Botanical details and historical notes are kept separate from Sunday Garden's own interpretation.</p></div>
+          <div class="section-heading"><p class="eyebrow">Read further</p><h2>Sources & further reading</h2><p>Rincian botani dan catatan sejarah dipisahkan dari interpretasi Sunday Garden sendiri.</p></div>
           <ol class="source-list">${sourcesMarkup(f.sources)}</ol>
         </section>
 
-        <section class="flower-cta container"><p class="eyebrow">Keep wandering</p><h2>Setiap bunga membawa cerita yang berbeda.</h2><p>Masih ada Gardener lain yang menunggu untuk kamu temui di taman.</p><a class="button" href="garden.html">${SundayGardenI18n.cta.exploreGarden}</a></section>
+        <section class="flower-cta container"><p class="eyebrow">Keep wandering</p><h2>Every flower carries a different story.</h2><p>Masih ada Gardener lain yang menunggu untuk kamu temui di taman.</p><a class="button" href="garden.html">${SundayGardenI18n.cta.exploreGarden}</a></section>
       </article>`;
   }
 

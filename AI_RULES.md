@@ -334,3 +334,13 @@ Before release, check as applicable:
 - Preserve scientific names, taxonomic nomenclature, proper names, source titles, URLs, technical identifiers, and original-language evidence where translation would change their identity or evidentiary function.
 - Do not translate Gardener stories unless explicitly requested.
 - A language inconsistency in an existing record is an RF/content-data correction, not a new Phase.
+
+
+### RF-009 language iteration — page-level editorial surfaces
+- Home `The question`: the question and selected supporting editorial line are English; the flower-choice rationale paragraph is Indonesian.
+- Home `Your turn`: the requested headline is English.
+- The Garden: the requested collection/continuation headlines are English.
+- Flower/Gardener Page: `A little about...`, `Keep wandering`, and the requested closing line are English; specified cultural/history/source explanatory copy is Indonesian.
+- About: the requested section headlines are English; the two requested `Our vision` paragraphs are Indonesian.
+- Shared footer: the closing philosophy is English.
+- This is part of RF-009 and must remain under the same RF name for future language corrections.

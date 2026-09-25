@@ -15,7 +15,7 @@ const SundayGardenI18n = Object.freeze({
     enableJs: 'Aktifkan JavaScript untuk menjelajahi koleksi Taman.',
     noMatch: 'Tidak ada bunga yang cocok dengan pencarian ini. Coba jalur lain di dalam taman.',
     firstFlowers: 'Bunga-bunga pertama masih sedang ditanam.',
-    room: 'Masih ada ruang untuk bunga lain.',
+    room: 'There is still room for more flowers.',
     slowGrowth: 'Sunday Garden tumbuh perlahan. Satu bunga, satu orang, satu cerita dalam satu waktu.'
   },
   flower: {
@@ -150,8 +150,8 @@ const SundayGarden = (() => {
         </div>
 
         <p class="site-footer__meta">
-          Setiap orang mekar dengan caranya sendiri.<br>
-          Bunga berbeda. Cerita berbeda. Satu taman.
+          Everyone blooms in their own way.<br>
+          Different flowers. Different stories. One garden.
         </p>
       </div>
     `;

@@ -201,9 +201,14 @@ Future innovations may add Phase 33, Phase 34, and beyond. A Phase is added only
 | RF-008 | Growth Cycle Template & Resolution Remake | ✅ Complete |
 | RF-009 | Flower Data Language Consistency Remake | 🔧 Ongoing iterative fix |
 
+
 Detailed records are maintained in `REMAKE_FIX_LOG.md`.
 
 ---
+
+### RF-009 — Current language consistency scope
+
+RF-009 remains an ongoing iterative fix. The current iteration aligns the requested language system across Home, The Garden, Flower/Gardener pages, About, and the shared footer: selected editorial lines are English, while specified botanical/history explanatory lines and the Home question rationale are Indonesian. The Flower Page `A little about...` heading uses the English `heroName` when available. Future language inconsistencies continue under RF-009 without renaming it.
 
 ## 7. Feature & Innovation Registry
 

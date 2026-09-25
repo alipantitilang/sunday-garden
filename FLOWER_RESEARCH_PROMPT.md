@@ -277,3 +277,7 @@ Before finalizing a researched flower record, audit all visitor-facing botanical
 
 ### Flower Page Hero Language
 The Flower Page hero is an intentional English editorial surface. Flower records may define `heroName` for the English common flower name used only in the hero. The canonical `commonName` remains the Indonesian visitor-facing name used elsewhere. Scientific names remain unchanged.
+
+
+### RF-009 Language Consistency — Flower Page editorial exception
+The Flower Page may use English for the `A little about [Flower]` heading, `Keep wandering`, and designated editorial opening/closing surfaces. Specified botanical, cultural/historical, and source-explanation copy remains Indonesian according to the current language system. Do not infer or translate other fields solely from this exception.
