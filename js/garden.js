@@ -30,6 +30,7 @@
     return {
       family: flower?.family || taxonomy.family || '-',
       genus: flower?.genus || taxonomy.genus || '-',
+      order: flower?.order || taxonomy.order || '-',
       commonName: flower?.commonName || gardener.flower?.name || '-',
       heroName: flower?.heroName || gardener.flower?.name || '-',
       scientificName: flower?.scientificName || gardener.flower?.scientificName || '-'
@@ -89,33 +90,31 @@
     const caption = document.createElement('div');
     caption.className = 'garden-card__caption';
 
-    const name = document.createElement('h3');
-    name.className = 'garden-card__name';
-    name.textContent = gardener.displayName;
+    const createMetaCell = (primary, secondary, primaryClass = '') => {
+      const cell = document.createElement('div');
+      cell.className = 'garden-card__meta-cell';
 
-    const flower = document.createElement('span');
-    flower.className = 'garden-card__flower';
-    flower.textContent = meta.commonName || 'Bunga tidak diketahui';
-    caption.append(name, flower);
+      const primaryEl = document.createElement('div');
+      primaryEl.className = `garden-card__meta-primary${primaryClass ? ` ${primaryClass}` : ''}`;
+      primaryEl.textContent = display(primary);
 
-    if (meta.scientificName && meta.scientificName !== '-') {
-      const scientific = document.createElement('p');
-      scientific.className = 'garden-card__scientific';
-      scientific.textContent = meta.scientificName;
-      caption.appendChild(scientific);
-    }
+      const secondaryEl = document.createElement('div');
+      secondaryEl.className = 'garden-card__meta-secondary';
+      secondaryEl.textContent = display(secondary);
 
-    const relation = document.createElement('div');
-    relation.className = 'garden-card__relation';
-    const family = document.createElement('span');
-    family.textContent = display(meta.family);
-    const dot = document.createElement('i');
-    dot.setAttribute('aria-hidden', 'true');
-    dot.textContent = '·';
-    const genus = document.createElement('span');
-    genus.textContent = display(meta.genus);
-    relation.append(family, dot, genus);
-    caption.appendChild(relation);
+      cell.append(primaryEl, secondaryEl);
+      return cell;
+    };
+
+    const metaGrid = document.createElement('div');
+    metaGrid.className = 'garden-card__meta-grid';
+    metaGrid.append(
+      createMetaCell(gardener.displayName, 'Gardener', 'garden-card__meta-primary--name'),
+      createMetaCell(meta.heroName, meta.scientificName, 'garden-card__meta-primary--flower'),
+      createMetaCell(meta.genus, meta.order, 'garden-card__meta-primary--taxonomy')
+    );
+
+    caption.appendChild(metaGrid);
 
     link.append(imageWrap, caption);
     article.appendChild(link);

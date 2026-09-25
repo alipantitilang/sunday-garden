@@ -1,3 +1,28 @@
+## Iteration 4 — Stable index control sizing and editorial card metadata
+
+### Fixed
+
+- Stabilized the Botanical Index trigger so the `Browse the botanical index` label, active family text, and circular arrow keep fixed grid columns instead of pushing each other when the selected family is `Semua bunga` or `Nymphaeaceae`.
+- Kept the active family name fluid inside a bounded column with ellipsis fallback, while the circular control remains a fixed `2rem` element.
+- Reworked each Garden Card caption into a consistent three-column, two-row editorial metadata layout:
+  - column 1: Gardener name / `Gardener`
+  - column 2: English flower name / scientific name
+  - column 3: genus / order
+- The English flower name now comes from `heroName` so cards display `Blue Lotus`, `Red Rose`, `Pink Tulip`, etc., rather than the Indonesian `commonName`.
+- Added taxonomy `order` to the Garden Card data model.
+- Removed obsolete card-caption CSS from the previous layout.
+
+### Responsive behavior
+
+- The card metadata remains a three-column structure on mobile, with fluid type and tighter gaps so the information hierarchy stays recognizable without returning to the old stacked caption.
+- The index trigger retains its stable arrow/control column at narrow widths.
+
+### Validation
+
+- `node --check js/garden.js` passed.
+- `node tools/validate-data.mjs` passed.
+- ZIP integrity checked after packaging.
+
 # Sunday Garden — Remake & Fix Log
 
 Remake & Fix entries record changes to systems that were already built in a completed or active phase. They do **not** rewrite Phase 01–32 history.
