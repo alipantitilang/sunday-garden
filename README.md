@@ -119,7 +119,7 @@ Examples:
 
 Phases are about **new capability**, not about the number of flowers or Gardeners in the garden.
 
-Phases may continue beyond Phase 32 when new innovations are approved.
+Phases may continue beyond Phase 33 when new innovations are approved.
 
 ### Remake & Fix — Existing System Improvement
 
@@ -180,10 +180,11 @@ The roadmap describes system and workflow development only. It intentionally doe
 - [ ] Phase 30 — Accessibility + Performance Audit
 - [ ] Phase 31 — SEO + Metadata Audit
 - [ ] Phase 32 — Final Garden Release
+- [ ] Phase 33 — Sunday Garden Program Profile & Brand Archive
 
-Future innovations may add Phase 33, Phase 34, and beyond. A Phase is added only when a new capability is agreed upon.
+Future innovations may add Phase 34, Phase 35, and beyond. A Phase is added only when a new capability is agreed upon.
 
-**Active system roadmap progress: 14 / 32 phases complete.**
+**Active system roadmap progress: 14 / 33 phases complete.**
 
 ---
 
@@ -199,7 +200,9 @@ Future innovations may add Phase 33, Phase 34, and beyond. A Phase is added only
 | RF-006 | Responsive Audit | ✅ Complete |
 | RF-007 | Documentation, Information & AI Governance Remake | ✅ Complete |
 | RF-008 | Growth Cycle Template & Resolution Remake | ✅ Complete |
-| RF-009 | Flower Data Language Consistency Remake | 🔧 Ongoing iterative fix |
+| RF-009 | Flower Data Language Consistency Remake | ✅ Complete |
+| RF-010 | Flower Search & Discovery Experience Remake | ✅ Complete |
+| RF-011 | Brand Identity, Navigation & Gardener Asset Remake | 🔄 In progress |
 
 
 Detailed records are maintained in `REMAKE_FIX_LOG.md`.
@@ -208,7 +211,7 @@ Detailed records are maintained in `REMAKE_FIX_LOG.md`.
 
 ### RF-009 — Current language consistency scope
 
-RF-009 remains an ongoing iterative fix. The current iteration aligns the requested language system across Home, The Garden, Flower/Gardener pages, About, and the shared footer: selected editorial lines are English, while specified botanical/history explanatory lines and the Home question rationale are Indonesian. The Flower Page `A little about...` heading uses the English `heroName` when available. Future language inconsistencies continue under RF-009 without renaming it.
+RF-009 is closed. The agreed language audit across Home, The Garden, Flower/Gardener pages, About, and the shared footer has been completed. Future language changes are treated as new work rather than appended to RF-009.
 
 ## 7. Feature & Innovation Registry
 
@@ -223,7 +226,10 @@ Legend:
 - [x] Static-first HTML/CSS/JS/JSON architecture
 - [x] Universal Flower Page
 - [x] The Garden directory
+- [x] Flower search and discovery
+- [x] Botanical family/genus relationship grouping
 - [x] Gardener story rendering
+- [ ] Sunday Garden program profile & brand archive
 - [x] Data-driven content rendering
 - [x] Responsive layout system
 - [x] Accessibility/performance baseline
@@ -475,7 +481,7 @@ For research excerpts:
 
 The translation must preserve meaning and must not be presented as a direct quotation from the original source.
 
-Existing records may be migrated gradually. A language inconsistency should be treated as a content/data improvement, not as a reason to alter historical Phase numbers. RF-009 tracks the systematic cleanup of existing flower records and Flower Page language consistency. Visitor-facing botanical/editorial data is primarily Indonesian, while the Flower Page hero intentionally follows the English editorial language standard and uses the English flower common name. Scientific nomenclature, proper names, source titles, URLs, technical identifiers, and evidence language remain preserved where appropriate. RF-009 remains open for iterative language fixes until the language audit is considered stable.
+Existing records may be migrated gradually. A language inconsistency should be treated as a content/data improvement, not as a reason to alter historical Phase numbers. RF-009 tracked the systematic cleanup of existing flower records and Flower Page language consistency and is now closed. Visitor-facing botanical/editorial data is primarily Indonesian, while the Flower Page hero intentionally follows the English editorial language standard and uses the English flower common name. Scientific nomenclature, proper names, source titles, URLs, technical identifiers, and evidence language remain preserved where appropriate.
 
 ---
 
@@ -565,9 +571,34 @@ Never claim a validation was performed unless it was actually performed.
 
 ## 15. Project State
 
-**System roadmap:** 14 / 32 active phases complete  
+**System roadmap:** 14 / 33 active phases complete  
 **Remake & Fix:** RF-007 complete  
 **Feature registry:** continuously expanding  
 **Flower/Gardener content:** intentionally excluded from system progress counts
 
 Sunday Garden is expected to grow beyond the original roadmap. The documentation should grow with the system without turning content volume into development history.
+
+
+## Brand Asset Architecture
+
+Sunday Garden keeps brand identity assets separate from content imagery. The current structure is:
+
+```text
+assets/
+├── brand/
+│   ├── logo/
+│   ├── wordmark/
+│   ├── lockup/
+│   ├── primary/
+│   └── favicon/
+├── images/
+│   ├── gardeners/
+│   ├── flowers/
+│   ├── home/
+│   └── placeholder/
+└── textures/
+    └── paper/
+```
+
+The compact transparent lockup is the global navbar asset. Standalone logo and wordmark assets are used where independent marks are useful. The primary branding asset is reserved for the future About / Brand Archive presentation.
+

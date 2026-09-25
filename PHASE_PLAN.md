@@ -8,7 +8,7 @@ This document tracks **system and workflow development**, not the number of flow
 - **Remake & Fix = existing-system change.** See `REMAKE_FIX_LOG.md`.
 - Adding content alone does not create a Phase.
 - New flower research is an ongoing content workflow governed by `FLOWER_RESEARCH_PROMPT.md`.
-- The roadmap may continue beyond Phase 32 when new innovations are approved.
+- The roadmap may continue beyond Phase 33 when new innovations are approved.
 
 ## Historical baseline
 
@@ -106,6 +106,7 @@ Final technical quality pass.
 Consistent public-page metadata and discoverability.
 
 ### Phase 32 — Final Garden Release
+
 Release candidate validation and final packaging.
 
 ## Future phases
@@ -129,3 +130,7 @@ When a Phase is completed:
 4. update the Feature & Innovation Registry when applicable;
 5. record the completion and next step;
 6. create a release ZIP only after verification.
+
+### Phase 33 — Sunday Garden Program Profile & Brand Archive — PLANNED
+A substantial About-page update that turns the page into the official profile and visual archive of Sunday Garden. The update will document program identity, origin, publication history, relationship with Sunday Vibes, logo/wordmark meaning, colors, typography, visual philosophy, and brand usage. The Primary Branding lockup will be displayed here as the visual reference for the identity explanations.
+

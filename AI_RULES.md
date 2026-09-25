@@ -256,6 +256,35 @@ Support compatible singular/plural forms where the schema requires it, such as `
 
 Never hide valid data simply because an older renderer did not anticipate the field.
 
+## 9A. Flower Search & Discovery Governance
+
+The Garden search is a discovery system, not only a name lookup. Search and filtering should use the canonical relationship data available from `flowers.json` and should help visitors notice botanical relationships without collapsing distinct Gardener flower choices into one record.
+
+### Relationship hierarchy
+
+Use the available hierarchy:
+
+```text
+Family
+  ↓
+Genus
+  ↓
+Flower / category record
+  ↓
+Gardener choice
+```
+
+A shared genus or family means records are related, but it does not automatically mean they are the same species or the same visual category. Category-level records such as `Lilium spp.` must remain distinct when the Gardener chose distinct flower presentations.
+
+### Discovery behavior
+
+- Search may match Gardener name, flower name, scientific name, family, and genus.
+- Family grouping should be derived from canonical flower research, not duplicated manually in `gardeners.json`.
+- Genus grouping should remain visible when it clarifies relationships.
+- The interface may show related records together, but must not merge their personal stories or botanical profiles.
+- Sorting/filtering is an interface concern; taxonomy remains data-driven.
+- Do not infer a family or genus from a common-name colour/category alone when the canonical flower record does not establish it.
+
 ## 10. Content separation
 
 Keep these layers separate:
@@ -344,3 +373,11 @@ Before release, check as applicable:
 - About: the requested section headlines are English; the two requested `Our vision` paragraphs are Indonesian.
 - Shared footer: the closing philosophy is English.
 - This is part of RF-009 and must remain under the same RF name for future language corrections.
+
+## Brand Asset Rules — RF-011
+- Use `assets/brand/lockup/sg-logo-wordmark-transparent.svg` for the global navbar unless a future approved brand rule replaces it.
+- Do not place the primary branding lockup in the navbar; reserve `assets/brand/primary/` for the About / Brand Archive presentation.
+- Keep logo, wordmark, lockup, primary branding, and favicon assets in their dedicated folders.
+- Keep Gardener/flower/home imagery separate from brand identity assets.
+- Do not recreate or rename supplied brand assets during routine implementation without explicit approval.
+- When supplied assets use an extension that does not match their actual file format, verify the file signature before integration. Preserve approved paths when practical, but normalize the container/format so browser MIME handling is reliable; do not claim a raster-wrapped SVG is true vector artwork.

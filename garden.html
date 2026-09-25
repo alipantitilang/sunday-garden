@@ -14,7 +14,11 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Garden — Sunday Garden">
   <meta name="twitter:description" content="Explore the flowers and stories growing in Sunday Garden.">
-  <link rel="icon" href="assets/brand/favicon.png" type="image/png">
+  <link rel="icon" href="assets/brand/favicon/sg-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/brand/favicon/sg-favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/brand/favicon/sg-favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/brand/favicon/sg-favicon-180.png" sizes="180x180">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/garden.css">
@@ -33,7 +37,7 @@
           <h1>A garden of<br><em>different blooms.</em></h1>
           <p class="garden-intro__lead">
             Setiap bunga di sini adalah milik seseorang. Jelajahi pilihan dan cerita,
-            and the little pieces of life growing between the petals.
+            dan temukan hubungan kecil yang tumbuh di antara bunga-bunga.
           </p>
         </div>
 
@@ -51,25 +55,50 @@
             <p class="eyebrow">Growing here</p>
             <h2 id="collection-title">Meet the Gardeners</h2>
           </div>
+        </div>
 
-          <div class="garden-controls" aria-label="Garden filters">
-            <label class="garden-search">
-              <span class="sr-only">Cari Gardener atau bunga</span>
-              <input
-                type="search"
-                data-garden-search
-                placeholder="Cari di taman…"
-                autocomplete="off"
-              >
-            </label>
-
-            <label class="garden-filter">
-              <span class="sr-only">Filter berdasarkan bunga</span>
-              <select data-garden-filter>
-                <option value="all">Semua bunga</option>
-              </select>
-            </label>
+        <div class="garden-discovery" aria-label="Penjelajahan taman">
+          <div class="garden-search">
+            <span class="garden-search__glyph" aria-hidden="true"></span>
+            <label class="sr-only" for="garden-search-input">Cari Gardener, bunga, atau hubungan botani</label>
+            <input
+              id="garden-search-input"
+              type="search"
+              data-garden-search
+              placeholder="Cari nama, bunga, atau hubungan…"
+              autocomplete="off"
+              enterkeyhint="search"
+            >
+            <button class="garden-search__clear" type="button" data-garden-search-clear aria-label="Hapus pencarian" hidden>
+              <span aria-hidden="true">×</span>
+            </button>
           </div>
+
+          <details class="garden-index" data-garden-index>
+            <summary>
+              <span class="garden-index__label">Browse the botanical index</span>
+              <span class="garden-index__meta" data-garden-index-meta>Semua bunga</span>
+              <span class="garden-index__chevron" aria-hidden="true">⌄</span>
+            </summary>
+
+            <div class="garden-index__body">
+              <div class="garden-index__section">
+                <p class="garden-index__eyebrow">Famili</p>
+                <div class="garden-index__families" data-garden-family-list></div>
+              </div>
+
+              <div class="garden-index__section garden-index__section--sort">
+                <label class="garden-index__eyebrow" for="garden-sort">Urutkan</label>
+                <select id="garden-sort" class="garden-sort" data-garden-sort>
+                  <option value="default">Urutan taman</option>
+                  <option value="gardener-asc">Gardener A–Z</option>
+                  <option value="flower-asc">Bunga A–Z</option>
+                  <option value="family-asc">Famili botani A–Z</option>
+                  <option value="genus-asc">Genus A–Z</option>
+                </select>
+              </div>
+            </div>
+          </details>
         </div>
 
         <div class="garden-count" aria-live="polite" data-garden-count></div>

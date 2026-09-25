@@ -34,7 +34,7 @@ body {
   min-width: 320px;
   color: var(--ink);
   background-color: var(--paper);
-  background-image: url("../assets/textures/paper.webp");
+  background-image: url("../assets/textures/paper/paper.webp");
   background-repeat: repeat;
   background-size: 700px auto;
   font-family: var(--font-body);

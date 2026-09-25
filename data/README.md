@@ -95,6 +95,12 @@ A cultural meaning must not be presented as a universal botanical fact.
 
 Use a recognised botanical authority when available. Common colour/category names do not automatically identify one species. Genus-level or category-level records are valid when that is the evidence-supported scope.
 
+## Flower discovery relationship rule
+
+The Garden may group or filter flower choices by botanical family and genus using the canonical relationship fields in `flowers.json`. This is a discovery aid, not a reason to merge records. Distinct category-level flower records remain distinct even when they share the same genus or family.
+
+For example, two `Lilium spp.` category records may appear together under their shared family/genus relationship while retaining separate IDs, Gardener stories, images, and Flower Page content.
+
 ## Image rule
 
 Large images should remain externally hosted/CDN-hosted where practical. JSON stores URLs/paths rather than image binaries.

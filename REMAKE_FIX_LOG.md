@@ -296,3 +296,105 @@ This iteration applies the requested page-level language corrections without ren
 - The Flower Page `A little about...` heading uses `heroName` when available so its editorial flower name remains English.
 - Shared footer text in `js/main.js` is now English for all pages.
 - RF-009 remains ongoing; future language issues must continue under RF-009 without creating RF-010 unless explicitly requested.
+
+## RF-010 — Flower Search & Discovery Experience Remake — COMPLETED
+
+**Date:** 2026-09-25  
+**Scope:** The Garden search, botanical relationship discovery, filter/sort controls, grouping, and responsive interaction
+
+### Problem
+
+The existing Garden search used a standard search input and flower select filter. It treated flower choices primarily as names and did not expose the botanical relationships already present in the canonical flower data. Related records such as White Lily and Pink & White Lily both using `Lilium spp.` therefore had no visible relationship in discovery. The controls also did not fit the Quiet Botanical Journal direction strongly enough.
+
+### Changes
+
+- Rebuilt the Garden search as an editorial botanical search component with an integrated search mark, clear action, focus state, and responsive behavior.
+- Search now matches Gardener name, flower name, English hero name, scientific name, family, and genus.
+- The Garden now loads `flowers.json` alongside `gardeners.json` so family/genus relationships come from the canonical botanical records rather than duplicated Gardener data.
+- Added a botanical index accordion with family-based discovery controls.
+- Added sorting options for Gardener A–Z, flower A–Z, family A–Z, and genus A–Z while preserving the existing garden order as the default.
+- Grouped visible results by **Family → Genus → Gardener cards**, allowing related flower categories to be discovered together.
+- Kept distinct flower/category records separate even when they share a genus or family.
+- Added a compact family/genus relationship line to each Garden Card.
+- Added responsive layouts for the discovery controls and grouped result headings.
+- Added `prefers-reduced-motion` handling for the new accordion/search interactions.
+- Kept the existing Garden Card media, links, and data-driven rendering model.
+
+### Taxonomy behavior
+
+The discovery hierarchy is:
+
+```text
+Family → Genus → Flower / category → Gardener
+```
+
+This is a relationship view, not a taxonomic merge. For example, White Lily and Pink & White Lily remain separate category records even though both use `Lilium spp.` and share their botanical relationship.
+
+### Documentation updates
+
+- Closed RF-009 as the agreed language audit is complete.
+- Added RF-010 to `README.md` and this log.
+- Added Flower Search & Discovery governance to `AI_RULES.md`.
+- Added the family/genus discovery rule to `data/README.md`.
+- Added planned **Phase 33 — Sunday Garden Program Profile & Brand Archive** to the roadmap. This corresponds to the future large About-page update previously discussed as RF-013.
+
+### Validation
+
+- `node --check js/garden.js` passed.
+- `node --check js/main.js` passed.
+- `node --check js/flower.js` passed.
+- `node tools/validate-data.mjs` passed.
+- The Garden discovery uses canonical family/genus values from `flowers.json`.
+- Current related records resolve correctly: Pink Tulip → Liliaceae / Tulipa; White Lily → Liliaceae / Lilium; Pink & White Lily → Liliaceae / Lilium; Red Rose → Rosaceae / Rosa; Blue Lotus → Nymphaeaceae / Nymphaea.
+- No Gardener stories or botanical research content were rewritten by RF-010.
+
+### Result
+
+RF-010 closes the current Flower Search & Discovery Experience scope. Future changes to this existing search/discovery implementation should be logged as a new RF unless they introduce a genuinely new capability that belongs in a future Phase.
+
+## RF-011 — Brand Identity, Navigation & Gardener Asset Remake — IN PROGRESS
+
+**Started:** 2026-09-25
+
+### Scope
+- Replace the previous flat brand asset structure with the new brand/content asset architecture.
+- Integrate the supplied Sunday Garden favicon, logo, wordmark, compact lockup, and primary branding assets.
+- Remake the global navigation around the compact logo+wordmark lockup.
+- Remake the global footer around the standalone logo mark and wordmark.
+- Update favicon and Apple touch icon references.
+- Remove obsolete references to the former `assets/brand/logo.png` and `assets/brand/favicon.png` files.
+- Preserve the primary branding asset for the future About / Brand Archive work; it is not used in the navbar.
+- Keep Gardener media external where currently defined; the new `assets/images/gardeners/` directory is reserved for future local assets.
+
+### Asset architecture
+```text
+assets/
+├── brand/
+│   ├── logo/
+│   ├── wordmark/
+│   ├── lockup/
+│   ├── primary/
+│   └── favicon/
+├── images/
+│   ├── gardeners/
+│   ├── flowers/
+│   ├── home/
+│   └── placeholder/
+└── textures/
+    └── paper/
+```
+
+### Integration rules
+- Navbar uses `brand/lockup/sg-logo-wordmark-transparent.svg`.
+- Footer uses the standalone logo and wordmark assets.
+- `brand/primary/` is reserved for the About / brand archive presentation planned for Phase 33.
+- Favicon implementation uses SVG as the modern primary icon, ICO as compatibility fallback, 16/32 PNG browser sizes, and 180 PNG for Apple touch icon.
+- 192/512 PNG assets remain available for future PWA/manifest work and are not forced into the current static site before a manifest exists.
+
+### Status
+RF-011 is **in progress**. Asset architecture and first-pass global navigation/footer integration are implemented in this iteration. Responsive and visual QA, documentation reconciliation, and final validation remain before closure.
+
+### Asset-format normalization note
+The supplied files named with `.svg` extensions were inspected and found to contain raster image data rather than native SVG markup. To keep the approved filenames and make browser MIME handling reliable, RF-011 wraps those supplied raster assets inside valid SVG containers. This preserves the supplied artwork but does **not** turn it into true vector artwork. A future true-vector export can replace these files without changing the website paths.
+
+The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-011 replaces it with a valid multi-resolution ICO generated from the supplied favicon artwork.
