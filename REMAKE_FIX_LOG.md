@@ -486,3 +486,14 @@ RF-011 is **closed**. RF-012 remains **in progress**. Iteration 3 replaces the p
 The supplied files named with `.svg` extensions were inspected and found to contain raster image data rather than native SVG markup. To keep the approved filenames and make browser MIME handling reliable, RF-011 wraps those supplied raster assets inside valid SVG containers. This preserves the supplied artwork but does **not** turn it into true vector artwork. A future true-vector export can replace these files without changing the website paths.
 
 The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-011 replaces it with a valid multi-resolution ICO generated from the supplied favicon artwork.
+
+## RF-012 Iteration 3 — Minimal Navigation Glyphs & Responsive Phase Layout
+
+- Replaced framed/circular `<` and `>` controls with literal editorial glyphs only.
+- Previous (`<`) is hidden on the first phase and appears from the second phase through the final phase.
+- Next (`>`) is visible from the first phase and disappears on the final phase.
+- Both controls use the same typography, scale system, vertical alignment, and interaction behavior.
+- Growth timeline no longer relies on horizontal scrolling on narrow portrait screens; phase nodes remain visible within the available width.
+- Phase cards use fluid sizing so landscape layouts can keep the phase timeline and active phase viewer compact within the same viewport area, while portrait layouts retain the same horizontal reading concept.
+- Typography, card spacing, node sizing, and navigation scale with viewport width/height using `clamp()` and responsive media queries.
+- Reduced-motion behavior remains supported.

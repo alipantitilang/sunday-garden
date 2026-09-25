@@ -199,6 +199,8 @@ const SundayGardenFlower = (() => {
         });
         previous.disabled = active <= 0;
         next.disabled = active >= cards.length - 1;
+        previous.hidden = active <= 0;
+        next.hidden = active >= cards.length - 1;
         previous.setAttribute('aria-disabled', String(previous.disabled));
         next.setAttribute('aria-disabled', String(next.disabled));
       };
