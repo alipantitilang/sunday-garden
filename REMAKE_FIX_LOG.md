@@ -520,3 +520,12 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - Improved responsive sizing for landscape and portrait layouts so the timeline and phase viewer remain compact and readable within the viewport.
 - Flower data schema unchanged; navigation assets are UI-only and live under `assets/ui/growth-cycle/`.
 - RF-012 remains in progress.
+
+
+### RF-012 Iteration 6 — Precision Centering & Portrait Peek Cards
+- Active phase cards are centered using the existing measured card position/viewport center behavior, with the card layout reset to a single centered content column.
+- Portrait layouts use a deliberately narrower phase card so neighboring phase cards remain visibly peeking into the same viewport.
+- Portrait card typography, label, phase number, spacing, and description scale down together.
+- `Fase 01/04` remains anchored at the card's upper edge; the phase number remains centered at the lower edge.
+- Card corners and internal spacing remain restrained and editorial.
+- No growth-cycle data/schema changes.

@@ -1077,3 +1077,164 @@
   .growth-cycle__previous img,
   .growth-cycle__next img { transition: none; }
 }
+
+/* RF-012 Iteration 6 — precision centering + portrait peek cards */
+.growth-cycle__viewer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  min-width: 0;
+  width: 100%;
+  padding-inline: 0;
+}
+
+.growth-cycle__track {
+  display: flex;
+  align-items: stretch;
+  width: max-content;
+  gap: clamp(.55rem, 1.25vw, 1rem);
+  margin: 0;
+  will-change: transform;
+}
+
+.growth-cycle__card {
+  position: relative;
+  flex: 0 0 var(--growth-card-width);
+  width: var(--growth-card-width);
+  min-height: var(--growth-card-min-height);
+  height: var(--growth-card-min-height);
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+  border-radius: clamp(.65rem, 1.1vw, 1rem);
+  overflow: hidden;
+}
+
+.growth-cycle__card-copy {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: clamp(1.75rem, 3vw, 2.35rem) clamp(1.4rem, 4vw, 3.25rem) clamp(1.5rem, 2.8vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.growth-cycle__phase-label {
+  position: absolute;
+  top: clamp(.55rem, 1vw, .8rem);
+  left: clamp(.7rem, 1.35vw, 1rem);
+  right: auto;
+  margin: 0;
+  font-size: clamp(.5rem, .65vw, .62rem);
+  line-height: 1;
+  letter-spacing: .11em;
+  white-space: nowrap;
+}
+
+.growth-cycle__phase-number {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(.32rem, .65vw, .5rem);
+  margin: 0;
+  transform: translateX(-50%);
+  font-size: clamp(.78rem, 1.25vw, 1.05rem);
+  line-height: 1;
+}
+
+.growth-cycle__card-copy h3 {
+  width: 100%;
+  margin: 0 0 clamp(.28rem, .6vw, .45rem);
+  font-size: clamp(1.25rem, 2.35vw, 2rem);
+  line-height: 1.05;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.growth-cycle__phase-description {
+  width: min(100%, 48rem);
+  margin: 0;
+  font-size: clamp(.7rem, .88vw, .86rem);
+  line-height: 1.42;
+  text-align: center;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .growth-cycle {
+    --growth-card-width: clamp(27rem, 50vw, 38rem);
+    --growth-card-min-height: clamp(9.5rem, 21vh, 13.5rem);
+  }
+}
+
+@media (max-width: 899px) and (orientation: portrait) {
+  .growth-cycle {
+    /* Deliberately narrower than the viewport so the neighboring phase cards remain visible. */
+    --growth-card-width: clamp(12.5rem, 64vw, 20rem);
+    --growth-card-min-height: clamp(8.5rem, 27vw, 11.5rem);
+  }
+
+  .growth-cycle__viewer {
+    min-height: var(--growth-card-min-height);
+  }
+
+  .growth-cycle__card-copy {
+    padding: clamp(1.45rem, 4vw, 1.9rem) clamp(1rem, 4vw, 1.6rem) clamp(1.2rem, 3.5vw, 1.55rem);
+  }
+
+  .growth-cycle__phase-label {
+    top: clamp(.48rem, 1.8vw, .68rem);
+    left: clamp(.58rem, 2vw, .82rem);
+    font-size: clamp(.43rem, 1.55vw, .55rem);
+    letter-spacing: .08em;
+  }
+
+  .growth-cycle__phase-number {
+    bottom: clamp(.22rem, .9vw, .38rem);
+    font-size: clamp(.68rem, 2.3vw, .88rem);
+  }
+
+  .growth-cycle__card-copy h3 {
+    margin-bottom: clamp(.18rem, .7vw, .3rem);
+    font-size: clamp(.98rem, 4.4vw, 1.35rem);
+  }
+
+  .growth-cycle__phase-description {
+    max-width: 92%;
+    font-size: clamp(.58rem, 2.05vw, .72rem);
+    line-height: 1.34;
+  }
+
+  .growth-cycle__previous,
+  .growth-cycle__next {
+    width: clamp(2rem, 8vw, 2.65rem);
+    height: clamp(2rem, 8vw, 2.65rem);
+  }
+}
+
+@media (max-width: 420px) and (orientation: portrait) {
+  .growth-cycle {
+    --growth-card-width: 63vw;
+    --growth-card-min-height: clamp(8rem, 27vw, 9.75rem);
+  }
+
+  .growth-cycle__track {
+    gap: .55rem;
+  }
+
+  .growth-cycle__card-copy h3 {
+    font-size: clamp(.92rem, 4.2vw, 1.12rem);
+  }
+
+  .growth-cycle__phase-description {
+    font-size: clamp(.54rem, 1.95vw, .65rem);
+    line-height: 1.3;
+  }
+}
