@@ -402,8 +402,21 @@ assets/
 - Stabilized the sorting select dimensions and replaced the browser-dependent select arrow with a consistent botanical-style CSS arrow.
 - Preserved `prefers-reduced-motion` behavior.
 
+### Iteration 3 — Deterministic discovery state and true overlay accordion
+
+- Replaced the DOM-card-as-state model with immutable Gardener records. Every search, family filter, and sort operation now derives from the complete `records` collection and creates a fresh card tree. This removes the class of bugs where a previous family selection can leak into the next state.
+- Family selection and sorting are now independent state dimensions: selecting Liliaceae does not rewrite or shrink the source dataset, and returning to `Semua bunga` always restores all published Gardeners.
+- Sorting now uses stable keys plus the original garden index as a deterministic tie-breaker.
+- Replaced native `<details>` accordion behavior with a controlled button/panel accordion. This prevents browser-native open/close behavior from racing the animation.
+- The accordion panel uses a grid-row height transition inside an absolutely positioned overlay. It animates its own height while remaining outside normal document flow, so the collection below never moves.
+- The circular arrow keeps a fixed footprint and rotates smoothly without changing the trigger dimensions.
+- Added click-outside and Escape handling for the controlled accordion.
+- The panel contents use staggered opacity/translate transitions after the panel begins opening, creating a visible opening process rather than an instant content swap.
+- Preserved reduced-motion behavior and keyboard focus semantics.
+- Removed obsolete duplicate root-level brand/home/texture files left over from the asset migration.
+
 ### Status
-RF-011 remains **in progress**. Iteration 2 resolves the reported discovery-state, accordion layout, and control-motion issues. Final responsive/visual QA and validation remain before closure.
+RF-011 remains **in progress**. Iteration 3 replaces the previous state/rendering and accordion implementation rather than layering another patch over it. Final responsive/visual QA remains before closure.
 
 ### Asset-format normalization note
 The supplied files named with `.svg` extensions were inspected and found to contain raster image data rather than native SVG markup. To keep the approved filenames and make browser MIME handling reliable, RF-011 wraps those supplied raster assets inside valid SVG containers. This preserves the supplied artwork but does **not** turn it into true vector artwork. A future true-vector export can replace these files without changing the website paths.

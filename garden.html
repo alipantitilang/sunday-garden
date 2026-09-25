@@ -74,33 +74,41 @@
             </button>
           </div>
 
-          <details class="garden-index" data-garden-index>
-            <summary>
+          <div class="garden-index" data-garden-index>
+            <button
+              class="garden-index__toggle"
+              type="button"
+              data-garden-index-toggle
+              aria-expanded="false"
+              aria-controls="garden-index-panel"
+            >
               <span class="garden-index__label">Browse the botanical index</span>
               <span class="garden-index__meta" data-garden-index-meta>Semua bunga</span>
-              <span class="garden-index__chevron" aria-hidden="true">⌄</span>
-            </summary>
+              <span class="garden-index__chevron" aria-hidden="true"></span>
+            </button>
 
-            <div class="garden-index__body">
-              <div class="garden-index__section">
-                <p class="garden-index__eyebrow">Famili</p>
-                <div class="garden-index__families" data-garden-family-list></div>
-              </div>
+            <div class="garden-index__panel" id="garden-index-panel" data-garden-index-panel aria-hidden="true">
+              <div class="garden-index__panel-inner">
+                <div class="garden-index__section">
+                  <p class="garden-index__eyebrow">Famili</p>
+                  <div class="garden-index__families" data-garden-family-list></div>
+                </div>
 
-              <div class="garden-index__section garden-index__section--sort">
-                <label class="garden-index__eyebrow" for="garden-sort">Urutkan</label>
-                <div class="garden-sort-wrap">
-                  <select id="garden-sort" class="garden-sort" data-garden-sort>
-                  <option value="default">Urutan taman</option>
-                  <option value="gardener-asc">Gardener A–Z</option>
-                  <option value="flower-asc">Bunga A–Z</option>
-                  <option value="family-asc">Famili botani A–Z</option>
-                  <option value="genus-asc">Genus A–Z</option>
-                </select>
-              </div>
+                <div class="garden-index__section garden-index__section--sort">
+                  <label class="garden-index__eyebrow" for="garden-sort">Urutkan</label>
+                  <div class="garden-sort-wrap">
+                    <select id="garden-sort" class="garden-sort" data-garden-sort>
+                      <option value="default">Urutan taman</option>
+                      <option value="gardener-asc">Gardener A–Z</option>
+                      <option value="flower-asc">Bunga A–Z</option>
+                      <option value="family-asc">Famili botani A–Z</option>
+                      <option value="genus-asc">Genus A–Z</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
-          </details>
+          </div>
         </div>
 
         <div class="garden-count" aria-live="polite" data-garden-count></div>
