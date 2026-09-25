@@ -549,3 +549,22 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - Increased Growth Cycle card height on landscape and portrait layouts to create a larger vertical safety zone for long descriptions.
 - Kept the phase number anchored at the bottom of the card.
 - No growth-cycle data/schema changes.
+
+
+## RF-012 Closure — Final State
+
+RF-012 — Growth Cycle Timeline & Phase Viewer is **CLOSED**.
+
+Final scope includes:
+- horizontal data-driven Growth Cycle timeline;
+- one timeline node per `growthCycle.phases` entry;
+- centered active phase card with neighboring previews;
+- supplied previous/next image controls with first/final visibility rules;
+- responsive portrait peek behavior;
+- raised `Fase NN/NN` label and taller cards for long phase descriptions;
+- keyboard and reduced-motion support;
+- no growth-cycle data/schema changes.
+
+Additional final fix included explicit PNG brand paths for navbar/footer because the supplied `.svg`-named artwork contained raster PNG data.
+
+The RF was closed by the user after implementation/data validation. Browser visual QA could not be completed in the final execution environment because the available headless browser attempts timed out; no visual-QA pass is claimed here.

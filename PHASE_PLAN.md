@@ -60,16 +60,25 @@ Canonical flower registry and taxonomy-scope handling.
 
 ### Remake baseline
 
-RF-001 through RF-011 are completed. RF-012 is currently active. The remake series remains open: if another existing-system issue is identified, assign it to the next RF rather than creating a new Phase. New capability work may resume from the active Phase roadmap.
+RF-001 through RF-012 are completed. The remake series remains open: if another existing-system issue is identified, assign it to the next RF rather than creating a new Phase. New capability work may resume from the active Phase roadmap.
 
-### RF-012 — Growth Cycle Timeline & Phase Viewer — ACTIVE
+### Workstream / chat separation
+- **Phase work and RF work must use separate chats.**
+- A **Phase chat** may plan, implement, validate, and document the currently assigned Phase only, unless the user explicitly opens a different Phase.
+- An **RF chat** may repair, redesign, refactor, or validate the currently assigned RF only, unless the user explicitly opens a different RF.
+- Do not silently convert a Phase task into an RF, or an RF task into a Phase.
+- If a requested change belongs to an already planned Phase, update that Phase's description/scope instead of creating a duplicate Phase.
+- If a requested change is an existing-system fix, use the next RF and record it in `REMAKE_FIX_LOG.md`.
+
+### RF-012 — Growth Cycle Timeline & Phase Viewer — CLOSED
 - Replace the previous circular Growth Cycle visual with a horizontal phase timeline.
 - Render one `O` node per research-backed `growthCycle.phases` entry.
 - Provide a simple Phase Viewer with an active card and neighboring previews.
 - Support direct timeline selection and minimal `<` / `>` previous-next controls.
 - Use natural horizontal transitions, sequential entrance motion, and reduced-motion fallback.
 - Keep the system data-driven for any supported phase count without inventing or merging biological phases.
-- Complete browser visual QA before closing the RF.
+- Final implementation is recorded in the latest RF-012 release package.
+- Browser visual QA was attempted in the final environment but could not be completed because headless browser execution timed out; closure was accepted by the user after implementation/data validation.
 
 ### Phase 20 — Gardener-to-Flower Relationships — NEXT
 - People of This Flower
@@ -96,8 +105,16 @@ Manual collection workflow with secrets kept server-side when needed.
 ### Phase 25 — Testimonial Data Layer
 Reusable testimonial schema and publication states.
 
-### Phase 26 — Home Testimonial Strip
-Calm horizontal testimonial presentation with accessible interaction.
+### Phase 26 — Home Running Cards & Testimonial Strip
+A structural Home-page redesign for two data-driven running-card collections:
+- up to **10 testimonial cards**;
+- up to **10 flower cards**;
+- each collection receives its own dedicated visual screen/section rather than being forced into the current Home layout;
+- horizontal/continuous card presentation is the intended interaction direction;
+- the final motion model, controls, speed, pause behavior, and exact composition remain to be designed and validated in the Phase 26 chat;
+- the Home page may therefore undergo a **structural layout rebuild**, not merely a cosmetic section edit.
+
+If the scope expands while still serving this same Home running-card capability, update Phase 26 rather than creating another Phase.
 
 ### Phase 27 — About Page Expansion
 Garden Keeper, Sunday Garden origin, and supplied community information.

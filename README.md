@@ -173,7 +173,7 @@ The roadmap describes system and workflow development only. It intentionally doe
 - [ ] Phase 23 — Feedback Popup
 - [ ] Phase 24 — Manual Feedback Workflow
 - [ ] Phase 25 — Testimonial Data Layer
-- [ ] Phase 26 — Home Testimonial Strip
+- [ ] Phase 26 — Home Running Cards & Testimonial Strip
 - [ ] Phase 27 — About Page Expansion
 - [ ] Phase 28 — Sunday Vibes Data Boundary
 - [ ] Phase 29 — Content Editorial Audit
@@ -186,9 +186,23 @@ Future innovations may add Phase 34, Phase 35, and beyond. A Phase is added only
 
 **Active system roadmap progress: 14 / 33 phases complete.**
 
+RF-012 is closed. The next planned Home capability is Phase 26 — Home Running Cards & Testimonial Strip, whose scope now includes the structural Home redesign for testimonial and flower running-card screens.
+
 ---
 
-## 6. Remake & Fix Log
+## 6. Workstream / Chat Separation
+
+Sunday Garden development is intentionally split into two chat workstreams:
+
+### Phase chats
+Use a dedicated chat for the active Phase. That chat is responsible for the Phase scope, implementation, validation, documentation, and release package.
+
+### RF chats
+Use a separate dedicated chat for the active Remake & Fix item. That chat is responsible for the RF scope, implementation, validation, fix log, and release package.
+
+Do not mix Phase and RF work in the same development chat unless the user explicitly asks to bridge them. A change that belongs to an already planned Phase should update that Phase's scope rather than create a duplicate Phase.
+
+## 7. Remake & Fix Log
 
 | ID | Area | Status |
 |---|---|---|
@@ -203,7 +217,7 @@ Future innovations may add Phase 34, Phase 35, and beyond. A Phase is added only
 | RF-009 | Flower Data Language Consistency Remake | ✅ Complete |
 | RF-010 | Flower Search & Discovery Experience Remake | ✅ Complete |
 | RF-011 | Brand Identity, Navigation & Gardener Asset Remake | ✅ Complete |
-| RF-012 | Growth Cycle Timeline & Phase Viewer Remake | 🔄 In progress |
+| RF-012 | Growth Cycle Timeline & Phase Viewer Remake | ✅ Complete |
 
 
 Detailed records are maintained in `REMAKE_FIX_LOG.md`.
@@ -214,7 +228,7 @@ Detailed records are maintained in `REMAKE_FIX_LOG.md`.
 
 RF-009 is closed. The agreed language audit across Home, The Garden, Flower/Gardener pages, About, and the shared footer has been completed. Future language changes are treated as new work rather than appended to RF-009.
 
-## 7. Feature & Innovation Registry
+## 8. Feature & Innovation Registry
 
 This registry describes what Sunday Garden can do now and what has been approved or proposed for the future. It is intentionally expandable.
 
@@ -606,6 +620,7 @@ Never claim a validation was performed unless it was actually performed.
 | `PHASE_PLAN.md` | Structured Phase roadmap and completion tracking |
 | `REMAKE_FIX_LOG.md` | Detailed Remake & Fix history |
 | `AI_RULES.md` | Core rules for AI-assisted project work |
+| `AI_HANDOFF_PROMPT.md` | Portable prompt for continuing the project in a fresh AI/chat/account |
 | `ADD_GARDENER_PROMPT.md` | Standard workflow for adding a Gardener |
 | `FLOWER_RESEARCH_PROMPT.md` | Standard workflow for researching/updating flower data |
 | `data/README.md` | Canonical data schema and content rules |
@@ -616,7 +631,7 @@ Never claim a validation was performed unless it was actually performed.
 ## 15. Project State
 
 **System roadmap:** 14 / 33 active phases complete  
-**Remake & Fix:** RF-007 complete  
+**Remake & Fix:** RF-012 complete  
 **Feature registry:** continuously expanding  
 **Flower/Gardener content:** intentionally excluded from system progress counts
 

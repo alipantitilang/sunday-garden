@@ -24,6 +24,29 @@ Adding a Gardener, flower, story, or research entry does not automatically creat
 
 Do not rewrite Phase history because content volume grows.
 
+
+## 2A. Cross-AI project continuity and handoff
+
+This repository is designed to be understandable by a fresh AI session, a different ChatGPT account, or another AI tool. The repository documentation is the portable project memory.
+
+When a ZIP is provided:
+1. Treat the ZIP as the current source of truth.
+2. Read `AI_HANDOFF_PROMPT.md` first if present.
+3. Then read `README.md`, `AI_RULES.md`, `PHASE_PLAN.md`, `REMAKE_FIX_LOG.md`, and any task-specific prompt/document referenced by the user.
+4. Inspect the actual files relevant to the requested change before proposing or applying edits.
+5. Do not rely on conversation memory, assumptions, or an older repository version when the current ZIP contains the required information.
+6. Preserve the established architecture, naming, data schemas, visual language, and completed history unless the user explicitly requests a change.
+
+### Chat workstream separation
+- **Phase chat:** work only on the currently assigned Phase.
+- **RF chat:** work only on the currently assigned RF.
+- Never silently create a new Phase for an RF, or a new RF for a Phase.
+- If the requested work already belongs to a planned Phase, update that Phase's scope instead of creating a duplicate Phase.
+- If the requested work is an improvement/fix to an existing system, use the RF workflow.
+
+### Portable state principle
+The repository must contain enough documentation for a new AI to reconstruct the project's current state without access to previous chat messages. Important decisions, completed work, active roadmap items, architectural constraints, and handoff instructions should therefore be written into repository documents rather than left only in conversation history.
+
 ## 3. Language policy
 
 Sunday Garden uses a bilingual editorial system.
