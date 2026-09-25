@@ -60,7 +60,7 @@ Canonical flower registry and taxonomy-scope handling.
 
 ### Remake baseline
 
-RF-001 through RF-009 are completed. The remake series remains open: if another existing-system issue is identified, assign it to the next RF rather than creating a new Phase. New capability work may resume from the active Phase roadmap.
+RF-001 through RF-011 are completed. RF-012 is currently in progress. The remake series remains open: if another existing-system issue is identified, assign it to the next RF rather than creating a new Phase. New capability work may resume from the active Phase roadmap.
 
 ### Phase 20 — Gardener-to-Flower Relationships — NEXT
 - People of This Flower

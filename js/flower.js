@@ -149,24 +149,91 @@ const SundayGardenFlower = (() => {
 
     const nodes = meaningful.map((step, i) => {
       const angle = (360 / count) * i - 90;
-      return `<article class="growth-cycle__node" style="--angle:${angle}deg" aria-label="Fase ${i + 1} dari ${count}"><span>${String(i + 1).padStart(2, '0')}</span></article>`;
+      const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
+      return `<button class="growth-cycle__node${i === 0 ? ' is-active' : ''}" type="button" style="--angle:${angle}deg;--phase-index:${i}" data-growth-phase="${i}" aria-label="${escapeHTML(name)}" aria-pressed="${i === 0 ? 'true' : 'false'}"><span>${String(i + 1).padStart(2, '0')}</span></button>`;
     }).join('');
+
+    const first = meaningful[0];
+    const firstName = typeof first === 'string' ? `Fase ${String(1).padStart(2, '0')}` : (first.name || `Fase ${String(1).padStart(2, '0')}`);
+    const firstDescription = typeof first === 'string' ? first : (first.description || first.name || '');
     const details = meaningful.map((step, i) => {
       const description = typeof step === 'string' ? step : (step.description || step.name || '');
-      const name = typeof step === 'string' ? '' : (step.name || '');
-      return `<article class="growth-cycle__detail">
+      const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
+      return `<article class="growth-cycle__detail${i === 0 ? ' is-active' : ''}" data-growth-detail="${i}" aria-hidden="${i === 0 ? 'false' : 'true'}">
         <span>${String(i + 1).padStart(2, '0')}</span>
-        <div>${name ? `<h3>${escapeHTML(name)}</h3>` : ''}<p>${escapeHTML(description)}</p></div>
+        <div><p class="growth-cycle__detail-label">Phase ${String(i + 1).padStart(2, '0')}</p><h3>${escapeHTML(name)}</h3><p>${escapeHTML(description)}</p></div>
       </article>`;
     }).join('');
+
     return `<div class="container growth-cycle growth-cycle--${template}" data-template="${template}" data-resolution="${escapeHTML(resolution)}" style="--phase-count:${count}">
-      <div class="growth-cycle__visual" role="img" aria-label="${escapeHTML(phaseLabel)} dengan ${count} fase">
+      <div class="growth-cycle__visual" aria-label="${escapeHTML(phaseLabel)} dengan ${count} fase">
         <div class="growth-cycle__orbit" aria-hidden="true"></div>
-        <div class="growth-cycle__center"><span>${escapeHTML(phaseLabel)}</span><strong>${count}</strong><small>fase</small></div>
+        <div class="growth-cycle__direction" aria-hidden="true"></div>
+        <div class="growth-cycle__center" aria-live="polite">
+          <span>${escapeHTML(phaseLabel)}</span>
+          <strong data-growth-active-number>01</strong>
+          <small data-growth-active-name>${escapeHTML(firstName)}</small>
+        </div>
         ${nodes}
       </div>
-      <div class="growth-cycle__details">${details}</div>
+      <div class="growth-cycle__details" data-growth-details aria-live="polite">
+        ${details}
+      </div>
     </div>`;
+  }
+
+  function initGrowthCycleInteractions() {
+    document.querySelectorAll('.growth-cycle:not(.growth-cycle--custom)').forEach(cycle => {
+      const nodes = [...cycle.querySelectorAll('[data-growth-phase]')];
+      const details = [...cycle.querySelectorAll('[data-growth-detail]')];
+      const activeNumber = cycle.querySelector('[data-growth-active-number]');
+      const activeName = cycle.querySelector('[data-growth-active-name]');
+      if (!nodes.length || !details.length) return;
+
+      const selectPhase = index => {
+        const safeIndex = Math.max(0, Math.min(index, nodes.length - 1));
+        nodes.forEach((node, i) => {
+          const active = i === safeIndex;
+          node.classList.toggle('is-active', active);
+          node.setAttribute('aria-pressed', String(active));
+        });
+        details.forEach((detail, i) => {
+          const active = i === safeIndex;
+          detail.classList.toggle('is-active', active);
+          detail.setAttribute('aria-hidden', String(!active));
+        });
+        const selected = details[safeIndex];
+        const name = selected?.querySelector('h3')?.textContent || `Fase ${String(safeIndex + 1).padStart(2, '0')}`;
+        if (activeNumber) activeNumber.textContent = String(safeIndex + 1).padStart(2, '0');
+        if (activeName) activeName.textContent = name;
+      };
+
+      nodes.forEach((node, index) => {
+        node.addEventListener('click', () => selectPhase(index));
+        node.addEventListener('keydown', event => {
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+            event.preventDefault();
+            const next = (index + 1) % nodes.length;
+            nodes[next].focus();
+            selectPhase(next);
+          } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+            event.preventDefault();
+            const next = (index - 1 + nodes.length) % nodes.length;
+            nodes[next].focus();
+            selectPhase(next);
+          } else if (event.key === 'Home') {
+            event.preventDefault();
+            nodes[0].focus();
+            selectPhase(0);
+          } else if (event.key === 'End') {
+            event.preventDefault();
+            const last = nodes.length - 1;
+            nodes[last].focus();
+            selectPhase(last);
+          }
+        });
+      });
+    });
   }
 
 
@@ -300,6 +367,7 @@ const SundayGardenFlower = (() => {
         if (description) description.setAttribute('content', `${state.gardener.displayName} memilih ${state.flower.commonName}. Baca ceritanya dan kenali bunga di baliknya di Sunday Garden.`);
       }
       render();
+      initGrowthCycleInteractions();
     } catch (error) {
       console.error(error);
       document.querySelector('#main-content').innerHTML = `<section class="flower-error container"><p class="eyebrow">The Garden</p><h1>Terjadi kesalahan.</h1><p>Cerita bunga tidak dapat dimuat saat ini.</p><a class="button" href="garden.html">${SundayGardenI18n.cta.backToGarden}</a></section>`;

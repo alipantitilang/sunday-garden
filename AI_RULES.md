@@ -381,3 +381,15 @@ Before release, check as applicable:
 - Keep Gardener/flower/home imagery separate from brand identity assets.
 - Do not recreate or rename supplied brand assets during routine implementation without explicit approval.
 - When supplied assets use an extension that does not match their actual file format, verify the file signature before integration. Preserve approved paths when practical, but normalize the container/format so browser MIME handling is reliable; do not claim a raster-wrapped SVG is true vector artwork.
+
+
+## Growth Cycle Rules — RF-012
+- Growth Cycle is data-driven: the number of visual phases must follow `growthCycle.phases`.
+- Do not impose a universal fixed phase count. Standard layouts support 3–8 phases; other counts use the custom fallback.
+- `growthCycle.resolution` may be `standard`, `detailed`, `specialized`, or `custom`; resolution changes presentation context, not the underlying research data.
+- The circular visual is the primary desktop presentation. On narrow/portrait screens, the layout may transform rather than simply shrink.
+- Do not use image-based phase illustrations as the Growth Cycle UI.
+- Phase interaction must remain keyboard accessible and provide visible active/focus states.
+- Sequential entrance motion should be subtle and editorial; provide a `prefers-reduced-motion` fallback.
+- Missing or incomplete growth-cycle data must not break the Flower Page. Preserve the existing legacy `howItGrows` fallback where applicable.
+- Botanical claims belong to the researched flower data; the visual layer must not invent biological stages or alter their meaning for presentation.

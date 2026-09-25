@@ -377,7 +377,7 @@ This is a relationship view, not a taxonomic merge. For example, White Lily and 
 
 RF-010 closes the current Flower Search & Discovery Experience scope. Future changes to this existing search/discovery implementation should be logged as a new RF unless they introduce a genuinely new capability that belongs in a future Phase.
 
-## RF-011 — Brand Identity, Navigation & Gardener Asset Remake — IN PROGRESS
+## RF-011 — Brand Identity, Navigation & Gardener Asset Remake — CLOSED
 
 **Started:** 2026-09-25
 
@@ -441,9 +441,30 @@ assets/
 - Removed obsolete duplicate root-level brand/home/texture files left over from the asset migration.
 
 ### Status
-RF-011 remains **in progress**. Iteration 3 replaces the previous state/rendering and accordion implementation rather than layering another patch over it. Final responsive/visual QA remains before closure.
+RF-011 is **closed**. The final accepted implementation is the v4 remake, including the stabilized Botanical Index, independent filtering/sorting state, responsive brand/navigation system, cleaned asset architecture, and updated Gardener card metadata layout.
 
 ### Asset-format normalization note
 The supplied files named with `.svg` extensions were inspected and found to contain raster image data rather than native SVG markup. To keep the approved filenames and make browser MIME handling reliable, RF-011 wraps those supplied raster assets inside valid SVG containers. This preserves the supplied artwork but does **not** turn it into true vector artwork. A future true-vector export can replace these files without changing the website paths.
 
 The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-011 replaces it with a valid multi-resolution ICO generated from the supplied favicon artwork.
+
+
+## RF-012 — Growth Cycle Visual & Interaction Remake — IN PROGRESS
+
+RF-012 started after RF-011 closure. The existing data-driven Growth Cycle model from RF-003/RF-008 is retained, while its visual and interaction layer is being remade.
+
+### Initial implementation scope
+- Preserve data-driven phase counts; do not hard-code a universal number of phases.
+- Keep `standard`, `detailed`, `specialized`, and `custom` resolution handling.
+- Retain the circular botanical-editorial presentation for standard 3–8 phase cycles.
+- Add sequential entrance animation for orbit, direction cue, center, and phase nodes.
+- Make phase nodes interactive with active state, detail transition, and keyboard navigation.
+- Keep the detailed phase reading below the visual rather than overcrowding the circle.
+- Keep custom-resolution / out-of-range phase counts on the safe linear fallback.
+- Support reduced-motion preferences.
+- Preserve legacy growth-cycle fallback behavior and avoid changing botanical content.
+
+### Current validation
+- `node --check js/flower.js` passes.
+- Data schema/content remains unchanged by this RF.
+- Browser visual QA is still pending before RF-012 can be closed.
