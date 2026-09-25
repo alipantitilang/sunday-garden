@@ -156,8 +156,12 @@ const SundayGardenFlower = (() => {
 
       <div class="growth-cycle__viewer" data-growth-viewer>
         <div class="growth-cycle__track" data-growth-track>${cards}</div>
-        <button class="growth-cycle__previous" type="button" data-growth-previous aria-label="Fase sebelumnya" title="Fase sebelumnya">&lt;</button>
-        <button class="growth-cycle__next" type="button" data-growth-next aria-label="Fase berikutnya" title="Fase berikutnya">&gt;</button>
+        <button class="growth-cycle__previous" type="button" data-growth-previous aria-label="Fase sebelumnya" title="Fase sebelumnya">
+          <img src="assets/ui/growth-cycle/growth-previous.png" alt="" aria-hidden="true">
+        </button>
+        <button class="growth-cycle__next" type="button" data-growth-next aria-label="Fase berikutnya" title="Fase berikutnya">
+          <img src="assets/ui/growth-cycle/growth-next.png" alt="" aria-hidden="true">
+        </button>
       </div>
     </div>`;
   }

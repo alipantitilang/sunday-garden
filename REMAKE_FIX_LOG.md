@@ -508,3 +508,15 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - Responsive sizing refined for landscape, portrait, and narrow mobile screens.
 - Data schema unchanged; renderer-only presentation update.
 - Status: RF-012 remains in progress.
+
+
+## RF-012 Iteration 5 — Supplied Navigation Assets & Compact Phase Card Refinement
+
+- Integrated the supplied `assets/ui/growth-cycle/growth-previous.png` and `growth-next.png` assets into the repository.
+- Growth Cycle navigation now renders the supplied image buttons instead of text glyphs.
+- Kept first/last navigation visibility behavior: previous is hidden on the first phase; next is hidden on the final phase.
+- Refined phase cards to a smaller, cleaner horizontal composition with softer rounded corners.
+- Kept `Fase 01/04` anchored at the upper edge of the card and reduced the bottom phase number (`01`, `02`, etc.) size while keeping it centered at the lower edge.
+- Improved responsive sizing for landscape and portrait layouts so the timeline and phase viewer remain compact and readable within the viewport.
+- Flower data schema unchanged; navigation assets are UI-only and live under `assets/ui/growth-cycle/`.
+- RF-012 remains in progress.
