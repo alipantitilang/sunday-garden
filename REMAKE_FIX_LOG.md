@@ -542,3 +542,10 @@ The supplied `favicon.ico` was likewise a PNG file with an `.ico` extension; RF-
 - Added stacking priority so the label remains above the centered phase content.
 - Applied tighter top positioning for portrait layouts as well.
 - No flower/growthCycle data schema changes.
+
+
+## RF-012 Iteration 7 — phase label clearance + taller cards
+- Raised the `Fase NN/NN` label closer to the card frame.
+- Increased Growth Cycle card height on landscape and portrait layouts to create a larger vertical safety zone for long descriptions.
+- Kept the phase number anchored at the bottom of the card.
+- No growth-cycle data/schema changes.
