@@ -391,8 +391,19 @@ assets/
 - Favicon implementation uses SVG as the modern primary icon, ICO as compatibility fallback, 16/32 PNG browser sizes, and 180 PNG for Apple touch icon.
 - 192/512 PNG assets remain available for future PWA/manifest work and are not forced into the current static site before a manifest exists.
 
+### Iteration 2 — Discovery control and accordion behavior
+
+- Fixed the Flower Search/Discovery rendering state so filtering and sorting always operate on the complete canonical Gardener card set instead of the currently rendered group. This prevents a selected family from becoming the accidental source set for subsequent filters.
+- Fixed the sequence `Semua bunga → family → another family → Semua bunga`; each state is now recalculated from all published Gardeners.
+- Remade the botanical index toggle into a circular arrow control with a stable footprint, so opening/closing does not change the button dimensions.
+- Reworked the index panel animation into a measured height transition with opacity and vertical motion.
+- The index panel now overlays the collection instead of participating in normal document flow, so opening the accordion no longer pushes the Garden collection section downward.
+- Added staggered section entrance timing inside the accordion.
+- Stabilized the sorting select dimensions and replaced the browser-dependent select arrow with a consistent botanical-style CSS arrow.
+- Preserved `prefers-reduced-motion` behavior.
+
 ### Status
-RF-011 is **in progress**. Asset architecture and first-pass global navigation/footer integration are implemented in this iteration. Responsive and visual QA, documentation reconciliation, and final validation remain before closure.
+RF-011 remains **in progress**. Iteration 2 resolves the reported discovery-state, accordion layout, and control-motion issues. Final responsive/visual QA and validation remain before closure.
 
 ### Asset-format normalization note
 The supplied files named with `.svg` extensions were inspected and found to contain raster image data rather than native SVG markup. To keep the approved filenames and make browser MIME handling reliable, RF-011 wraps those supplied raster assets inside valid SVG containers. This preserves the supplied artwork but does **not** turn it into true vector artwork. A future true-vector export can replace these files without changing the website paths.

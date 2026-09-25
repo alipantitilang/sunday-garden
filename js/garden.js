@@ -13,6 +13,7 @@
 
   let gardeners = [];
   let flowersById = new Map();
+  let allCards = [];
   let selectedFamily = 'all';
 
   const normalize = (value) => String(value || '').trim().toLocaleLowerCase('id-ID');
@@ -157,7 +158,10 @@
     applyFilters();
   };
 
-  const getCards = () => [...grid.querySelectorAll('.garden-card')];
+  // Keep the canonical card set outside the rendered DOM. Grouping moves cards
+  // between containers, so querying the grid after each filter would lose cards
+  // that were temporarily removed by the previous filter.
+  const getCards = () => allCards.slice();
 
   const sortCards = (cards) => {
     const sort = sortSelect.value;
@@ -249,7 +253,8 @@
       return;
     }
 
-    grid.replaceChildren(...gardeners.map(createCard));
+    allCards = gardeners.map(createCard);
+    grid.replaceChildren();
     populateFamilyIndex();
     applyFilters();
   };
@@ -283,6 +288,50 @@
       count.textContent = '';
     }
   };
+
+  const index = document.querySelector('[data-garden-index]');
+  const indexSummary = index?.querySelector('summary');
+  const indexBody = index?.querySelector('.garden-index__body');
+
+  const syncIndexHeight = () => {
+    if (!index || !indexBody) return;
+    index.style.setProperty('--garden-index-panel-height', `${indexBody.scrollHeight}px`);
+  };
+
+  const openIndex = () => {
+    if (!index || !indexBody) return;
+    index.open = true;
+    index.classList.remove('is-closing');
+    syncIndexHeight();
+    requestAnimationFrame(() => {
+      syncIndexHeight();
+      index.classList.add('is-open');
+    });
+  };
+
+  const closeIndex = () => {
+    if (!index || !indexBody || !index.open) return;
+    syncIndexHeight();
+    index.classList.remove('is-open');
+    index.classList.add('is-closing');
+    const finish = (event) => {
+      if (event.propertyName !== 'max-height') return;
+      index.open = false;
+      index.classList.remove('is-closing');
+      indexBody.removeEventListener('transitionend', finish);
+    };
+    indexBody.addEventListener('transitionend', finish);
+  };
+
+  indexSummary?.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (index.open && !index.classList.contains('is-closing')) closeIndex();
+    else openIndex();
+  });
+
+  window.addEventListener('resize', () => {
+    if (index?.open) syncIndexHeight();
+  }, { passive: true });
 
   searchInput.addEventListener('input', applyFilters);
   sortSelect.addEventListener('change', applyFilters);
