@@ -140,11 +140,11 @@ const SundayGardenFlower = (() => {
 
     const cards = phaseData.map((phase, i) => `
       <article class="growth-cycle__card${i === 0 ? ' is-active' : ''}" data-growth-card="${i}" aria-hidden="${i === 0 ? 'false' : 'true'}">
-        <div class="growth-cycle__card-index">${String(i + 1).padStart(2, '0')}</div>
         <div class="growth-cycle__card-copy">
-          <p class="eyebrow">Fase ${String(i + 1).padStart(2, '0')} / ${phaseData.length}</p>
+          <p class="growth-cycle__phase-label">Fase ${String(i + 1).padStart(2, '0')}/${String(phaseData.length).padStart(2, '0')}</p>
+          <p class="growth-cycle__phase-number">${String(i + 1).padStart(2, '0')}</p>
           <h3>${escapeHTML(phase.name)}</h3>
-          <p>${escapeHTML(phase.description)}</p>
+          <p class="growth-cycle__phase-description">${escapeHTML(phase.description)}</p>
         </div>
       </article>`).join('');
 
@@ -156,11 +156,8 @@ const SundayGardenFlower = (() => {
 
       <div class="growth-cycle__viewer" data-growth-viewer>
         <div class="growth-cycle__track" data-growth-track>${cards}</div>
+        <button class="growth-cycle__previous" type="button" data-growth-previous aria-label="Fase sebelumnya" title="Fase sebelumnya">&lt;</button>
         <button class="growth-cycle__next" type="button" data-growth-next aria-label="Fase berikutnya" title="Fase berikutnya">&gt;</button>
-      </div>
-
-      <div class="growth-cycle__controls">
-        <span class="growth-cycle__status" data-growth-status aria-live="polite">Fase 01 dari ${phaseData.length}</span>
       </div>
     </div>`;
   }
@@ -174,8 +171,8 @@ const SundayGardenFlower = (() => {
       const cards = [...cycle.querySelectorAll('[data-growth-card]')];
       const viewer = cycle.querySelector('[data-growth-viewer]');
       const track = cycle.querySelector('[data-growth-track]');
+      const previous = cycle.querySelector('[data-growth-previous]');
       const next = cycle.querySelector('[data-growth-next]');
-      const status = cycle.querySelector('[data-growth-status]');
       let active = 0;
       let resizeFrame = 0;
 
@@ -200,12 +197,14 @@ const SundayGardenFlower = (() => {
           card.classList.toggle('is-active', selected);
           card.setAttribute('aria-hidden', String(!selected));
         });
-        status.textContent = `Fase ${String(active + 1).padStart(2, '0')} dari ${cards.length}`;
+        previous.disabled = active <= 0;
         next.disabled = active >= cards.length - 1;
+        previous.setAttribute('aria-disabled', String(previous.disabled));
         next.setAttribute('aria-disabled', String(next.disabled));
       };
 
       nodes.forEach((node, i) => node.addEventListener('click', () => sync(i)));
+      previous.addEventListener('click', () => sync(active - 1));
       next.addEventListener('click', () => sync(active + 1));
 
       cycle.addEventListener('keydown', (event) => {

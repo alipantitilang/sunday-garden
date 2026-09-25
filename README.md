@@ -481,6 +481,8 @@ Reduced-motion users receive the same information and controls without decorativ
 
 > **The data should shape the timeline; the timeline should not shape the data.**
 
+The renderer derives the display labels (`Fase 01/04` and the phase number) from the phase index and total count. Flower data should not add separate UI-only labels for these elements.
+
 For new or substantially researched flowers:
 
 1. research the documented developmental sequence;
@@ -495,8 +497,8 @@ The renderer retains a backward-compatible fallback for legacy phase arrays, but
 
 - [x] Replace the circular Growth Cycle visual with a horizontal timeline.
 - [x] Add a data-driven phase node for every research-backed phase.
-- [x] Add an interactive Phase Viewer with neighboring previews.
-- [x] Add timeline navigation and the `>` next-phase control.
+- [x] Add an interactive Phase Viewer with neighboring previews and a simple phase card.
+- [x] Add timeline navigation and bidirectional `<` / `>` phase controls.
 - [x] Add natural slide/fade transitions and sequential timeline entrance.
 - [x] Add responsive timeline behavior for narrow screens.
 - [x] Add keyboard navigation and reduced-motion support.

@@ -65,8 +65,8 @@ RF-001 through RF-011 are completed. RF-012 is currently active. The remake seri
 ### RF-012 — Growth Cycle Timeline & Phase Viewer — ACTIVE
 - Replace the previous circular Growth Cycle visual with a horizontal phase timeline.
 - Render one `O` node per research-backed `growthCycle.phases` entry.
-- Provide a Phase Viewer with active, previous-preview, and next-preview cards.
-- Support direct timeline selection and a minimal `>` next-phase control.
+- Provide a simple Phase Viewer with an active card and neighboring previews.
+- Support direct timeline selection and minimal `<` / `>` previous-next controls.
 - Use natural horizontal transitions, sequential entrance motion, and reduced-motion fallback.
 - Keep the system data-driven for any supported phase count without inventing or merging biological phases.
 - Complete browser visual QA before closing the RF.

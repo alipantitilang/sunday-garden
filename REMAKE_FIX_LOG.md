@@ -470,8 +470,17 @@ assets/
 - Preserved reduced-motion behavior and keyboard focus semantics.
 - Removed obsolete duplicate root-level brand/home/texture files left over from the asset migration.
 
+
+### RF-012 Iteration 2 — Minimal Phase Cards and Bidirectional Navigation
+
+- Simplified the Phase Viewer card so its UI text is derived from the phase position: `Fase 01/04`, the standalone phase number, the documented phase name, and the phase content.
+- Updated phase typography to use the editorial display serif for timeline numbers and card phase numbers/headings, with Manrope for metadata and body copy.
+- Added the missing `<` previous-phase control alongside the `>` next-phase control.
+- Previous/next controls disable naturally at the first and final phases without changing the viewer layout.
+- Kept the underlying `growthCycle.phases` data schema unchanged; documentation now explicitly says UI-only labels are renderer-derived rather than research fields.
+
 ### Status
-RF-011 remains **in progress**. Iteration 3 replaces the previous state/rendering and accordion implementation rather than layering another patch over it. Final responsive/visual QA remains before closure.
+RF-011 is **closed**. RF-012 remains **in progress**. Iteration 3 replaces the previous state/rendering and accordion implementation rather than layering another patch over it. Final responsive/visual QA remains before closure.
 
 ### Asset-format normalization note
 The supplied files named with `.svg` extensions were inspected and found to contain raster image data rather than native SVG markup. To keep the approved filenames and make browser MIME handling reliable, RF-011 wraps those supplied raster assets inside valid SVG containers. This preserves the supplied artwork but does **not** turn it into true vector artwork. A future true-vector export can replace these files without changing the website paths.

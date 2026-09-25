@@ -251,6 +251,8 @@ The current renderer uses the RF-012 horizontal timeline and Phase Viewer for al
 
 Legacy `howItGrows` arrays may be read for compatibility, but new flower records should use `growthCycle.phases`.
 
+The renderer derives UI-only phase labels from position and total count (for example, `Fase 01/04` and `01`). Do not add duplicate display-label fields to flower data.
+
 
 Support compatible singular/plural forms where the schema requires it, such as `flower` and `flowers`.
 

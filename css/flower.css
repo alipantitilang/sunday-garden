@@ -401,3 +401,132 @@
   .growth-cycle__node,
   .growth-cycle__next { transition: none; }
 }
+
+/* RF-012 Iteration 2 — restrained phase cards + bidirectional navigation */
+.growth-cycle__node span {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+
+.growth-cycle__card {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  padding: clamp(1.75rem, 4vw, 3.25rem);
+}
+
+.growth-cycle__card-copy {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  min-width: 0;
+}
+
+.growth-cycle__phase-label {
+  margin: 0 0 .8rem;
+  font-family: var(--font-body);
+  font-size: .72rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.growth-cycle__phase-number {
+  margin: 0 0 .25rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: .82;
+  font-weight: 500;
+  color: var(--lotus-blue);
+  letter-spacing: -.02em;
+}
+
+.growth-cycle__card-copy h3 {
+  margin: 0 0 .85rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: .98;
+  font-weight: 500;
+  letter-spacing: -.015em;
+  color: var(--forest);
+}
+
+.growth-cycle__phase-description {
+  max-width: 48rem;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(.95rem, 1.3vw, 1.05rem);
+  line-height: 1.8;
+  color: var(--ink);
+}
+
+.growth-cycle__previous,
+.growth-cycle__next {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid rgba(52, 70, 58, .28);
+  border-radius: 50%;
+  background: rgba(243, 238, 227, .92);
+  color: var(--forest);
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .35s cubic-bezier(.22,.61,.36,1), background-color .35s ease, color .35s ease, opacity .35s ease, border-color .35s ease;
+}
+
+.growth-cycle__previous { left: clamp(.6rem, 1.5vw, 1.25rem); }
+.growth-cycle__next { right: clamp(.6rem, 1.5vw, 1.25rem); }
+
+.growth-cycle__previous:hover:not(:disabled),
+.growth-cycle__next:hover:not(:disabled) {
+  background: var(--forest);
+  color: var(--paper);
+  border-color: var(--forest);
+}
+
+.growth-cycle__previous:hover:not(:disabled) { transform: translateY(-50%) translateX(-3px); }
+.growth-cycle__next:hover:not(:disabled) { transform: translateY(-50%) translateX(3px); }
+
+.growth-cycle__previous:focus-visible,
+.growth-cycle__next:focus-visible {
+  outline: 2px solid var(--lotus-blue);
+  outline-offset: 4px;
+}
+
+.growth-cycle__previous:disabled,
+.growth-cycle__next:disabled {
+  opacity: .22;
+  cursor: default;
+}
+
+@media (max-width: 680px) {
+  .growth-cycle__card {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+  }
+
+  .growth-cycle__phase-number { font-size: clamp(2.6rem, 13vw, 4rem); }
+  .growth-cycle__card-copy h3 { font-size: clamp(1.8rem, 9vw, 2.7rem); }
+  .growth-cycle__previous,
+  .growth-cycle__next { width: 2.25rem; height: 2.25rem; }
+}
+
+@media (max-width: 420px) {
+  .growth-cycle__card { flex-basis: 82vw; min-height: 230px; padding: 1.35rem 3.1rem 1.35rem 1.25rem; }
+  .growth-cycle__phase-label { font-size: .66rem; }
+  .growth-cycle__phase-description { font-size: .9rem; line-height: 1.7; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .growth-cycle__previous,
+  .growth-cycle__next { transition: none; }
+}

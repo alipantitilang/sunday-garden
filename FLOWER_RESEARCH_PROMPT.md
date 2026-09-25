@@ -153,6 +153,7 @@ Research workflow:
 3. preserve the supported number and order of phases;
 4. record each phase without inventing biological stages for visual symmetry;
 5. let the renderer choose an appropriate template afterward.
+6. do not add UI-only labels such as `Fase 01/04` or standalone phase numbers; the renderer derives those from phase order and total count.
 
 Do not assume every flower has the same number of phases. A detailed scientific staging system may contain many more stages than an editorial life-cycle summary; these are different resolutions, not contradictions.
 
