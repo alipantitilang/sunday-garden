@@ -247,7 +247,7 @@ Allowed resolutions:
 
 Research determines the phases first. The interface template is selected afterward. Never invent, merge, delete, or reorder research-backed phases only to fit a visual layout.
 
-For phase counts from 3–8, the current renderer may use a corresponding circular template family. Counts outside that range use the custom ordered presentation unless a future validated template family is introduced. This is a rendering decision, not a biological rule.
+The current renderer uses the RF-012 horizontal timeline and Phase Viewer for all phase counts. It does not require a fixed 3–8 phase template family. Every meaningful research-backed phase becomes one timeline node, while the Phase Viewer handles first, middle, and final positions. This is a rendering decision, not a biological rule.
 
 Legacy `howItGrows` arrays may be read for compatibility, but new flower records should use `growthCycle.phases`.
 
@@ -381,15 +381,3 @@ Before release, check as applicable:
 - Keep Gardener/flower/home imagery separate from brand identity assets.
 - Do not recreate or rename supplied brand assets during routine implementation without explicit approval.
 - When supplied assets use an extension that does not match their actual file format, verify the file signature before integration. Preserve approved paths when practical, but normalize the container/format so browser MIME handling is reliable; do not claim a raster-wrapped SVG is true vector artwork.
-
-
-## Growth Cycle Rules — RF-012
-- Growth Cycle is data-driven: the number of visual phases must follow `growthCycle.phases`.
-- Do not impose a universal fixed phase count. Standard layouts support 3–8 phases; other counts use the custom fallback.
-- `growthCycle.resolution` may be `standard`, `detailed`, `specialized`, or `custom`; resolution changes presentation context, not the underlying research data.
-- The circular visual is the primary desktop presentation. On narrow/portrait screens, the layout may transform rather than simply shrink.
-- Do not use image-based phase illustrations as the Growth Cycle UI.
-- Phase interaction must remain keyboard accessible and provide visible active/focus states.
-- Sequential entrance motion should be subtle and editorial; provide a `prefers-reduced-motion` fallback.
-- Missing or incomplete growth-cycle data must not break the Flower Page. Preserve the existing legacy `howItGrows` fallback where applicable.
-- Botanical claims belong to the researched flower data; the visual layer must not invent biological stages or alter their meaning for presentation.

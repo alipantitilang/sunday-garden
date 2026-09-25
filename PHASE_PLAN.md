@@ -60,7 +60,16 @@ Canonical flower registry and taxonomy-scope handling.
 
 ### Remake baseline
 
-RF-001 through RF-011 are completed. RF-012 is currently in progress. The remake series remains open: if another existing-system issue is identified, assign it to the next RF rather than creating a new Phase. New capability work may resume from the active Phase roadmap.
+RF-001 through RF-011 are completed. RF-012 is currently active. The remake series remains open: if another existing-system issue is identified, assign it to the next RF rather than creating a new Phase. New capability work may resume from the active Phase roadmap.
+
+### RF-012 — Growth Cycle Timeline & Phase Viewer — ACTIVE
+- Replace the previous circular Growth Cycle visual with a horizontal phase timeline.
+- Render one `O` node per research-backed `growthCycle.phases` entry.
+- Provide a Phase Viewer with active, previous-preview, and next-preview cards.
+- Support direct timeline selection and a minimal `>` next-phase control.
+- Use natural horizontal transitions, sequential entrance motion, and reduced-motion fallback.
+- Keep the system data-driven for any supported phase count without inventing or merging biological phases.
+- Complete browser visual QA before closing the RF.
 
 ### Phase 20 — Gardener-to-Flower Relationships — NEXT
 - People of This Flower

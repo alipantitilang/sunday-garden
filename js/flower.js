@@ -119,8 +119,6 @@ const SundayGardenFlower = (() => {
     if (!meaningful.length) return '';
 
     const resolution = growthCycle?.resolution || 'standard';
-    const count = meaningful.length;
-    const template = count >= 3 && count <= 8 ? `cycle-${count}` : 'cycle-custom';
     const phaseLabel = resolution === 'detailed'
       ? 'Siklus terperinci'
       : resolution === 'specialized'
@@ -129,110 +127,110 @@ const SundayGardenFlower = (() => {
           ? 'Siklus kustom'
           : 'Siklus standar';
 
-    if (template === 'cycle-custom') {
-      const details = meaningful.map((step, i) => {
-        const description = typeof step === 'string' ? step : (step.description || step.name || '');
-        const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
-        return `<article class="growth-cycle__detail growth-cycle__detail--custom">
-          <span>${String(i + 1).padStart(2, '0')}</span>
-          <div><h3>${escapeHTML(name)}</h3><p>${escapeHTML(description)}</p></div>
-        </article>`;
-      }).join('');
-      return `<div class="container growth-cycle growth-cycle--custom" data-template="${template}" data-resolution="${escapeHTML(resolution)}">
-        <div class="growth-cycle__custom-heading">
-          <p class="eyebrow">${escapeHTML(phaseLabel)}</p>
-          <p>Siklus ditampilkan dalam urutan fase yang ditentukan oleh data penelitian.</p>
-        </div>
-        <div class="growth-cycle__details">${details}</div>
-      </div>`;
-    }
-
-    const nodes = meaningful.map((step, i) => {
-      const angle = (360 / count) * i - 90;
-      const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
-      return `<button class="growth-cycle__node${i === 0 ? ' is-active' : ''}" type="button" style="--angle:${angle}deg;--phase-index:${i}" data-growth-phase="${i}" aria-label="${escapeHTML(name)}" aria-pressed="${i === 0 ? 'true' : 'false'}"><span>${String(i + 1).padStart(2, '0')}</span></button>`;
-    }).join('');
-
-    const first = meaningful[0];
-    const firstName = typeof first === 'string' ? `Fase ${String(1).padStart(2, '0')}` : (first.name || `Fase ${String(1).padStart(2, '0')}`);
-    const firstDescription = typeof first === 'string' ? first : (first.description || first.name || '');
-    const details = meaningful.map((step, i) => {
+    const phaseData = meaningful.map((step, i) => {
       const description = typeof step === 'string' ? step : (step.description || step.name || '');
       const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
-      return `<article class="growth-cycle__detail${i === 0 ? ' is-active' : ''}" data-growth-detail="${i}" aria-hidden="${i === 0 ? 'false' : 'true'}">
-        <span>${String(i + 1).padStart(2, '0')}</span>
-        <div><p class="growth-cycle__detail-label">Phase ${String(i + 1).padStart(2, '0')}</p><h3>${escapeHTML(name)}</h3><p>${escapeHTML(description)}</p></div>
-      </article>`;
-    }).join('');
+      return { name, description, index: i };
+    });
 
-    return `<div class="container growth-cycle growth-cycle--${template}" data-template="${template}" data-resolution="${escapeHTML(resolution)}" style="--phase-count:${count}">
-      <div class="growth-cycle__visual" aria-label="${escapeHTML(phaseLabel)} dengan ${count} fase">
-        <div class="growth-cycle__orbit" aria-hidden="true"></div>
-        <div class="growth-cycle__direction" aria-hidden="true"></div>
-        <div class="growth-cycle__center" aria-live="polite">
-          <span>${escapeHTML(phaseLabel)}</span>
-          <strong data-growth-active-number>01</strong>
-          <small data-growth-active-name>${escapeHTML(firstName)}</small>
+    const nodes = phaseData.map((phase, i) => `
+      <button class="growth-cycle__node${i === 0 ? ' is-active' : ''}" type="button" data-growth-phase="${i}" style="--phase-index:${i}" aria-label="Pilih ${escapeHTML(phase.name)} — fase ${i + 1} dari ${phaseData.length}" aria-pressed="${i === 0 ? 'true' : 'false'}">
+        <span>${String(i + 1).padStart(2, '0')}</span>
+      </button>`).join('');
+
+    const cards = phaseData.map((phase, i) => `
+      <article class="growth-cycle__card${i === 0 ? ' is-active' : ''}" data-growth-card="${i}" aria-hidden="${i === 0 ? 'false' : 'true'}">
+        <div class="growth-cycle__card-index">${String(i + 1).padStart(2, '0')}</div>
+        <div class="growth-cycle__card-copy">
+          <p class="eyebrow">Fase ${String(i + 1).padStart(2, '0')} / ${phaseData.length}</p>
+          <h3>${escapeHTML(phase.name)}</h3>
+          <p>${escapeHTML(phase.description)}</p>
         </div>
-        ${nodes}
+      </article>`).join('');
+
+    return `<div class="container growth-cycle" data-growth-cycle data-resolution="${escapeHTML(resolution)}" style="--phase-count:${phaseData.length}">
+      <div class="growth-cycle__timeline" aria-label="${escapeHTML(phaseLabel)} dengan ${phaseData.length} fase">
+        <div class="growth-cycle__line" aria-hidden="true"></div>
+        <div class="growth-cycle__nodes">${nodes}</div>
       </div>
-      <div class="growth-cycle__details" data-growth-details aria-live="polite">
-        ${details}
+
+      <div class="growth-cycle__viewer" data-growth-viewer>
+        <div class="growth-cycle__track" data-growth-track>${cards}</div>
+        <button class="growth-cycle__next" type="button" data-growth-next aria-label="Fase berikutnya" title="Fase berikutnya">&gt;</button>
+      </div>
+
+      <div class="growth-cycle__controls">
+        <span class="growth-cycle__status" data-growth-status aria-live="polite">Fase 01 dari ${phaseData.length}</span>
       </div>
     </div>`;
   }
 
-  function initGrowthCycleInteractions() {
-    document.querySelectorAll('.growth-cycle:not(.growth-cycle--custom)').forEach(cycle => {
-      const nodes = [...cycle.querySelectorAll('[data-growth-phase]')];
-      const details = [...cycle.querySelectorAll('[data-growth-detail]')];
-      const activeNumber = cycle.querySelector('[data-growth-active-number]');
-      const activeName = cycle.querySelector('[data-growth-active-name]');
-      if (!nodes.length || !details.length) return;
+  function initGrowthCycles(root = document) {
+    root.querySelectorAll('[data-growth-cycle]').forEach((cycle) => {
+      if (cycle.dataset.growthReady === 'true') return;
+      cycle.dataset.growthReady = 'true';
 
-      const selectPhase = index => {
-        const safeIndex = Math.max(0, Math.min(index, nodes.length - 1));
+      const nodes = [...cycle.querySelectorAll('[data-growth-phase]')];
+      const cards = [...cycle.querySelectorAll('[data-growth-card]')];
+      const viewer = cycle.querySelector('[data-growth-viewer]');
+      const track = cycle.querySelector('[data-growth-track]');
+      const next = cycle.querySelector('[data-growth-next]');
+      const status = cycle.querySelector('[data-growth-status]');
+      let active = 0;
+      let resizeFrame = 0;
+
+      const sync = (index, animate = true) => {
+        if (!cards.length) return;
+        active = Math.max(0, Math.min(index, cards.length - 1));
+        const target = cards[active];
+        const viewerWidth = viewer.clientWidth;
+        const targetCenter = target.offsetLeft + target.offsetWidth / 2;
+        const offset = viewerWidth / 2 - targetCenter;
+        track.style.transition = animate ? '' : 'none';
+        track.style.transform = `translate3d(${offset}px, 0, 0)`;
+        if (!animate) requestAnimationFrame(() => { track.style.transition = ''; });
+
         nodes.forEach((node, i) => {
-          const active = i === safeIndex;
-          node.classList.toggle('is-active', active);
-          node.setAttribute('aria-pressed', String(active));
+          const selected = i === active;
+          node.classList.toggle('is-active', selected);
+          node.setAttribute('aria-pressed', String(selected));
         });
-        details.forEach((detail, i) => {
-          const active = i === safeIndex;
-          detail.classList.toggle('is-active', active);
-          detail.setAttribute('aria-hidden', String(!active));
+        cards.forEach((card, i) => {
+          const selected = i === active;
+          card.classList.toggle('is-active', selected);
+          card.setAttribute('aria-hidden', String(!selected));
         });
-        const selected = details[safeIndex];
-        const name = selected?.querySelector('h3')?.textContent || `Fase ${String(safeIndex + 1).padStart(2, '0')}`;
-        if (activeNumber) activeNumber.textContent = String(safeIndex + 1).padStart(2, '0');
-        if (activeName) activeName.textContent = name;
+        status.textContent = `Fase ${String(active + 1).padStart(2, '0')} dari ${cards.length}`;
+        next.disabled = active >= cards.length - 1;
+        next.setAttribute('aria-disabled', String(next.disabled));
       };
 
-      nodes.forEach((node, index) => {
-        node.addEventListener('click', () => selectPhase(index));
-        node.addEventListener('keydown', event => {
-          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
-            event.preventDefault();
-            const next = (index + 1) % nodes.length;
-            nodes[next].focus();
-            selectPhase(next);
-          } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
-            event.preventDefault();
-            const next = (index - 1 + nodes.length) % nodes.length;
-            nodes[next].focus();
-            selectPhase(next);
-          } else if (event.key === 'Home') {
-            event.preventDefault();
-            nodes[0].focus();
-            selectPhase(0);
-          } else if (event.key === 'End') {
-            event.preventDefault();
-            const last = nodes.length - 1;
-            nodes[last].focus();
-            selectPhase(last);
-          }
-        });
+      nodes.forEach((node, i) => node.addEventListener('click', () => sync(i)));
+      next.addEventListener('click', () => sync(active + 1));
+
+      cycle.addEventListener('keydown', (event) => {
+        if (event.target.closest('button') && event.key !== 'ArrowLeft' && event.key !== 'ArrowRight' && event.key !== 'Home' && event.key !== 'End') return;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+          event.preventDefault();
+          sync(active + 1);
+        } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+          event.preventDefault();
+          sync(active - 1);
+        } else if (event.key === 'Home') {
+          event.preventDefault();
+          sync(0);
+        } else if (event.key === 'End') {
+          event.preventDefault();
+          sync(cards.length - 1);
+        }
       });
+
+      const resize = () => {
+        cancelAnimationFrame(resizeFrame);
+        resizeFrame = requestAnimationFrame(() => sync(active, false));
+      };
+      window.addEventListener('resize', resize, { passive: true });
+      sync(0, false);
     });
   }
 
@@ -351,6 +349,7 @@ const SundayGardenFlower = (() => {
 
         <section class="flower-cta container"><p class="eyebrow">Keep wandering</p><h2>Every flower carries a different story.</h2><p>Masih ada Gardener lain yang menunggu untuk kamu temui di taman.</p><a class="button" href="garden.html">${SundayGardenI18n.cta.exploreGarden}</a></section>
       </article>`;
+    initGrowthCycles(main);
   }
 
   async function init() {
@@ -367,7 +366,6 @@ const SundayGardenFlower = (() => {
         if (description) description.setAttribute('content', `${state.gardener.displayName} memilih ${state.flower.commonName}. Baca ceritanya dan kenali bunga di baliknya di Sunday Garden.`);
       }
       render();
-      initGrowthCycleInteractions();
     } catch (error) {
       console.error(error);
       document.querySelector('#main-content').innerHTML = `<section class="flower-error container"><p class="eyebrow">The Garden</p><h1>Terjadi kesalahan.</h1><p>Cerita bunga tidak dapat dimuat saat ini.</p><a class="button" href="garden.html">${SundayGardenI18n.cta.backToGarden}</a></section>`;

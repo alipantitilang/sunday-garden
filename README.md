@@ -203,7 +203,7 @@ Future innovations may add Phase 34, Phase 35, and beyond. A Phase is added only
 | RF-009 | Flower Data Language Consistency Remake | ✅ Complete |
 | RF-010 | Flower Search & Discovery Experience Remake | ✅ Complete |
 | RF-011 | Brand Identity, Navigation & Gardener Asset Remake | ✅ Complete |
-| RF-012 | Growth Cycle Visual & Interaction Remake | 🔄 In progress |
+| RF-012 | Growth Cycle Timeline & Phase Viewer Remake | 🔄 In progress |
 
 
 Detailed records are maintained in `REMAKE_FIX_LOG.md`.
@@ -418,7 +418,7 @@ When a field is genuinely not applicable to a particular flower, the data model 
 
 The Growth Cycle is a **research-driven representation**, not a universal fixed biological stage count. Different sources may describe the same plant at different levels of resolution, and specialized developmental studies may use substantially more stages than a general life-cycle summary.
 
-Sunday Garden therefore stores the cycle explicitly:
+Sunday Garden stores the cycle explicitly:
 
 ```json
 "growthCycle": {
@@ -439,27 +439,68 @@ Sunday Garden therefore stores the cycle explicitly:
 - `standard` — a normal editorial life-cycle representation.
 - `detailed` — a finer-grained representation supported by the research.
 - `specialized` — a domain-specific developmental sequence.
-- `custom` — a structure that does not fit the standard template families.
+- `custom` — a research-backed sequence that needs the same timeline/phase-viewer system without assuming a fixed phase count.
 
-### Template rule
+### RF-012 visual standard — Timeline & Phase Viewer
 
-The renderer may use compact circular templates for phase counts that remain readable, and a custom ordered presentation when the phase count or structure would make a circular diagram misleading or overcrowded.
+The current Growth Cycle remake uses a **horizontal timeline**, not a circular diagram. The timeline is intentionally simple and extensible:
 
-The implementation must **not** create biological phases merely to fill a visual template, merge research-backed phases merely to reduce a count, or assume that a flower has the same number of phases as another flower.
+```text
+O────────────O────────────O────────────O
+Phase 01     Phase 02     Phase 03     Phase 04
+```
 
-> **The data should shape the cycle; the cycle should not shape the data.**
+- Each phase is represented by one `O` node.
+- The horizontal line runs across the available width.
+- The number of nodes is derived directly from `growthCycle.phases`.
+- Adding more research-backed phases adds more nodes; the biological data is never changed to satisfy a visual template.
+- Each node is selectable and updates the Phase Viewer below it.
+
+### Phase Viewer
+
+The viewer presents the selected phase as the primary card and exposes neighboring phases as partial previews where available:
+
+```text
+[ previous preview ] [ ACTIVE PHASE ] [ next preview ]
+```
+
+- Phase 01: active card + next preview.
+- Middle phase: previous preview + active card + next preview.
+- Final phase: previous preview + active card.
+- The `>` control advances to the next phase.
+- Timeline nodes allow direct navigation to any phase.
+- Keyboard navigation supports previous/next and first/last phase.
+
+### Motion & responsive behavior
+
+Transitions should feel like moving through a quiet botanical journal rather than operating a dashboard carousel. Active cards slide smoothly, neighboring previews move naturally, and the timeline active state changes without layout jumps.
+
+On narrow screens, the timeline may scroll horizontally so every phase remains reachable without compressing the nodes into unreadable spacing. The active phase should remain visually clear, while the Phase Viewer adapts to the available width.
+
+Reduced-motion users receive the same information and controls without decorative movement.
+
+> **The data should shape the timeline; the timeline should not shape the data.**
 
 For new or substantially researched flowers:
 
 1. research the documented developmental sequence;
 2. determine the appropriate resolution;
-3. preserve the supported phase count;
-4. choose the renderer template based on that data;
-5. validate that every phase remains visible and understandable.
+3. preserve the supported phase count and order;
+4. render one timeline node per phase;
+5. validate the Phase Viewer at the first, middle, and final positions.
 
 The renderer retains a backward-compatible fallback for legacy phase arrays, but new records should use `growthCycle`.
 
----
+### RF-012 implementation scope
+
+- [x] Replace the circular Growth Cycle visual with a horizontal timeline.
+- [x] Add a data-driven phase node for every research-backed phase.
+- [x] Add an interactive Phase Viewer with neighboring previews.
+- [x] Add timeline navigation and the `>` next-phase control.
+- [x] Add natural slide/fade transitions and sequential timeline entrance.
+- [x] Add responsive timeline behavior for narrow screens.
+- [x] Add keyboard navigation and reduced-motion support.
+- [ ] Complete browser visual QA and final polish before closing RF-012.
 
 ## 10. Content Language Standard
 
