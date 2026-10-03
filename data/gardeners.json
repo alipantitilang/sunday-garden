@@ -23,12 +23,12 @@
       "status": "published"
     },
     {
-      "id": "sarah-pink-white-lily",
+      "id": "sarah-stargazer-lily",
       "displayName": "Sarah",
       "flower": {
-        "id": "pink-white-lily",
-        "name": "Pink & White Lily",
-        "scientificName": "Lilium spp."
+        "id": "stargazer-lily",
+        "name": "Stargazer Lily",
+        "scientificName": "Lilium 'Star Gazer'"
       },
       "story": "Aku ingin menjadi pink lily,\nagar hatiku selalu tahu cara menyayangi dengan lembut.\n\nDan aku ingin menjadi white lily,\nagar setiap rasa yang tumbuh tetap tulus dan damai.\n\nSemoga aku mekar tanpa kehilangan kelembutan,\ndan mencintai tanpa kehilangan ketulusan.",
       "about": {
@@ -37,10 +37,10 @@
         "links": []
       },
       "media": {
-        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228525/sarah-pink-white-lily-hero.jpg",
-        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790228693/sarah-pink-white-lily-card.jpg",
+        "hero": "https://res.cloudinary.com/zraurb8h/image/upload/v1790998964/sarah-stargazer-lily-hero.jpg",
+        "gardenCard": "https://res.cloudinary.com/zraurb8h/image/upload/v1790998983/sarah-stargazer-lily-card.jpg",
         "gallery": [],
-        "altText": "Sarah — Pink & White Lily"
+        "altText": "Sarah — Stargazer Lily"
       },
       "status": "published"
     },

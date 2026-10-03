@@ -58,7 +58,7 @@ Cross-check important taxonomic and historical claims where practical.
 
 Determine the most appropriate taxonomic scope.
 
-A colour/common-name category such as Red Rose, Pink Tulip, White Lily, or Pink & White Lily may represent multiple species or cultivated groups. Do not invent one species merely because the user supplied a common name.
+Colour/common-name categories such as Red Rose, Pink Tulip, and White Lily may represent multiple species or cultivated groups. Stargazer Lily is different: when that cultivar name is supplied, identify the cultivar and its horticultural classification rather than treating it as a generic colour category. Do not invent one species merely because the user supplied a common name.
 
 Where the accepted taxon is not a single species, explain the scope and use an appropriate genus/category treatment.
 

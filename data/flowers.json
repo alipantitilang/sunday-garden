@@ -748,53 +748,63 @@
       "heroName": "White Lily"
     },
     {
-      "id": "pink-white-lily",
-      "commonName": "Lili Merah Muda & Putih",
-      "scientificName": "Lilium spp.",
+      "id": "stargazer-lily",
+      "commonName": "Stargazer Lily",
+      "scientificName": "Lilium 'Star Gazer'",
       "researchStatus": "complete",
-      "taxonomicNote": "Lili Merah Muda & Putih adalah kategori deskriptif berdasarkan warna dan pola, bukan satu spesies. Genus Lilium mencakup banyak spesies dan kultivar dengan bunga putih, semburat merah muda, bintik, garis, atau kombinasi warna.",
+      "taxonomicNote": "Stargazer Lily adalah kultivar hibrida dalam kelompok Oriental (Divisi VII) pada genus Lilium. RHS mencatat nama kultivar yang diterima sebagai ‘Star Gazer’; ‘Stargazer’ merupakan ejaan yang umum digunakan tetapi dicatat RHS sebagai bentuk yang salah eja.",
       "taxonomy": {
         "kingdom": "Plantae",
         "order": "Liliales",
         "family": "Liliaceae",
         "genus": "Lilium",
-        "acceptedName": "Lilium Tourn. ex L.",
-        "synonyms": []
+        "acceptedName": "Lilium 'Star Gazer'",
+        "synonyms": [
+          "Lilium 'Stargazer'"
+        ]
       },
       "growthForm": "Herba tahunan berumbi.",
       "morphology": {
-        "roots": "Akar berkembang dari umbi dan pangkal batang; sebagian lili juga membentuk akar di sepanjang bagian bawah batang.",
-        "stem": "Batang tegak dan berdaun tumbuh dari umbi.",
-        "leaves": "Daun dapat tersusun berseling, spiral, atau berkarang bergantung pada spesies.",
-        "flower": "Bunga dapat berbentuk terompet, mangkuk, corong, atau topi Turki; warnanya mencakup putih, merah muda, dan berbagai kombinasi.",
-        "fruit": "Lili menghasilkan kapsul yang berisi biji."
+        "roots": "Sistem akar berkembang dari umbi dan pangkal batang, mendukung pertumbuhan tahunan tanaman.",
+        "stem": "Batang tegak dan kuat tumbuh dari umbi, dengan daun tersebar sepanjang batang.",
+        "leaves": "Daun berbentuk lanset dan tersusun tersebar di sepanjang batang.",
+        "flower": "Bunga besar berbentuk mangkuk hingga agak mendatar dengan tepala yang dapat melengkung ke belakang; bunga Stargazer didominasi merah muda hingga merah tua dengan tepi putih dan bintik lebih gelap.",
+        "fruit": "Setelah penyerbukan, Lilium dapat membentuk kapsul berisi biji."
       },
       "interestingFacts": [
         {
-          "title": "Kombinasi warna ini benar-benar ditemukan",
-          "text": "RHS mendokumentasikan Lilium regale dengan bunga terompet putih yang memiliki semburat merah muda dan Lilium Muscadet dengan bunga putih, semburat merah muda, serta bintik merah muda tua."
+          "title": "Menghadap ke atas",
+          "text": "Stargazer dikenal karena bunganya yang menghadap ke atas. RHS mencatat ‘Star Gazer’ sebagai Oriental hybrid Division VII dengan klasifikasi VII(a/c)."
         },
         {
-          "title": "Ini bukan satu spesies",
-          "text": "Label Lili Merah Muda & Putih dapat menggambarkan beberapa spesies Lilium dan pilihan budidaya."
+          "title": "Termasuk Oriental hybrid",
+          "text": "RHS menempatkan ‘Star Gazer’ dalam Division VII, Oriental hybrids. Kelompok ini umumnya memiliki bunga besar, sering beraroma, dengan warna dari putih hingga merah muda dan merah keunguan."
         },
         {
-          "title": "Bunga lili sangat beragam",
-          "text": "RHS mendeskripsikan bunga berbentuk terompet, mangkuk, corong, dan topi Turki di seluruh genus, dengan warna dari putih dan pastel hingga kombinasi dua warna yang tegas."
+          "title": "Dikembangkan oleh Leslie Woodriff",
+          "text": "University of Wisconsin–Madison mencatat Stargazer sebagai hibrida yang diperkenalkan oleh breeder Leslie Woodriff pada akhir 1970-an dan dikenal karena bunga yang menghadap ke atas."
+        },
+        {
+          "title": "Warna yang khas",
+          "text": "Stargazer memiliki kombinasi merah muda hingga merah tua dengan tepi putih dan bintik gelap, ciri yang membedakannya dari label umum “lili merah muda dan putih”."
         }
       ],
       "culturalNotes": [
         {
-          "title": "Kategori, bukan nama historis",
-          "text": "Lili Merah Muda & Putih diperlakukan di sini sebagai kategori visual. Karena itu, asosiasi budaya sebaiknya dikaitkan dengan spesies, tradisi, karya seni, atau sumber bahasa bunga yang terdokumentasi, bukan disajikan sebagai makna universal."
+          "title": "Makna bunga tidak selalu tunggal",
+          "text": "Tradisi bahasa bunga dapat memberikan makna yang berbeda menurut bunga, warna, dan sumber. Karena itu, Sunday Garden memperlakukan simbolisme sebagai konteks budaya, bukan makna universal yang menentukan seseorang."
+        },
+        {
+          "title": "Stargazer sebagai nama",
+          "text": "Nama Stargazer merujuk pada orientasi bunganya yang menghadap ke atas, seperti menatap langit. Dalam konteks Sunday Garden, asosiasi ini dapat menjadi titik awal interpretasi, sementara makna personal tetap milik Gardener."
         }
       ],
       "symbolism": [
         "keindahan dan kasih sayang dalam tradisi bahasa bunga tertentu",
-        "kemurnian atau kepolosan dalam tradisi yang berkaitan dengan lili putih",
+        "harapan atau aspirasi yang dapat diasosiasikan secara interpretatif dengan bunga yang menghadap ke atas",
         "makna pribadi yang ditentukan oleh Gardener"
       ],
-      "sundayGardenInterpretation": "Merah muda dan putih dapat hidup berdampingan tanpa salah satunya harus menghapus yang lain. Bagi Sunday Garden, bunga ini menjadi pengingat tenang bahwa kelembutan dan kejernihan dapat berbagi kelopak yang sama, sementara maknanya pada akhirnya tetap milik orang yang memilihnya.",
+      "sundayGardenInterpretation": "Stargazer membawa kesan lembut sekaligus berani: kelopak merah muda dan merah tua bertemu dengan tepian putih, sementara bunganya menghadap ke atas. Bagi Sunday Garden, ia dapat menjadi ruang untuk membaca kelembutan yang tidak berarti rapuh, dan harapan yang tetap berani menatap ke atas. Makna akhirnya tetap milik orang yang memilihnya.",
       "sources": [
         {
           "title": "RHS — Lilies",
@@ -802,52 +812,67 @@
           "type": "Referensi botani / hortikultura"
         },
         {
-          "title": "RHS — Lilium regale",
-          "url": "https://www.rhs.org.uk/plants/10248/lilium-regale-%28ixb-a%29-regal-lily-king-s-lily-royal-lily/details",
-          "type": "Referensi botani / hortikultura"
+          "title": "RHS — Lily cultivar registration",
+          "url": "https://www.rhs.org.uk/plants/horticulture-hub/plant-registration/lily-cultivar-registration",
+          "type": "Referensi nomenklatur dan registrasi kultivar"
         },
         {
-          "title": "RHS — Lilium Muscadet",
-          "url": "https://www.rhs.org.uk/plants/113837/lilium-muscadet-viia-b-b/details",
-          "type": "Referensi kultivar"
+          "title": "RHS — The International Lily Register and Checklist",
+          "url": "https://www.rhs.org.uk/plants/pdfs/plant-register-supplements/lilies/lily-register-and-checklist.pdf",
+          "type": "Referensi registrasi kultivar lily"
         },
         {
-          "title": "Smithsonian Gardens — Meaning of Flowers",
+          "title": "RHS — 7th Lily Supplement",
+          "url": "https://www.rhs.org.uk/plants/pdfs/plant-register-supplements/lilies/rhs-7th-lily-supp-web-version-03sep19.pdf",
+          "type": "Referensi klasifikasi Oriental hybrids"
+        },
+        {
+          "title": "University of Wisconsin–Madison Extension — Stargazer Lily",
+          "url": "https://hort.extension.wisc.edu/articles/stargazer-lily/",
+          "type": "Referensi hortikultura / sejarah kultivar"
+        },
+        {
+          "title": "North Carolina Extension Gardener Plant Toolbox — Oriental Hybrid Lilies",
+          "url": "https://plants.ces.ncsu.edu/plants/lilium-oriental-hybrids/common-name/oriental-lilies/",
+          "type": "Referensi hortikultura / kelompok Oriental hybrids"
+        },
+        {
+          "title": "Smithsonian Gardens — The Meaning of Flowers",
           "url": "https://gardens.si.edu/meaning-of-flowers",
-          "type": "Referensi budaya / simbolisme"
+          "type": "Referensi budaya / bahasa bunga"
         }
       ],
       "distribution": {
-        "nativeRange": "Genus Lilium berasal dari berbagai bagian Belahan Bumi Utara, termasuk Eropa, Asia, dan Amerika Utara; wilayah tepatnya bergantung pada spesies.",
-        "introducedElsewhere": "Banyak lili dibudidayakan jauh di luar wilayah aslinya.",
-        "distributionNote": "Karena Lili Merah Muda & Putih merupakan kategori, persebarannya dijelaskan pada tingkat genus dan tidak ditetapkan pada satu spesies."
+        "nativeRange": "Stargazer adalah kultivar hibrida budidaya, bukan spesies liar dengan satu native range tersendiri. Genus Lilium secara alami tersebar di berbagai wilayah Belahan Bumi Utara.",
+        "introducedElsewhere": "Sebagai kultivar hortikultura, Stargazer dibudidayakan di berbagai wilayah di luar persebaran alami spesies induknya.",
+        "distributionNote": "Persebaran alami tidak ditetapkan pada tingkat kultivar Stargazer; pembahasan wilayah alami lebih tepat dilakukan pada spesies yang menjadi bagian dari garis keturunannya."
       },
       "habitatProfile": {
-        "habitat": "Spesies Lilium menempati habitat yang beragam, dari hutan dan pegunungan hingga padang rumput terbuka dan lingkungan kebun.",
-        "growthEnvironment": "Lili budidaya umumnya memerlukan drainase dan kondisi cahaya yang sesuai dengan spesies atau kultivarnya.",
+        "habitat": "Sebagai lili budidaya, Stargazer tumbuh di lingkungan taman dan wadah dengan kondisi yang sesuai untuk Oriental hybrids.",
+        "growthEnvironment": "Lili Oriental umumnya membutuhkan tanah yang lembap tetapi berdrainase baik dan kondisi cahaya yang sesuai; RHS mencatat banyak lili tumbuh baik di matahari penuh dengan pangkal tanaman lebih teduh.",
         "growthForm": "Tumbuhan tahunan berumbi."
       },
       "flowering": {
-        "flowerPosition": "Bunga tumbuh pada bagian atas batang yang tegak dan berdaun.",
-        "flowerSize": "Sangat bervariasi menurut spesies dan kultivar.",
-        "colour": "Bunga putih dapat memiliki semburat, bintik, atau tanda merah muda; RHS mendokumentasikan beberapa contohnya."
+        "flowerPosition": "Bunga muncul pada bagian atas batang tegak dan menghadap ke atas atau ke luar.",
+        "flowerSize": "Bunga berukuran besar dan mencolok, sebagaimana umum pada Oriental hybrids.",
+        "colour": "Merah muda hingga merah tua/crimson dengan tepi putih, bintik lebih gelap, dan kepala sari berwarna jingga-cokelat."
       },
       "reproduction": {
-        "flowers": "Bunga memiliki benang sari dan karpel yang menjadi ciri Lilium.",
-        "fruit": "Kapsul berkembang setelah pembungaan.",
-        "seeds": "Biji dihasilkan di dalam kapsul.",
-        "note": "Lili budidaya juga dapat diperbanyak secara vegetatif, termasuk melalui anakan pada jenis yang sesuai."
+        "flowers": "Bunga Lilium memiliki benang sari dan karpel; pada Stargazer, struktur bunga mengikuti karakter genus Lilium.",
+        "fruit": "Setelah pembuahan, kapsul dapat berkembang dan menghasilkan biji.",
+        "seeds": "Biji terbentuk di dalam kapsul ketika terjadi reproduksi seksual yang berhasil.",
+        "note": "Stargazer juga dapat diperbanyak secara vegetatif melalui bagian umbi dan sisik umbi dalam praktik hortikultura."
       },
       "lifeCycle": {
-        "persistence": "Sebagian besar lili taman merupakan tumbuhan tahunan berumbi dengan pertumbuhan musiman dan masa dormansi.",
-        "seasonalityNote": "Waktu berbunga berbeda menurut spesies, kelompok, kultivar, dan iklim."
+        "persistence": "Sebagai lili berumbi, Stargazer merupakan tanaman tahunan yang menyimpan cadangan di dalam umbi dan kembali tumbuh pada musim pertumbuhan berikutnya.",
+        "seasonalityNote": "Waktu berbunga bergantung pada iklim dan kondisi budidaya; sumber hortikultura menempatkannya pada periode pertengahan hingga akhir musim panas di iklim yang sesuai."
       },
       "ecology": {
-        "role": "Tumbuhan berbunga berumbi yang berinteraksi dengan habitat sekitarnya melalui bunga, dedaunan, akar, dan organ penyimpanan bawah tanah.",
-        "caution": "Tidak ada satu penyerbuk atau peran ekologis yang dapat ditetapkan untuk seluruh genus karena setiap spesies memiliki karakter berbeda."
+        "role": "Sebagai tanaman berbunga budidaya, Stargazer menyediakan bunga yang dapat dikunjungi penyerbuk dan menjadi bagian dari ekosistem taman.",
+        "caution": "Interaksi ekologis spesifik dapat berbeda menurut lokasi, kondisi taman, dan komunitas penyerbuk setempat."
       },
       "conservation": {
-        "note": "Tidak ada satu status konservasi untuk Lili Merah Muda & Putih karena kategori ini bukan satu takson. Kebutuhan konservasi sebaiknya dinilai pada tingkat spesies atau kultivar jika relevan."
+        "note": "Stargazer merupakan kultivar hortikultura, sehingga status konservasi spesies liar tidak diterapkan langsung pada kultivar ini. Konservasi kerabat liar perlu dinilai pada tingkat spesies."
       },
       "profileOrder": [
         "commonName",
@@ -868,26 +893,26 @@
           {
             "id": "phase-01",
             "name": "Fase 01",
-            "description": "Umbi menyimpan cadangan selama masa dormansi."
+            "description": "Umbi berada dalam masa dormansi dan menyimpan cadangan untuk pertumbuhan berikutnya."
           },
           {
             "id": "phase-02",
             "name": "Fase 02",
-            "description": "Batang dan daun baru muncul dari umbi selama musim pertumbuhan aktif."
+            "description": "Batang dan daun baru tumbuh dari umbi ketika kondisi pertumbuhan mendukung."
           },
           {
             "id": "phase-03",
             "name": "Fase 03",
-            "description": "Bunga berkembang di bagian atas batang berdaun; bentuk dan warna berbeda menurut spesies atau kultivar."
+            "description": "Kuncup berkembang di bagian atas batang dan membuka menjadi bunga Stargazer yang besar, berwarna merah muda-merah tua dengan tepi putih."
           },
           {
             "id": "phase-04",
             "name": "Fase 04",
-            "description": "Setelah berbunga, tumbuhan mengisi kembali cadangan umbi sebelum dedaunan mengering pada banyak lili yang menggugurkan daun."
+            "description": "Setelah berbunga, dedaunan membantu mengisi kembali cadangan umbi sebelum tanaman memasuki fase dormansi berikutnya."
           }
         ]
       },
-      "heroName": "Pink & White Lily"
+      "heroName": "Stargazer Lily"
     }
   ]
 }
