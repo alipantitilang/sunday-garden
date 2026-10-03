@@ -2,9 +2,6 @@ const SundayGardenI18n = Object.freeze({
   nav: { home: 'Beranda', garden: 'Taman', about: 'Tentang' },
   cta: {
     exploreGarden: 'Jelajahi Taman',
-    about: 'Tentang Sunday Garden',
-    plant: 'Tanam Bungamu',
-    visitSundayVibes: 'Kunjungi Sunday Vibes',
     backToGarden: 'Kembali ke Taman'
   },
   garden: {
@@ -37,7 +34,6 @@ const SundayGardenI18n = Object.freeze({
     taxonomicFallback: 'Penelitian botani untuk bunga ini masih dipersiapkan.',
     growthIntro: 'Perjalanan tenang dari bawah permukaan hingga bunga yang terlihat.',
     sourcesNewTab: '(terbuka di tab baru)',
-    meaningFallback: 'Interpretasi bunga ini akan ditambahkan setelah tahap penelitiannya selesai.'
   },
   accessibility: {
     skip: 'Lewati ke konten utama',
@@ -69,7 +65,7 @@ const SundayGarden = (() => {
     header.innerHTML = `
       <nav class="site-nav container" aria-label="Navigasi utama">
         <a class="site-brand" href="index.html" aria-label="${SundayGardenI18n.accessibility.home}">
-          <img src="assets/brand/lockup/sg-logo-wordmark-transparent.png" alt="Sunday Garden">
+          <img src="assets/brand/lockup/sg-logo-wordmark-transparent.svg" alt="Sunday Garden">
         </a>
 
         <button
@@ -142,8 +138,8 @@ const SundayGarden = (() => {
       <div class="site-footer__inner">
         <div class="site-footer__brand-block">
           <a class="site-footer__brand" href="index.html" aria-label="${SundayGardenI18n.accessibility.home}">
-            <img src="assets/brand/logo/sg-logo-transparent.png" alt="" aria-hidden="true">
-            <img class="site-footer__wordmark" src="assets/brand/wordmark/sg-wordmark-transparent.png" alt="Sunday Garden">
+            <img src="assets/brand/logo/sg-logo-transparent.svg" alt="" aria-hidden="true">
+            <img class="site-footer__wordmark" src="assets/brand/wordmark/sg-wordmark-transparent.svg" alt="Sunday Garden">
           </a>
           <div class="site-footer__links" aria-label="Tautan footer">
             <a href="index.html">${SundayGardenI18n.nav.home}</a>

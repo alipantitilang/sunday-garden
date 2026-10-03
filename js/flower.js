@@ -130,7 +130,7 @@ const SundayGardenFlower = (() => {
     const phaseData = meaningful.map((step, i) => {
       const description = typeof step === 'string' ? step : (step.description || step.name || '');
       const name = typeof step === 'string' ? `Fase ${String(i + 1).padStart(2, '0')}` : (step.name || `Fase ${String(i + 1).padStart(2, '0')}`);
-      return { name, description, index: i };
+      return { name, description };
     });
 
     const nodes = phaseData.map((phase, i) => `
@@ -157,10 +157,10 @@ const SundayGardenFlower = (() => {
       <div class="growth-cycle__viewer" data-growth-viewer>
         <div class="growth-cycle__track" data-growth-track>${cards}</div>
         <button class="growth-cycle__previous" type="button" data-growth-previous aria-label="Fase sebelumnya" title="Fase sebelumnya">
-          <img src="assets/ui/growth-cycle/growth-previous.png" alt="" aria-hidden="true">
+          <img src="assets/ui/growth-cycle/growth-previous.svg" alt="" aria-hidden="true">
         </button>
         <button class="growth-cycle__next" type="button" data-growth-next aria-label="Fase berikutnya" title="Fase berikutnya">
-          <img src="assets/ui/growth-cycle/growth-next.png" alt="" aria-hidden="true">
+          <img src="assets/ui/growth-cycle/growth-next.svg" alt="" aria-hidden="true">
         </button>
       </div>
     </div>`;
@@ -330,6 +330,8 @@ const SundayGardenFlower = (() => {
           <div class="section-heading"><p class="eyebrow">A closer look</p><h2>Botanical details</h2></div>
           <div class="morphology-grid">${morphologyMarkup(f.morphology)}</div>
         </section>
+
+        ${meaningSectionMarkup(f)}
 
         ${detailSection('Flowering', 'The bloom', f.flowering)}
         ${detailSection('Reproduction', 'How new plants begin', f.reproduction)}

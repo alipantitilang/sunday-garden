@@ -74,7 +74,7 @@
 
     const image = document.createElement('img');
     image.className = 'garden-card__image';
-    image.src = gardener.media?.gardenCard || gardener.media?.hero || 'assets/images/placeholder/garden-card-placeholder.jpg';
+    image.src = gardener.media?.gardenCard || gardener.media?.hero || 'assets/images/placeholder/garden-card-placeholder.svg';
     image.alt = `${gardener.displayName} — ${meta.commonName || 'Bunga'}`;
     image.loading = 'lazy';
     image.decoding = 'async';

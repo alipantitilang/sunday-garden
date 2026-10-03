@@ -22,7 +22,7 @@
 
     const image = document.createElement('img');
     image.className = 'featured-card__image';
-    image.src = gardener.media?.gardenCard || gardener.media?.hero || 'assets/images/placeholder/garden-card-placeholder.jpg';
+    image.src = gardener.media?.gardenCard || gardener.media?.hero || 'assets/images/placeholder/garden-card-placeholder.svg';
     image.alt = `${gardener.displayName} — ${gardener.flower.name}`;
     image.loading = 'lazy';
     image.width = 1920;
